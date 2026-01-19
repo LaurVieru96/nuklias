@@ -26,6 +26,7 @@ export function ServiceCard({ title, subtitle, features, tier, delay = 0 }: Serv
       className={`
         relative p-8 rounded-2xl border ${accentColor}
         hover:shadow-xl transition-all duration-300 group
+        flex flex-col h-full
         ${isGold ? 'shadow-lg shadow-primary/5 ring-1 ring-primary/20' : ''}
       `}
     >
@@ -40,7 +41,7 @@ export function ServiceCard({ title, subtitle, features, tier, delay = 0 }: Serv
         <p className="text-muted-foreground text-sm font-medium">{subtitle}</p>
       </div>
 
-      <ul className="space-y-4 mb-8">
+      <ul className="space-y-4 mb-8 flex-1">
         {features.map((feature, i) => (
           <li key={i} className="flex items-start gap-3">
             <div className={`mt-0.5 rounded-full p-0.5 ${isGold ? 'bg-accent text-accent-foreground' : 'bg-primary/10 text-primary'}`}>

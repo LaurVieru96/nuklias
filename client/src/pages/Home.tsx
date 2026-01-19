@@ -128,15 +128,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* The Edge Section */}
-      <section id="edge" className="py-24 bg-primary text-white relative overflow-hidden">
+      {/* The What we Solve Section */}
+      <section id="solve" className="py-24 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold font-display mb-6">The Agency Edge</h2>
+            <h2 className="text-3xl md:text-5xl font-bold font-display mb-6">Our Promise</h2>
+            <h2 className="text-3xl md:text-5xl font-bold font-display mb-6">The only marketing that matters: The money in your pocket</h2>
             <p className="text-white/70 max-w-2xl mx-auto text-lg">
-              We move beyond traditional service delivery. We are system architects using AI to accelerate execution and logic to drive growth.
+            The only marketing that matters is the one you can observe in your pockets at the end of the month. We do not sell 'visibility' or 'likes'; we build the structural machinery that turns digital chaos into liquid cash with total predictability.
             </p>
           </div>
 
@@ -144,18 +145,18 @@ export default function Home() {
             {[
               {
                 icon: <BrainCircuit className="w-8 h-8 text-accent" />,
-                title: "AI-Accelerated",
-                desc: "We leverage cutting-edge AI to produce content and analyze data at speeds traditional agencies can't match."
+                title: "Operational Agility",
+                desc: "While others get lost in the planning phase, we focus on immediate, high-impact implementation. We drive your projects forward with a level of intensity and precision that ensures you stay ahead of the market and see results faster."
               },
               {
                 icon: <Network className="w-8 h-8 text-accent" />,
-                title: "System Thinking",
-                desc: "We don't build isolated pages. We build interconnected ecosystems where every part feeds the whole."
+                title: "Integrated Growth Ecosystems",
+                desc: "Stop investing in disconnected digital fragments. We architect unified ecosystems where SEO, Content, and Strategy function as a single, cohesive architecture designed to attract, engage, and convert your ideal leads 24/7."
               },
               {
                 icon: <Target className="w-8 h-8 text-accent" />,
-                title: "Results-Obsessed",
-                desc: "Vanity metrics don't pay bills. We focus entirely on the systems that generate revenue and leads."
+                title: "Revenue-First Engineering",
+                desc: "We prioritize the metrics that directly impact your wallet and spending habits: We focus on the stability of your lead flow and amplify your profit, simple as that."
               }
             ].map((item, i) => (
               <motion.div
@@ -177,62 +178,70 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-24 bg-gray-50">
+      {/* Products Section */}
+      <section id="products" className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold font-display text-primary mb-4">Architectural Blueprints</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Choose the level of system integration your business needs to thrive.
-            </p>
-          </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <ServiceCard 
-              title="Foundation"
-              subtitle="The Local Engine"
-              tier="bronze"
-              delay={0}
-              features={[
-                "Google Business Profile Optimization",
-                "NAP Consistency Audit",
-                "Digital Identity Clearing",
-                "Basic Review Management System",
-                "Local SEO Setup"
-              ]}
-            />
-            <ServiceCard 
-              title="Growth"
-              subtitle="The Content System"
-              tier="silver"
-              delay={0.1}
-              features={[
-                "Comprehensive Social Strategy",
-                "AI-Assisted Content Production",
-                "Cross-Platform Brand Consistency",
-                "Engagement Automation Scripts",
-                "Monthly Performance Analytics"
-              ]}
-            />
-            <ServiceCard 
-              title="Scale"
-              subtitle="Automated Pipeline"
-              tier="gold"
-              delay={0.2}
-              features={[
-                "High-Converting Lead Funnels",
-                "Custom CRM Integration",
-                "PPC Ad Management & Optimization",
-                "Email Nurture Sequences",
-                "Full-Stack Revenue Attribution"
-              ]}
-            />
+          {/* Custom Website Subsection */}
+          <div className="mt-20 max-w-6xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold font-display text-primary mb-3">
+                Create Your Custom Website
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Pick the structure that matches where your business is today. Every option is built to be fast, clear, and conversion-focused.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 items-stretch">
+              <ServiceCard
+                title="Website Basic"
+                subtitle="Essential Presence"
+                tier="bronze"
+                delay={0}
+                features={[
+                  "Custom 3–5 page website (Home, About, Services, Contact)",
+                  "Modern, responsive design for all devices",
+                  "Basic on-page SEO structure (titles, meta, headings)",
+                  "Contact form and location/map integration",
+                  "Performance-focused layout for clarity and trust"
+                ]}
+              />
+
+              <ServiceCard
+                title="Website + Hosting"
+                subtitle="Managed Foundation"
+                tier="silver"
+                delay={0.1}
+                features={[
+                  "Everything in Website Basic",
+                  "Premium, secure hosting fully managed for you",
+                  "Custom domain setup & SSL certificate",
+                  "Monthly uptime & performance monitoring",
+                  "Technical maintenance so you never touch servers"
+                ]}
+              />
+
+              <ServiceCard
+                title="Website + Host + Growth"
+                subtitle="Updates & Development"
+                tier="gold"
+                delay={0.2}
+                features={[
+                  "Everything in Website + Hosting",
+                  "Monthly content & design updates included",
+                  "New page development as your offers evolve",
+                  "Ongoing UX and conversion optimization",
+                  "Priority support for experiments and iterations"
+                ]}
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Results Section */}
-      <section id="results" className="py-24">
+      {/* Process Section */}
+      <section id="process" className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-primary rounded-3xl overflow-hidden shadow-2xl">
             <div className="grid md:grid-cols-2">
