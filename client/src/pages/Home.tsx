@@ -16,6 +16,7 @@ import {
   CheckCircle2
 } from "lucide-react";
 import { motion } from "framer-motion";
+import heroImage from '../assets/photo_2026-01-19_10-50-29.jpg';
 
 export default function Home() {
   const { toast } = useToast();
@@ -48,24 +49,25 @@ export default function Home() {
         <div className="absolute top-0 right-0 -z-10 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+          <div className="flex flex-col gap-12 lg:gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
+              className="w-full max-w-5xl"
             >
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/20 text-primary-foreground border border-accent/30 text-xs font-bold uppercase tracking-wider mb-6">
-                <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                Digital Architects
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent text-accent-foreground border border-accent/30 text-xs font-bold uppercase tracking-wider mb-6">
+                <span className="w-2 h-2 rounded-full bg-accent-foreground animate-pulse" />
+                YOUR JOURNEY
               </div>
               <h1 className="text-5xl lg:text-7xl font-bold font-display text-primary leading-[1.1] mb-6">
-                Turning Chaos <br />
+                From Chaos to Clarity: <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">
-                  Into Systems
+                  Your Digital Growth Engine
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
-                We don't just build websites. We architect interconnected digital ecosystems that turn passive followers into qualified leads through automation and strategy.
+                We engineer automated ecosystems that convert passive followers into loyal customers.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
@@ -76,7 +78,7 @@ export default function Home() {
                   <ArrowRight size={18} />
                 </button>
                 <button className="px-8 py-4 bg-white border border-border text-primary font-bold rounded-xl hover:bg-gray-50 transition-colors">
-                  Explore Our Work
+                  Explore Our Plans
                 </button>
               </div>
             </motion.div>
@@ -85,20 +87,20 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
+              className="relative w-full max-w-5xl"
             >
               {/* Abstract Tech Visual */}
-              <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary to-purple-900 p-1">
-                <div className="w-full h-full rounded-[20px] bg-white/10 backdrop-blur-sm overflow-hidden relative">
+              <div className="rounded-3xl bg-gradient-to-br from-primary to-purple-900 p-1">
+                <div className="w-full rounded-[20px] bg-white/10 backdrop-blur-sm overflow-hidden relative">
                    {/* Decorative Abstract Image - Network Nodes */}
                    <img 
-                    src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=2000" 
+                    src={heroImage}
                     alt="Digital Network Abstract" 
-                    className="w-full h-full object-cover opacity-80 mix-blend-overlay"
+                    className="w-full object-fit opacity-80 mix-blend-overlay"
                   />
                   
                   {/* Floating Cards Overlay */}
-                  <div className="absolute top-1/4 left-1/4 p-4 bg-white/90 backdrop-blur rounded-xl shadow-lg border border-white/20 max-w-[200px]">
+                  {/* <div className="absolute top-1/4 left-1/4 p-4 bg-white/90 backdrop-blur rounded-xl shadow-lg border border-white/20 max-w-[200px]">
                     <div className="flex items-center gap-3 mb-2">
                       <div className="p-2 bg-accent rounded-lg">
                         <BarChart3 size={16} className="text-primary" />
@@ -106,7 +108,7 @@ export default function Home() {
                       <span className="text-xs font-bold text-primary">Conversion Rate</span>
                     </div>
                     <div className="text-2xl font-bold text-primary">+145%</div>
-                  </div>
+                  </div> 
 
                   <div className="absolute bottom-1/4 right-12 p-4 bg-primary/90 backdrop-blur rounded-xl shadow-lg border border-primary/20 max-w-[200px]">
                     <div className="flex items-center gap-3 mb-2">
@@ -118,7 +120,7 @@ export default function Home() {
                     <div className="w-full bg-white/20 h-1.5 rounded-full overflow-hidden">
                       <div className="h-full bg-accent w-3/4" />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </motion.div>

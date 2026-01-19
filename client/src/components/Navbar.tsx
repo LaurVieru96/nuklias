@@ -8,10 +8,10 @@ export function Navbar() {
   const [location] = useLocation();
 
   const links = [
-    { href: "#edge", label: "Our Edge" },
-    { href: "#services", label: "Services" },
-    { href: "#results", label: "Results" },
-    { href: "#contact", label: "Contact" },
+    { href: "#solve", label: "What We Solve" },
+    { href: "#products", label: "Products" },
+    { href: "#process", label: "Process" },
+    { href: "#contact", label: "Contact Us" },
   ];
 
   const handleNav = (id: string) => {
@@ -28,8 +28,8 @@ export function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="font-display text-2xl font-bold tracking-tight text-primary flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center font-bold text-lg">N</div>
-            NUKLIAS
+            <div className="w-8 h-8 rounded-lg bg-accent text-accent-foreground flex items-center justify-center font-bold text-lg">N</div>
+            NUKLIAS MARKETING
           </Link>
 
           {/* Desktop Nav */}
