@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 function Router() {
   return (
@@ -20,6 +21,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Router />
+        <ThemeToggle />
         <Toaster />
       </TooltipProvider>
     </QueryClientProvider>

@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { sendContactEmail } from "./email";
 
 export const insertMessageSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -34,8 +35,11 @@ function saveMessages(messages: Message[]) {
 export const apiMock = {
   messages: {
     create: async (data: InsertMessage): Promise<Message> => {
-      await new Promise((resolve) => setTimeout(resolve, 500));
       const validated = insertMessageSchema.parse(data);
+      await sendContactEmail(validated);
+
+      // Keep local storage as a simple "inbox" history
+      await new Promise((resolve) => setTimeout(resolve, 200));
       const messages = getStoredMessages();
       const newMessage: Message = {
         ...validated,

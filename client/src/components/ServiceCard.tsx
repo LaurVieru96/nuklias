@@ -13,9 +13,9 @@ export function ServiceCard({ title, subtitle, features, tier, delay = 0 }: Serv
   const isGold = tier === "gold";
   
   const accentColor = 
-    tier === "bronze" ? "border-orange-200 bg-orange-50/50" : 
-    tier === "silver" ? "border-slate-200 bg-slate-50/50" : 
-    "border-purple-200 bg-purple-50/50";
+    tier === "bronze" ? "border-orange-200 dark:border-orange-900/50 bg-orange-50/50 dark:bg-orange-950/30" : 
+    tier === "silver" ? "border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/30" : 
+    "border-purple-200 dark:border-purple-900/50 bg-purple-50/50 dark:bg-purple-950/30";
 
   return (
     <motion.div
@@ -26,7 +26,7 @@ export function ServiceCard({ title, subtitle, features, tier, delay = 0 }: Serv
       className={`
         relative p-8 rounded-2xl border ${accentColor}
         hover:shadow-xl transition-all duration-300 group
-        flex flex-col h-full
+        flex flex-col h-full bg-card
         ${isGold ? 'shadow-lg shadow-primary/5 ring-1 ring-primary/20' : ''}
       `}
     >
@@ -55,8 +55,8 @@ export function ServiceCard({ title, subtitle, features, tier, delay = 0 }: Serv
       <button className={`
         w-full py-3 rounded-xl font-bold text-sm transition-all duration-300
         ${isGold 
-          ? 'bg-primary text-white hover:bg-primary/90 shadow-lg shadow-primary/20' 
-          : 'bg-white border-2 border-primary/10 text-primary hover:border-primary/30 hover:bg-primary/5'
+          ? 'bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20' 
+          : 'bg-card border-2 border-primary/10 dark:border-primary/30 text-primary hover:border-primary/30 hover:bg-primary/5 dark:hover:bg-primary/10'
         }
       `}>
         Request a Quote

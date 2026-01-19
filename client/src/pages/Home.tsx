@@ -1,10 +1,12 @@
 import { Navbar } from "@/components/Navbar";
 import { ServiceCard } from "@/components/ServiceCard";
+import { LegalModal } from "@/components/LegalModal";
 import { useMessages } from "@/hooks/use-messages";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { insertMessageSchema, type InsertMessage } from "@/lib/api-mock";
 import { useToast } from "@/hooks/use-toast";
+import { PrivacyPolicyContent, TermsOfServiceContent } from "@/lib/legal-content";
 import { 
   ArrowRight, 
   BrainCircuit, 
@@ -16,11 +18,14 @@ import {
   CheckCircle2
 } from "lucide-react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import heroImage from '../assets/photo_2026-01-19_10-50-29.jpg';
 
 export default function Home() {
   const { toast } = useToast();
   const { createMessage, isSubmitting } = useMessages();
+  const [privacyOpen, setPrivacyOpen] = useState(false);
+  const [termsOpen, setTermsOpen] = useState(false);
 
   const form = useForm<InsertMessage>({
     resolver: zodResolver(insertMessageSchema),
@@ -46,7 +51,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         {/* Abstract Background Element */}
-        <div className="absolute top-0 right-0 -z-10 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
+        <div className="absolute top-0 right-0 -z-10 w-[800px] h-[800px] bg-primary/5 dark:bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col gap-12 lg:gap-16 items-center">
@@ -77,7 +82,7 @@ export default function Home() {
                   Book a Strategic Audit
                   <ArrowRight size={18} />
                 </button>
-                <button className="px-8 py-4 bg-white border border-border text-primary font-bold rounded-xl hover:bg-gray-50 transition-colors">
+                <button className="px-8 py-4 bg-white dark:bg-card border border-border text-primary font-bold rounded-xl hover:bg-gray-50 dark:hover:bg-card/80 transition-colors">
                   Explore Our Plans
                 </button>
               </div>
@@ -90,8 +95,8 @@ export default function Home() {
               className="relative w-full max-w-5xl"
             >
               {/* Abstract Tech Visual */}
-              <div className="rounded-3xl bg-gradient-to-br from-primary to-purple-900 p-1">
-                <div className="w-full rounded-[20px] bg-white/10 backdrop-blur-sm overflow-hidden relative">
+              <div className="rounded-3xl bg-gradient-to-br from-primary to-purple-900 dark:from-primary/80 dark:to-purple-950 p-1">
+                <div className="w-full rounded-[20px] bg-white/10 dark:bg-black/20 backdrop-blur-sm overflow-hidden relative">
                    {/* Decorative Abstract Image - Network Nodes */}
                    <img 
                     src={heroImage}
@@ -179,7 +184,7 @@ export default function Home() {
       </section>
 
       {/* Products Section */}
-      <section id="products" className="py-24 bg-gray-50">
+      <section id="products" className="py-24 bg-gray-50 dark:bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Custom Website Subsection */}
@@ -241,9 +246,9 @@ export default function Home() {
       </section>
 
       {/* Process Section */}
-      <section id="process" className="py-24">
+      <section id="process" className="py-24 dark:bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-primary rounded-3xl overflow-hidden shadow-2xl">
+          <div className="bg-primary dark:bg-primary/90 rounded-3xl overflow-hidden shadow-2xl">
             <div className="grid md:grid-cols-2">
               <div className="p-12 md:p-16 flex flex-col justify-center">
                 <h2 className="text-3xl md:text-4xl font-bold font-display text-white mb-6">
@@ -267,7 +272,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="relative bg-white/5 h-full min-h-[400px]">
+              <div className="relative bg-white/5 dark:bg-black/20 h-full min-h-[400px]">
                  {/* Abstract Chart/Graph Image */}
                 <img 
                   src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" 
@@ -288,7 +293,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 bg-gray-50">
+      <section id="contact" className="py-24 bg-gray-50 dark:bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center mb-12">
             <h2 className="text-4xl font-bold font-display text-primary mb-4">Ready to Architect Your Growth?</h2>
@@ -297,13 +302,13 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="max-w-xl mx-auto bg-white rounded-2xl shadow-xl p-8 border border-border">
+          <div className="max-w-xl mx-auto bg-white dark:bg-card rounded-2xl shadow-xl p-8 border border-border">
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
               <div className="space-y-2">
                 <label className="text-sm font-bold text-foreground">Name</label>
                 <input
                   {...form.register("name")}
-                  className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
+                  className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-muted border border-gray-200 dark:border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
                   placeholder="John Doe"
                 />
                 {form.formState.errors.name && (
@@ -315,7 +320,7 @@ export default function Home() {
                 <label className="text-sm font-bold text-foreground">Email</label>
                 <input
                   {...form.register("email")}
-                  className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
+                  className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-muted border border-gray-200 dark:border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
                   placeholder="john@company.com"
                 />
                 {form.formState.errors.email && (
@@ -328,7 +333,7 @@ export default function Home() {
                 <textarea
                   {...form.register("message")}
                   rows={4}
-                  className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-muted border border-gray-200 dark:border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all resize-none"
                   placeholder="Tell us about your current digital challenges..."
                 />
                 {form.formState.errors.message && (
@@ -349,17 +354,54 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-primary text-white py-12 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex items-center gap-2 font-display font-bold text-xl">
-            <div className="w-8 h-8 rounded-lg bg-accent text-accent-foreground flex items-center justify-center">N</div>
-            NUKLIAS
-          </div>
-          <div className="text-white/40 text-sm">
-            © 2024 Nuklias Digital Architects. All rights reserved.
+      <footer className="bg-primary dark:bg-primary/90 text-white py-12 border-t border-white/10 dark:border-white/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+            <div className="flex items-center gap-2 font-display font-bold text-xl">
+              <div className="w-8 h-8 rounded-lg bg-accent text-accent-foreground flex items-center justify-center">
+                N
+              </div>
+              NUKLIAS
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center gap-4 text-white/60">
+              <button
+                onClick={() => setPrivacyOpen(true)}
+                className="hover:text-white transition-colors underline-offset-4 hover:underline"
+              >
+                Privacy Policy
+              </button>
+              <span className="text-white/30">•</span>
+              <button
+                onClick={() => setTermsOpen(true)}
+                className="hover:text-white transition-colors underline-offset-4 hover:underline"
+              >
+                Terms of Service
+              </button>
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center gap-4 text-white/60">
+              <span className="text-white/40">
+                © 2025 Nuklias Digital Architects. All rights reserved.
+              </span>
+            </div>
           </div>
         </div>
       </footer>
+
+      {/* Legal Modals */}
+      <LegalModal
+        open={privacyOpen}
+        onOpenChange={setPrivacyOpen}
+        title="Privacy Policy"
+        content={<PrivacyPolicyContent />}
+      />
+      <LegalModal
+        open={termsOpen}
+        onOpenChange={setTermsOpen}
+        title="Terms of Service"
+        content={<TermsOfServiceContent />}
+      />
     </div>
   );
 }

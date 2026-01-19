@@ -23,7 +23,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border/40 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-card/90 backdrop-blur-md border-b border-border/40 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -70,7 +70,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-t border-border"
+            className="md:hidden bg-white dark:bg-card border-t border-border"
           >
             <div className="px-4 py-4 space-y-4">
               {links.map((link) => (
