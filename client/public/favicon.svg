@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>NUKLIAS</title>
+  <rect width="64" height="64" rx="10" fill="#2ecc71" />
+  <path
+    fill="#6b2fb3"
+    d="M16 14h10l12 24V14h10v36H38L26 26v24H16z"
+  />
+</svg>
