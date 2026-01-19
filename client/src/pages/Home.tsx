@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "wouter";
 import heroImage from '../assets/photo_2026-01-19_10-50-29.jpg';
 
 export default function Home() {
@@ -40,9 +41,6 @@ export default function Home() {
     createMessage(data);
   };
 
-  const scrollToContact = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <div className="min-h-screen bg-background font-sans">
@@ -75,16 +73,17 @@ export default function Home() {
                 We engineer automated ecosystems that convert passive followers into loyal customers.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button 
-                  onClick={scrollToContact}
-                  className="px-8 py-4 bg-accent text-accent-foreground font-bold rounded-xl shadow-xl shadow-accent/20 hover:scale-105 transition-transform flex items-center justify-center gap-2"
-                >
-                  Book a Strategic Audit
-                  <ArrowRight size={18} />
-                </button>
-                <button className="px-8 py-4 bg-white dark:bg-card border border-border text-primary font-bold rounded-xl hover:bg-gray-50 dark:hover:bg-card/80 transition-colors">
-                  Explore Our Plans
-                </button>
+                <Link href="/contact">
+                  <button className="px-8 py-4 bg-accent text-accent-foreground font-bold rounded-xl shadow-xl shadow-accent/20 hover:scale-105 transition-transform flex items-center justify-center gap-2">
+                    Book a Strategic Audit
+                    <ArrowRight size={18} />
+                  </button>
+                </Link>
+                <Link href="/products">
+                  <button className="px-8 py-4 bg-white dark:bg-card border border-border text-primary font-bold rounded-xl hover:bg-gray-50 dark:hover:bg-card/80 transition-colors">
+                    Explore Our Plans
+                  </button>
+                </Link>
               </div>
             </motion.div>
             
@@ -101,7 +100,7 @@ export default function Home() {
                    <img 
                     src={heroImage}
                     alt="Digital Network Abstract" 
-                    className="w-full object-fit opacity-80 mix-blend-overlay"
+                    className="w-full object-fit  mix-blend-overlay"
                   />
                   
                   {/* Floating Cards Overlay */}
@@ -134,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* The What we Solve Section */}
-      <section id="solve" className="py-24 bg-primary text-white relative overflow-hidden">
+      <section className="py-24 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -184,7 +183,7 @@ export default function Home() {
       </section>
 
       {/* Products Section */}
-      <section id="products" className="py-24 bg-gray-50 dark:bg-background">
+      <section className="py-24 bg-gray-50 dark:bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Custom Website Subsection */}
@@ -246,7 +245,7 @@ export default function Home() {
       </section>
 
       {/* Process Section */}
-      <section id="process" className="py-24 dark:bg-background">
+      <section className="py-24 dark:bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-primary dark:bg-primary/90 rounded-3xl overflow-hidden shadow-2xl">
             <div className="grid md:grid-cols-2">
@@ -293,7 +292,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 bg-gray-50 dark:bg-background">
+      <section className="py-24 bg-gray-50 dark:bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center mb-12">
             <h2 className="text-4xl font-bold font-display text-primary mb-4">Ready to Architect Your Growth?</h2>
@@ -349,6 +348,11 @@ export default function Home() {
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>
+            <div className="mt-6 text-center">
+              <Link href="/contact" className="text-sm text-primary hover:underline font-medium">
+                Or fill out our detailed contact form →
+              </Link>
+            </div>
           </div>
         </div>
       </section>

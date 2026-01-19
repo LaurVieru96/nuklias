@@ -8,18 +8,14 @@ export function Navbar() {
   const [location] = useLocation();
 
   const links = [
-    { href: "#solve", label: "What We Solve" },
-    { href: "#products", label: "Products" },
-    { href: "#process", label: "Process" },
-    { href: "#contact", label: "Contact Us" },
+    { href: "/what-we-solve", label: "What We Solve" },
+    { href: "/products", label: "Products" },
+    { href: "/process", label: "Process" },
+    { href: "/contact", label: "Contact Us" },
   ];
 
-  const handleNav = (id: string) => {
+  const handleNav = (href: string) => {
     setIsOpen(false);
-    const element = document.querySelector(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
   };
 
   return (
@@ -35,20 +31,25 @@ export function Navbar() {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
             {links.map((link) => (
-              <button
+              <Link
                 key={link.label}
+                href={link.href}
                 onClick={() => handleNav(link.href)}
-                className="text-foreground/70 hover:text-primary transition-colors font-medium text-sm"
+                className={`transition-colors font-medium text-sm ${
+                  location === link.href 
+                    ? "text-primary font-bold" 
+                    : "text-foreground/70 hover:text-primary"
+                }`}
               >
                 {link.label}
-              </button>
+              </Link>
             ))}
-            <button 
-              onClick={() => handleNav("#contact")}
+            <Link 
+              href="/contact"
               className="bg-accent text-accent-foreground px-5 py-2.5 rounded-full font-bold text-sm shadow-lg shadow-accent/20 hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
               Book Strategic Audit
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -74,20 +75,26 @@ export function Navbar() {
           >
             <div className="px-4 py-4 space-y-4">
               {links.map((link) => (
-                <button
+                <Link
                   key={link.label}
+                  href={link.href}
                   onClick={() => handleNav(link.href)}
-                  className="block w-full text-left py-2 text-foreground/80 hover:text-primary font-medium"
+                  className={`block w-full text-left py-2 font-medium transition-colors ${
+                    location === link.href 
+                      ? "text-primary font-bold" 
+                      : "text-foreground/80 hover:text-primary"
+                  }`}
                 >
                   {link.label}
-                </button>
+                </Link>
               ))}
-              <button 
-                onClick={() => handleNav("#contact")}
-                className="w-full bg-accent text-accent-foreground py-3 rounded-lg font-bold shadow-md active:scale-95 transition-transform"
+              <Link 
+                href="/contact"
+                onClick={() => handleNav("/contact")}
+                className="block w-full bg-accent text-accent-foreground py-3 rounded-lg font-bold shadow-md active:scale-95 transition-transform text-center"
               >
                 Book Strategic Audit
-              </button>
+              </Link>
             </div>
           </motion.div>
         )}
