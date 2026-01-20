@@ -113,7 +113,7 @@ export default function Process() {
 
                     <div className="text-center px-2">
                       <div className={`inline-block px-2 py-1 rounded-full text-xs font-bold mb-3 ${step.color === "purple" ? "bg-purple-500/20 text-purple-600 dark:text-purple-300" : "bg-green-500/20 text-green-600 dark:text-green-300"}`}>
-                        STEP {step.number}
+                        {t('process_page.step')} {step.number}
                       </div>
                       <h3 className="text-xl font-bold font-display text-foreground dark:text-white mb-3">
                         {step.title}

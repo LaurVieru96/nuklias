@@ -46,6 +46,9 @@ export function CookieConsent() {
         setPreferences(JSON.parse(savedConsent));
       } catch (e) {
         console.error("Failed to parse cookie preferences", e);
+        // Reset and show banner if parsing fails
+        localStorage.removeItem("cookie_consent");
+        setIsVisible(true);
       }
     }
   }, []);
@@ -93,7 +96,7 @@ export function CookieConsent() {
                 <div className="flex-1 space-y-2 text-center md:text-left">
                   <h3 className="text-lg font-bold font-display flex items-center justify-center md:justify-start gap-2">
                     <Shield className="w-5 h-5 text-accent" />
-                    Cookie Preferences
+                    {t('cookie.preferences')}
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed max-w-2xl">
                     {t('cookie.text')}
@@ -143,7 +146,7 @@ export function CookieConsent() {
           <DialogHeader>
             <DialogTitle>{t('cookie.customize')}</DialogTitle>
             <DialogDescription>
-              Manage your cookie settings. Strictly necessary cookies are always enabled.
+              {t('cookie.customize_desc')}
             </DialogDescription>
           </DialogHeader>
           
@@ -151,10 +154,10 @@ export function CookieConsent() {
             <div className="flex items-center justify-between space-x-2">
               <div className="space-y-0.5">
                 <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-                  Strictly Necessary
+                  {t('cookie.necessary_title')}
                 </label>
                 <p className="text-xs text-muted-foreground">
-                  Required for the website to function properly.
+                  {t('cookie.necessary_desc')}
                 </p>
               </div>
               <Switch checked disabled />
@@ -163,10 +166,10 @@ export function CookieConsent() {
             <div className="flex items-center justify-between space-x-2">
               <div className="space-y-0.5">
                 <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-                  Analytics
+                  {t('cookie.analytics_title')}
                 </label>
                 <p className="text-xs text-muted-foreground">
-                  Help us understand how visitors interact with the website.
+                  {t('cookie.analytics_desc')}
                 </p>
               </div>
               <Switch 
@@ -178,10 +181,10 @@ export function CookieConsent() {
             <div className="flex items-center justify-between space-x-2">
               <div className="space-y-0.5">
                 <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-                  Marketing
+                  {t('cookie.marketing_title')}
                 </label>
                 <p className="text-xs text-muted-foreground">
-                  Used to deliver relevant advertisements and track performance.
+                  {t('cookie.marketing_desc')}
                 </p>
               </div>
               <Switch 
@@ -192,8 +195,8 @@ export function CookieConsent() {
           </div>
 
           <DialogFooter className="gap-2 sm:gap-0">
-            <Button variant="outline" onClick={() => setShowCustomize(false)}>Cancel</Button>
-            <Button onClick={handleSaveCustom} className="bg-primary text-primary-foreground">Save Preferences</Button>
+            <Button variant="outline" onClick={() => setShowCustomize(false)}>{t('cookie.cancel')}</Button>
+            <Button onClick={handleSaveCustom} className="bg-primary text-primary-foreground">{t('cookie.save')}</Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
@@ -202,7 +205,7 @@ export function CookieConsent() {
       <LegalModal
         open={showPrivacy}
         onOpenChange={setShowPrivacy}
-        title="Privacy Policy"
+        title={t('cookie.privacy_title')}
         content={<PrivacyPolicyContent />}
       />
     </>

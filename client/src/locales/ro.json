@@ -9,7 +9,7 @@
   "footer": {
     "privacy": "Politica de Confidențialitate",
     "terms": "Termeni și Condiții",
-    "copyright": "© 2025 Nuklias Arhitecți Digitali. Toate drepturile rezervate.",
+    "copyright": "© 2026 Nuklias Arhitecți Digitali. Toate drepturile rezervate.",
     "marketing": "NUKLIAS MARKETING"
   },
   "hero": {
@@ -70,7 +70,7 @@
     }
   },
   "contact_us": {
-    "badge": "CONTACT US",
+    "badge": "CONTACTEAZĂ-NE",
     "title": "Hai să Construim Ceva Măreț Împreună",
     "desc": "Ești gata să îți transformi prezența digitală? Contactează-ne și hai să discutăm cum te putem ajuta să îți atingi obiectivele.",
     "info_title": "Intră în Legătură",
@@ -135,7 +135,8 @@
     "info_title": "Simplu, Transparent, Eficient",
     "info_desc_1": "Fiecare pas este planificat atent pentru a asigura cele mai bune rezultate. Nu promitem miracole — promitem un proces clar, măsurabil și orientat spre rezultate.",
     "info_desc_2": "De la conversația inițială la un parteneriat pe termen lung, lucrăm ca o extensie a echipei tale, mereu concentrați pe succesul tău.",
-    "btn_start": "Începe Acum"
+    "btn_start": "Începe Acum",
+    "step": "PASUL"
   },
   "products_page": {
     "badge": "SERVICIILE NOASTRE",
@@ -335,6 +336,17 @@
     "policy_link": "Politica de Confidențialitate",
     "accept": "Acceptă Tot",
     "refuse": "Refuză",
-    "customize": "Personalizează"
+    "customize": "Personalizează",
+    "preferences": "Preferințe Cookie",
+    "customize_desc": "Gestionează setările cookie-urilor. Cookie-urile strict necesare sunt întotdeauna active.",
+    "necessary_title": "Strict Necesare",
+    "necessary_desc": "Necesare pentru funcționarea corectă a site-ului.",
+    "analytics_title": "Analitice",
+    "analytics_desc": "Ne ajută să înțelegem cum interacționează vizitatorii cu site-ul.",
+    "marketing_title": "Marketing",
+    "marketing_desc": "Folosite pentru a livra reclame relevante și a urmări performanța.",
+    "cancel": "Anulează",
+    "save": "Salvează Preferințele",
+    "privacy_title": "Politica de Confidențialitate"
   }
 }

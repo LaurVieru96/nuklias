@@ -9,7 +9,7 @@
   "footer": {
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
-    "copyright": "© 2025 Nuklias Digital Architects. Alle Rechte vorbehalten.",
+    "copyright": "© 2026 Nuklias Digital Architects. Alle Rechte vorbehalten.",
     "marketing": "NUKLIAS MARKETING"
   },
   "hero": {
@@ -135,7 +135,8 @@
     "info_title": "Einfach, Transparent, Effizient",
     "info_desc_1": "Jeder Schritt wird sorgfältig geplant, um die bestmöglichen Ergebnisse zu gewährleisten. Wir versprechen keine Wunder — wir versprechen einen klaren, messbaren und ergebnisorientierten Prozess.",
     "info_desc_2": "Vom ersten Gespräch bis zu einer langfristigen Partnerschaft arbeiten wir als Erweiterung Ihres Teams, immer fokussiert auf Ihren Erfolg.",
-    "btn_start": "Jetzt Starten"
+    "btn_start": "Jetzt Starten",
+    "step": "SCHRITT"
   },
   "products_page": {
     "badge": "UNSERE DIENSTLEISTUNGEN",
@@ -335,6 +336,17 @@
     "policy_link": "Datenschutzrichtlinie",
     "accept": "Alle Akzeptieren",
     "refuse": "Ablehnen",
-    "customize": "Anpassen"
+    "customize": "Anpassen",
+    "preferences": "Cookie-Einstellungen",
+    "customize_desc": "Verwalten Sie Ihre Cookie-Einstellungen. Unbedingt erforderliche Cookies sind immer aktiviert.",
+    "necessary_title": "Unbedingt erforderlich",
+    "necessary_desc": "Erforderlich für die ordnungsgemäße Funktion der Website.",
+    "analytics_title": "Analytik",
+    "analytics_desc": "Helfen Sie uns zu verstehen, wie Besucher mit der Website interagieren.",
+    "marketing_title": "Marketing",
+    "marketing_desc": "Dient zur Bereitstellung relevanter Werbung und zur Leistungsverfolgung.",
+    "cancel": "Abbrechen",
+    "save": "Einstellungen Speichern",
+    "privacy_title": "Datenschutzrichtlinie"
   }
 }

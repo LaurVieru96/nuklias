@@ -68,14 +68,12 @@ export function ServiceCard({ title, subtitle, features, tier, delay = 0 }: Serv
         ))}
       </ul>
 
-      <Link href="/contact">
-        <button className={`
-          w-full py-3 rounded-xl font-bold text-sm transition-all duration-300 shadow-sm
+      <Link href="/contact" className={`
+          w-full py-3 rounded-xl font-bold text-sm transition-all duration-300 shadow-sm flex items-center justify-center
           ${buttonStyles}
         `}>
           {t('products_section.request_quote')}
-        </button>
-      </Link>
+        </Link>
     </motion.div>
   );
 }

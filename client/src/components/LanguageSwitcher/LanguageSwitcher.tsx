@@ -26,7 +26,7 @@ export function LanguageSwitcher() {
     return null;
   }
 
-  const currentLanguage = i18n.language || 'en';
+  const currentLanguage = i18n.resolvedLanguage || 'en';
 
   return (
     <DropdownMenu>
