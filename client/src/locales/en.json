@@ -1,0 +1,352 @@
+{
+  "navbar": {
+    "home": "Home",
+    "what_we_solve": "What We Solve",
+    "products": "Products",
+    "process": "Process",
+    "contact": "Contact"
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2026 Nuklias Digital Architects. All rights reserved.",
+    "marketing": "NUKLIAS MARKETING"
+  },
+  "hero": {
+    "badge": "YOUR JOURNEY",
+    "title_start": "From Chaos to Clarity:",
+    "title_end": "Your Digital Growth Engine",
+    "description": "We engineer automated ecosystems that convert passive followers into loyal customers.",
+    "cta_audit": "Book a Strategic Audit",
+    "cta_plans": "Explore Our Plans"
+  },
+  "why_us": {
+    "title": "Why Nuklias?",
+    "subtitle": "Why choose Nuklias as your digital growth partner?",
+    "cards": {
+      "1": {
+        "title": "Client-First Mentality",
+        "desc": "We think like business owners, not just service providers. Every dollar invested must yield a return."
+      },
+      "2": {
+        "title": "Full-Service Architecture",
+        "desc": "From code to content, we handle every layer of your digital ecosystem in-house, ensuring total cohesion."
+      },
+      "3": {
+        "title": "Proactive Evolution",
+        "desc": "We don't just react to trends; we anticipate them. Your system is always ready for tomorrow's market."
+      },
+      "4": {
+        "title": "Radical Transparency",
+        "desc": "No black-box magic. You have full visibility into our strategies, metrics, and the logic behind every move."
+      },
+      "5": {
+        "title": "Proven Impact",
+        "desc": "We measure success in revenue, not vanity metrics. Our systems effectively scale businesses and saturate capacities."
+      },
+      "6": {
+        "title": "Relentless Passion",
+        "desc": "We are digital architects who love the craft. We build with precision, speed, and an obsession for quality."
+      }
+    }
+  },
+  "what_we_solve": {
+    "badge": "Our Promise",
+    "title": "The only marketing that matters: The money in your pocket",
+    "desc": "The only marketing that matters is the one you can observe in your pockets at the end of the month. We do not sell 'visibility' or 'likes'; we build the structural machinery that turns digital chaos into liquid cash with total predictability.",
+    "cards": {
+      "1": {
+        "title": "Operational Agility",
+        "desc": "While others get lost in the planning phase, we focus on immediate, high-impact implementation. We drive your projects forward with a level of intensity and precision that ensures you stay ahead of the market and see results faster."
+      },
+      "2": {
+        "title": "Integrated Growth Ecosystems",
+        "desc": "Stop investing in disconnected digital fragments. We architect unified ecosystems where SEO, Content, and Strategy function as a single, cohesive architecture designed to attract, engage, and convert your ideal leads 24/7."
+      },
+      "3": {
+        "title": "Revenue-First Engineering",
+        "desc": "We prioritize the metrics that directly impact your wallet and spending habits: We focus on the stability of your lead flow and amplify your profit, simple as that."
+      }
+    }
+  },
+  "contact_us": {
+    "badge": "CONTACT US",
+    "title": "Let's Build Something Great Together",
+    "desc": "Ready to transform your digital presence? Get in touch and let's discuss how we can help you achieve your goals.",
+    "info_title": "Get In Touch",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "location_text": "Bucharest, Romania<br />Remote consultations available worldwide",
+    "response_time": "We typically respond within 24 hours. For urgent matters, please call us directly.",
+    "form_title": "Tell Us About Your Project",
+    "form": {
+      "name_label": "Name *",
+      "name_placeholder": "John Doe",
+      "email_label": "Email *",
+      "email_placeholder": "john@company.com",
+      "phone_label": "Phone",
+      "phone_placeholder": "+1 (234) 567-890",
+      "location_label": "Location *",
+      "location_placeholder": "City, Country",
+      "industry_label": "What industry is your business in? *",
+      "industry_default": "Select your industry...",
+      "business_type_label": "What type of business do you have? *",
+      "business_type_placeholder": "e.g., Online retail store, Local service business, SaaS platform...",
+      "challenge_label": "What's your main digital marketing challenge? *",
+      "challenge_placeholder": "e.g., Not getting enough qualified leads, Low conversion rates, Lack of brand visibility...",
+      "message_label": "Tell us more about your project *",
+      "message_placeholder": "Share more details about what you're looking for, your goals, timeline, or any specific questions you have...",
+      "btn_send": "Send Message",
+      "btn_sending": "Sending..."
+    },
+    "errors": {
+      "name": "Name is required",
+      "email": "Invalid email address",
+      "location": "Location is required",
+      "industry": "Please select your business domain",
+      "business_type": "Please describe your business type",
+      "challenge": "Please tell us about your main challenge",
+      "message": "Message must be at least 10 characters"
+    }
+  },
+  "process_page": {
+    "badge": "OUR PROCESS",
+    "title": "The Next Steps",
+    "desc": "A clear and transparent process designed to build your digital success, step by step — from the first conversation to measurable results.",
+    "steps": {
+      "1": {
+        "title": "Contact Us",
+        "desc": "Everything starts with an open, no-obligation conversation, where we make sure we’re the perfect fit for your goals."
+      },
+      "2": {
+        "title": "Schedule a Consultation",
+        "desc": "We analyze the core of your business and create a strategic roadmap with clear steps and a 100% transparent offer."
+      },
+      "3": {
+        "title": "Choose a Package",
+        "desc": "Together, we select the right package, and our partnership becomes official. From here on, we work as an extension of your team."
+      },
+      "4": {
+        "title": "Become Our Partner",
+        "desc": "We set the growth engine in motion and start building your visible and measurable success."
+      }
+    },
+    "info_title": "Simple, Transparent, Efficient",
+    "info_desc_1": "Every step is carefully planned to ensure the best possible results. We don’t promise miracles — we promise a clear, measurable, and results-driven process.",
+    "info_desc_2": "From the initial conversation to a long-term partnership, we work as an extension of your team, always focused on your success.",
+    "btn_start": "Get Started",
+    "step": "STEP"
+  },
+  "products_page": {
+    "badge": "OUR SERVICES",
+    "title": "Complete Digital Solutions",
+    "desc": "From brand identity to revenue growth, we offer comprehensive services designed to transform your digital presence and drive measurable business results.",
+    "labels": {
+      "process": "Our Process",
+      "benefits": "What You Get"
+    },
+    "services": {
+      "brand_design": {
+        "title": "Brand Design",
+        "desc": "Create a visual identity that resonates with your audience and sets you apart from competitors.",
+        "process": [
+            "Brand strategy and positioning analysis",
+            "Logo design and visual identity development",
+            "Color palette and typography selection",
+            "Brand guidelines and style guide creation",
+            "Visual assets for all touchpoints"
+        ],
+        "benefits": [
+            "Professional brand presence",
+            "Consistent visual identity across all channels",
+            "Increased brand recognition and recall",
+            "Stronger emotional connection with your audience"
+        ]
+      },
+      "social_media": {
+        "title": "Social Media Management",
+        "desc": "Build and engage a loyal community on the platforms where your audience spends their time.",
+        "process": [
+            "Platform strategy and audience analysis",
+            "Content calendar and campaign planning",
+            "Creative content creation (graphics, videos, copy)",
+            "Community management and engagement",
+            "Performance tracking and optimization"
+        ],
+        "benefits": [
+            "Active, engaged community",
+            "Increased brand visibility and reach",
+            "Direct communication with your audience",
+            "Data-driven content optimization"
+        ]
+      },
+      "digital_marketing": {
+        "title": "Digital Marketing",
+        "desc": "Comprehensive marketing strategies that drive qualified leads and measurable growth.",
+        "process": [
+            "Market research and competitor analysis",
+            "Multi-channel marketing strategy development",
+            "Campaign creation and execution",
+            "Lead generation and nurturing systems",
+            "Conversion optimization and ROI analysis"
+        ],
+        "benefits": [
+            "Consistent flow of qualified leads",
+            "Multi-channel presence and reach",
+            "Measurable ROI and performance metrics",
+            "Scalable marketing systems"
+        ]
+      },
+      "email_marketing": {
+        "title": "Email Marketing",
+        "desc": "Nurture relationships and drive conversions through strategic, personalized email campaigns.",
+        "process": [
+            "Email list segmentation and strategy",
+            "Automated email sequence development",
+            "Campaign design and copywriting",
+            "A/B testing and optimization",
+            "Performance analytics and reporting"
+        ],
+        "benefits": [
+            "Direct communication channel with customers",
+            "Automated nurturing sequences",
+            "High ROI on marketing investment",
+            "Personalized customer experiences"
+        ]
+      },
+      "website_dev": {
+        "title": "Website Development",
+        "desc": "Fast, conversion-focused websites that turn visitors into customers.",
+        "process": [
+            "User experience and conversion optimization planning",
+            "Custom design and development",
+            "Mobile-responsive implementation",
+            "SEO structure and technical optimization",
+            "Ongoing maintenance and updates"
+        ],
+        "benefits": [
+            "Professional online presence",
+            "Mobile-optimized experience",
+            "Fast loading times and SEO-friendly structure",
+            "Conversion-focused design"
+        ]
+      },
+      "growth": {
+        "title": "Growth Strategy & Consulting",
+        "desc": "Strategic guidance to accelerate your business growth and overcome obstacles.",
+        "process": [
+            "Business audit and opportunity analysis",
+            "Growth strategy development",
+            "Implementation roadmap creation",
+            "Performance tracking and KPIs setup",
+            "Ongoing strategic consulting"
+        ],
+        "benefits": [
+            "Clear growth roadmap",
+            "Data-driven decision making",
+            "Strategic alignment across all channels",
+            "Expert guidance and support"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Custom Solutions for Your Business",
+      "desc": "We understand that every business is unique. That's why we create custom packages tailored to your specific needs, goals, and budget. No cookie-cutter solutions—just strategic services designed to deliver the results you need.",
+      "text": "Ready to discuss your project? Let's explore how we can help you achieve your goals.",
+      "btn": "Get a Custom Quote"
+    }
+  },
+  "what_we_solve_page": {
+    "badge": "WHAT WE SOLVE",
+    "title": "Our Promise",
+    "hero_subtitle": "The only marketing that matters: The money in your pocket",
+    "hero_desc": "The only marketing that matters is the one you can observe in your pockets at the end of the month. We do not sell 'visibility' or 'likes'; we build the structural machinery that turns digital chaos into liquid cash with total predictability.",
+    "cards": {
+      "agility": {
+        "title": "Operational Agility",
+        "desc": "While others get lost in the planning phase, we focus on immediate, high-impact implementation. We drive your projects forward with a level of intensity and precision that ensures you stay ahead of the market and see results faster."
+      },
+      "ecosystems": {
+        "title": "Integrated Growth Ecosystems",
+        "desc": "Stop investing in disconnected digital fragments. We architect unified ecosystems where SEO, Content, and Strategy function as a single, cohesive architecture designed to attract, engage, and convert your ideal leads 24/7."
+      },
+      "engineering": {
+        "title": "Revenue-First Engineering",
+        "desc": "We prioritize the metrics that directly impact your wallet and spending habits: We focus on the stability of your lead flow and amplify your profit, simple as that."
+      }
+    },
+    "content_title": "What We Do",
+    "content_desc": "We transform your digital presence into a revenue-generating machine. Our approach is systematic, measurable, and focused on one thing: growing your business.",
+    "approach_title": "Our Approach",
+    "approach_p1": "At Nuklias, we don't believe in one-size-fits-all solutions. Every business is unique, and your digital strategy should reflect that. We start by understanding your specific challenges, goals, and market position.",
+    "approach_p2": "Our team combines deep technical expertise with strategic business thinking. We build systems that work not just today, but evolve with your business. From initial analysis to ongoing optimization, we're with you every step of the way.",
+    "approach_p3": "We measure success in real results: increased revenue, qualified leads, and sustainable growth. No vanity metrics. No empty promises. Just proven systems that deliver measurable outcomes for your business.",
+    "cta_title": "Ready to Transform Your Digital Presence?",
+    "cta_desc": "Let's discuss how we can build a growth engine tailored specifically to your business.",
+    "btn": "Contact Us Today"
+  },
+  "not_found": {
+    "title": "404 Page Not Found",
+    "desc": "Page not found."
+  },
+  "products_section": {
+    "title": "Create Your Custom Website",
+    "subtitle": "Pick the structure that matches where your business is today. Every option is built to be fast, clear, and conversion-focused.",
+    "most_popular": "Most Popular",
+    "request_quote": "Request a Quote",
+    "tiers": {
+      "bronze": {
+        "title": "Website Basic",
+        "subtitle": "Essential Presence",
+        "features": {
+          "1": "Custom 3–5 page website (Home, About, Services, Contact)",
+          "2": "Modern, responsive design for all devices",
+          "3": "Basic on-page SEO structure (titles, meta, headings)",
+          "4": "Contact form and location/map integration",
+          "5": "Performance-focused layout for clarity and trust"
+        }
+      },
+      "silver": {
+        "title": "Website + Hosting",
+        "subtitle": "Managed Foundation",
+        "features": {
+          "1": "Everything in Website Basic",
+          "2": "Premium, secure hosting fully managed for you",
+          "3": "Custom domain setup & SSL certificate",
+          "4": "Monthly uptime & performance monitoring",
+          "5": "Technical maintenance so you never touch servers"
+        }
+      },
+      "gold": {
+        "title": "Website + Host + Growth",
+        "subtitle": "Updates & Development",
+        "features": {
+          "1": "Everything in Website + Hosting",
+          "2": "Monthly content & design updates included",
+          "3": "New page development as your offers evolve",
+          "4": "Ongoing UX and conversion optimization",
+          "5": "Priority support for experiments and iterations"
+        }
+      }
+    }
+  },
+  "cookie": {
+    "text": "We use cookies to improve your experience. You can accept, reject or customize your preferences.",
+    "policy_link": "Privacy Policy",
+    "accept": "Accept All",
+    "refuse": "Refuse",
+    "customize": "Customize",
+    "preferences": "Cookie Preferences",
+    "customize_desc": "Manage your cookie settings. Strictly necessary cookies are always enabled.",
+    "necessary_title": "Strictly Necessary",
+    "necessary_desc": "Required for the website to function properly.",
+    "analytics_title": "Analytics",
+    "analytics_desc": "Help us understand how visitors interact with the website.",
+    "marketing_title": "Marketing",
+    "marketing_desc": "Used to deliver relevant advertisements and track performance.",
+    "cancel": "Cancel",
+    "save": "Save Preferences",
+    "privacy_title": "Privacy Policy"
+  }
+}

@@ -1,6 +1,6 @@
-import { Navbar } from "@/components/Navbar";
-import { ServiceCard } from "@/components/ServiceCard";
-import { LegalModal } from "@/components/LegalModal";
+import { Navbar } from "@/components/Navbar/Navbar";
+import { ServiceCard } from "@/components/ServiceCard/ServiceCard";
+import { LegalModal } from "@/components/LegalModal/LegalModal";
 import { useMessages } from "@/hooks/use-messages";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -15,12 +15,20 @@ import {
   Cpu, 
   Network, 
   BarChart3,
-  CheckCircle2
+  CheckCircle2,
+  Users,
+  Lightbulb,
+  Search,
+  Zap,
+  Heart,
+  MessageCircle,
+  Trophy
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "wouter";
-import heroImage from '../assets/photo_2026-01-19_10-50-29.jpg';
+import heroImage from '../../assets/photo_2026-01-19_10-50-29.jpg';
 
 export default function Home() {
   const { toast } = useToast();
@@ -42,6 +50,8 @@ export default function Home() {
   };
 
 
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen bg-background font-sans">
       <Navbar />
@@ -61,27 +71,27 @@ export default function Home() {
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent text-accent-foreground border border-accent/30 text-xs font-bold uppercase tracking-wider mb-6">
                 <span className="w-2 h-2 rounded-full bg-accent-foreground animate-pulse" />
-                YOUR JOURNEY
+                {t('hero.badge')}
               </div>
               <h1 className="text-5xl lg:text-7xl font-bold font-display text-primary leading-[1.1] mb-6">
-                From Chaos to Clarity: <br />
+                {t('hero.title_start')} <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">
-                  Your Digital Growth Engine
+                  {t('hero.title_end')}
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
-                We engineer automated ecosystems that convert passive followers into loyal customers.
+                {t('hero.description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact">
                   <button className="px-8 py-4 bg-accent text-accent-foreground font-bold rounded-xl shadow-xl shadow-accent/20 hover:scale-105 transition-transform flex items-center justify-center gap-2">
-                    Book a Strategic Audit
+                    {t('hero.cta_audit')}
                     <ArrowRight size={18} />
                   </button>
                 </Link>
                 <Link href="/products">
                   <button className="px-8 py-4 bg-white dark:bg-card border border-border text-primary font-bold rounded-xl hover:bg-gray-50 dark:hover:bg-card/80 transition-colors">
-                    Explore Our Plans
+                    {t('hero.cta_plans')}
                   </button>
                 </Link>
               </div>
@@ -138,10 +148,10 @@ export default function Home() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold font-display mb-6">Our Promise</h2>
-            <h2 className="text-3xl md:text-5xl font-bold font-display mb-6">The only marketing that matters: The money in your pocket</h2>
+            <h2 className="text-3xl md:text-5xl font-bold font-display mb-6">{t('what_we_solve.badge')}</h2>
+            <h2 className="text-3xl md:text-5xl font-bold font-display mb-6">{t('what_we_solve.title')}</h2>
             <p className="text-white/70 max-w-2xl mx-auto text-lg">
-            The only marketing that matters is the one you can observe in your pockets at the end of the month. We do not sell 'visibility' or 'likes'; we build the structural machinery that turns digital chaos into liquid cash with total predictability.
+            {t('what_we_solve.desc')}
             </p>
           </div>
 
@@ -149,18 +159,18 @@ export default function Home() {
             {[
               {
                 icon: <BrainCircuit className="w-8 h-8 text-accent" />,
-                title: "Operational Agility",
-                desc: "While others get lost in the planning phase, we focus on immediate, high-impact implementation. We drive your projects forward with a level of intensity and precision that ensures you stay ahead of the market and see results faster."
+                title: t('what_we_solve.cards.1.title'),
+                desc: t('what_we_solve.cards.1.desc')
               },
               {
                 icon: <Network className="w-8 h-8 text-accent" />,
-                title: "Integrated Growth Ecosystems",
-                desc: "Stop investing in disconnected digital fragments. We architect unified ecosystems where SEO, Content, and Strategy function as a single, cohesive architecture designed to attract, engage, and convert your ideal leads 24/7."
+                title: t('what_we_solve.cards.2.title'),
+                desc: t('what_we_solve.cards.2.desc')
               },
               {
                 icon: <Target className="w-8 h-8 text-accent" />,
-                title: "Revenue-First Engineering",
-                desc: "We prioritize the metrics that directly impact your wallet and spending habits: We focus on the stability of your lead flow and amplify your profit, simple as that."
+                title: t('what_we_solve.cards.3.title'),
+                desc: t('what_we_solve.cards.3.desc')
               }
             ].map((item, i) => (
               <motion.div
@@ -190,53 +200,53 @@ export default function Home() {
           <div className="mt-20 max-w-6xl mx-auto">
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold font-display text-primary mb-3">
-                Create Your Custom Website
+                {t('products_section.title')}
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Pick the structure that matches where your business is today. Every option is built to be fast, clear, and conversion-focused.
+                {t('products_section.subtitle')}
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 items-stretch">
               <ServiceCard
-                title="Website Basic"
-                subtitle="Essential Presence"
+                title={t('products_section.tiers.bronze.title')}
+                subtitle={t('products_section.tiers.bronze.subtitle')}
                 tier="bronze"
                 delay={0}
                 features={[
-                  "Custom 3–5 page website (Home, About, Services, Contact)",
-                  "Modern, responsive design for all devices",
-                  "Basic on-page SEO structure (titles, meta, headings)",
-                  "Contact form and location/map integration",
-                  "Performance-focused layout for clarity and trust"
+                  t('products_section.tiers.bronze.features.1'),
+                  t('products_section.tiers.bronze.features.2'),
+                  t('products_section.tiers.bronze.features.3'),
+                  t('products_section.tiers.bronze.features.4'),
+                  t('products_section.tiers.bronze.features.5')
                 ]}
               />
 
               <ServiceCard
-                title="Website + Hosting"
-                subtitle="Managed Foundation"
+                title={t('products_section.tiers.silver.title')}
+                subtitle={t('products_section.tiers.silver.subtitle')}
                 tier="silver"
                 delay={0.1}
                 features={[
-                  "Everything in Website Basic",
-                  "Premium, secure hosting fully managed for you",
-                  "Custom domain setup & SSL certificate",
-                  "Monthly uptime & performance monitoring",
-                  "Technical maintenance so you never touch servers"
+                  t('products_section.tiers.silver.features.1'),
+                  t('products_section.tiers.silver.features.2'),
+                  t('products_section.tiers.silver.features.3'),
+                  t('products_section.tiers.silver.features.4'),
+                  t('products_section.tiers.silver.features.5')
                 ]}
               />
 
               <ServiceCard
-                title="Website + Host + Growth"
-                subtitle="Updates & Development"
+                title={t('products_section.tiers.gold.title')}
+                subtitle={t('products_section.tiers.gold.subtitle')}
                 tier="gold"
                 delay={0.2}
                 features={[
-                  "Everything in Website + Hosting",
-                  "Monthly content & design updates included",
-                  "New page development as your offers evolve",
-                  "Ongoing UX and conversion optimization",
-                  "Priority support for experiments and iterations"
+                  t('products_section.tiers.gold.features.1'),
+                  t('products_section.tiers.gold.features.2'),
+                  t('products_section.tiers.gold.features.3'),
+                  t('products_section.tiers.gold.features.4'),
+                  t('products_section.tiers.gold.features.5')
                 ]}
               />
             </div>
@@ -244,118 +254,77 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-24 dark:bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-primary dark:bg-primary/90 rounded-3xl overflow-hidden shadow-2xl">
-            <div className="grid md:grid-cols-2">
-              <div className="p-12 md:p-16 flex flex-col justify-center">
-                <h2 className="text-3xl md:text-4xl font-bold font-display text-white mb-6">
-                  Real Systems.<br/>Real Results.
-                </h2>
-                <p className="text-white/70 mb-8 text-lg">
-                  We took a local service business from page 3 obscurity to market dominance in just 90 days by restructuring their digital footprint.
-                </p>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4 text-white">
-                    <CheckCircle2 className="text-accent shrink-0" />
-                    <span>300% Increase in Organic Leads</span>
-                  </div>
-                  <div className="flex items-center gap-4 text-white">
-                    <CheckCircle2 className="text-accent shrink-0" />
-                    <span>50% Reduction in Ad Spend</span>
-                  </div>
-                  <div className="flex items-center gap-4 text-white">
-                    <CheckCircle2 className="text-accent shrink-0" />
-                    <span>#1 Ranking for High-Value Keywords</span>
-                  </div>
-                </div>
-              </div>
-              <div className="relative bg-white/5 dark:bg-black/20 h-full min-h-[400px]">
-                 {/* Abstract Chart/Graph Image */}
-                <img 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" 
-                  alt="Growth Analytics Chart" 
-                  className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-50"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-80" />
-                
-                {/* Overlay Text */}
-                <div className="absolute bottom-12 left-12 right-12">
-                  <p className="text-accent font-bold tracking-wider uppercase text-sm mb-2">Case Study: Nexus Logistics</p>
-                  <p className="text-white text-2xl font-display font-bold">"Nuklias didn't just build a site, they built a lead generation machine."</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-24 bg-gray-50 dark:bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl mx-auto text-center mb-12">
-            <h2 className="text-4xl font-bold font-display text-primary mb-4">Ready to Architect Your Growth?</h2>
-            <p className="text-muted-foreground">
-              Stop guessing. Start building. Request your strategic audit today.
+      {/* Why Us Section */}
+      <section className="py-24 bg-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-4">
+              {t('why_us.title')}
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              {t('why_us.subtitle')}
             </p>
           </div>
 
-          <div className="max-w-xl mx-auto bg-white dark:bg-card rounded-2xl shadow-xl p-8 border border-border">
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-              <div className="space-y-2">
-                <label className="text-sm font-bold text-foreground">Name</label>
-                <input
-                  {...form.register("name")}
-                  className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-muted border border-gray-200 dark:border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
-                  placeholder="John Doe"
-                />
-                {form.formState.errors.name && (
-                  <p className="text-red-500 text-xs">{form.formState.errors.name.message}</p>
-                )}
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm font-bold text-foreground">Email</label>
-                <input
-                  {...form.register("email")}
-                  className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-muted border border-gray-200 dark:border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
-                  placeholder="john@company.com"
-                />
-                {form.formState.errors.email && (
-                  <p className="text-red-500 text-xs">{form.formState.errors.email.message}</p>
-                )}
-              </div>
-
-              <div className="space-y-2">
-                <label className="text-sm font-bold text-foreground">Message</label>
-                <textarea
-                  {...form.register("message")}
-                  rows={4}
-                  className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-muted border border-gray-200 dark:border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all resize-none"
-                  placeholder="Tell us about your current digital challenges..."
-                />
-                {form.formState.errors.message && (
-                  <p className="text-red-500 text-xs">{form.formState.errors.message.message}</p>
-                )}
-              </div>
-
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full py-4 bg-accent text-accent-foreground font-bold rounded-xl hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {[
+              {
+                icon: <Trophy className="w-8 h-8 text-accent" />,
+                title: t('why_us.cards.1.title'),
+                desc: t('why_us.cards.1.desc')
+              },
+              {
+                icon: <Layers className="w-8 h-8 text-accent" />,
+                title: t('why_us.cards.2.title'),
+                desc: t('why_us.cards.2.desc')
+              },
+              {
+                icon: <Zap className="w-8 h-8 text-accent" />,
+                title: t('why_us.cards.3.title'),
+                desc: t('why_us.cards.3.desc')
+              },
+              {
+                icon: <MessageCircle className="w-8 h-8 text-accent" />,
+                title: t('why_us.cards.4.title'),
+                desc: t('why_us.cards.4.desc')
+              },
+              {
+                icon: <BarChart3 className="w-8 h-8 text-accent" />,
+                title: t('why_us.cards.5.title'),
+                desc: t('why_us.cards.5.desc')
+              },
+              {
+                icon: <Heart className="w-8 h-8 text-accent" />,
+                title: t('why_us.cards.6.title'),
+                desc: t('why_us.cards.6.desc')
+              }
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-card border border-border p-8 rounded-2xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group"
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
-              </button>
-            </form>
-            <div className="mt-6 text-center">
-              <Link href="/contact" className="text-sm text-primary hover:underline font-medium">
-                Or fill out our detailed contact form →
-              </Link>
-            </div>
+                <div className="mb-6 w-14 h-14 rounded-xl bg-accent/10 dark:bg-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  {item.icon}
+                </div>
+                <h3 className="text-xl font-bold font-display text-primary mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {item.desc}
+                </p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
+
+
 
       {/* Footer */}
       <footer className="bg-primary dark:bg-primary/90 text-white py-12 border-t border-white/10 dark:border-white/5">
@@ -365,7 +334,7 @@ export default function Home() {
               <div className="w-8 h-8 rounded-lg bg-accent text-accent-foreground flex items-center justify-center">
                 N
               </div>
-              NUKLIAS
+              {t('footer.marketing')}
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-4 text-white/60">
@@ -373,20 +342,20 @@ export default function Home() {
                 onClick={() => setPrivacyOpen(true)}
                 className="hover:text-white transition-colors underline-offset-4 hover:underline"
               >
-                Privacy Policy
+                {t('footer.privacy')}
               </button>
               <span className="text-white/30">•</span>
               <button
                 onClick={() => setTermsOpen(true)}
                 className="hover:text-white transition-colors underline-offset-4 hover:underline"
               >
-                Terms of Service
+                {t('footer.terms')}
               </button>
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-4 text-white/60">
               <span className="text-white/40">
-                © 2025 Nuklias Digital Architects. All rights reserved.
+                {t('footer.copyright')}
               </span>
             </div>
           </div>
