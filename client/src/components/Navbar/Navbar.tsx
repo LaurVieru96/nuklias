@@ -1,17 +1,19 @@
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function Navbar() {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [location] = useLocation();
 
   const links = [
-    { href: "/what-we-solve", label: "What We Solve" },
-    { href: "/products", label: "Products" },
-    { href: "/process", label: "Process" },
-    { href: "/contact", label: "Contact Us" },
+    { href: "/what-we-solve", label: t('navbar.what_we_solve') },
+    { href: "/products", label: t('navbar.products') },
+    { href: "/process", label: t('navbar.process') },
+    { href: "/contact", label: t('navbar.contact') },
   ];
 
   const handleNav = (href: string) => {
@@ -35,21 +37,15 @@ export function Navbar() {
                 key={link.label}
                 href={link.href}
                 onClick={() => handleNav(link.href)}
-                className={`transition-colors font-medium text-sm ${
+                className={`transition-all duration-300 font-bold text-sm px-5 py-2.5 rounded-full ${
                   location === link.href 
-                    ? "text-primary font-bold" 
-                    : "text-foreground/70 hover:text-primary"
+                    ? "bg-accent text-accent-foreground shadow-lg shadow-accent/20 hover:scale-105" 
+                    : "text-foreground/70 hover:text-foreground hover:bg-accent/10"
                 }`}
               >
                 {link.label}
               </Link>
             ))}
-            <Link 
-              href="/contact"
-              className="bg-accent text-accent-foreground px-5 py-2.5 rounded-full font-bold text-sm shadow-lg shadow-accent/20 hover:shadow-xl hover:scale-105 transition-all duration-300"
-            >
-              Book Strategic Audit
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -93,7 +89,7 @@ export function Navbar() {
                 onClick={() => handleNav("/contact")}
                 className="block w-full bg-accent text-accent-foreground py-3 rounded-lg font-bold shadow-md active:scale-95 transition-transform text-center"
               >
-                Book Strategic Audit
+                {t('hero.cta_audit')}
               </Link>
             </div>
           </motion.div>

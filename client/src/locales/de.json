@@ -1,0 +1,340 @@
+{
+  "navbar": {
+    "home": "Startseite",
+    "what_we_solve": "Was wir lösen",
+    "products": "Produkte",
+    "process": "Prozess",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "copyright": "© 2025 Nuklias Digital Architects. Alle Rechte vorbehalten.",
+    "marketing": "NUKLIAS MARKETING"
+  },
+  "hero": {
+    "badge": "IHRE REISE",
+    "title_start": "Vom Chaos zur Klarheit:",
+    "title_end": "Ihr Motor für Digitales Wachstum",
+    "description": "Wir entwickeln automatisierte Ökosysteme, die passive Follower in treue Kunden verwandeln.",
+    "cta_audit": "Strategisches Audit Buchen",
+    "cta_plans": "Unsere Pläne Erkunden"
+  },
+  "why_us": {
+    "title": "Warum Nuklias?",
+    "subtitle": "Warum Nuklias als Ihr Partner für digitales Wachstum?",
+    "cards": {
+      "1": {
+        "title": "Kundenorientierte Denkweise",
+        "desc": "Wir denken wie Unternehmer. Jeder investierte Euro muss eine Rendite bringen."
+      },
+      "2": {
+        "title": "Full-Service-Architektur",
+        "desc": "Von Code bis Content steuern wir jede Ebene Ihres digitalen Ökosystems intern."
+      },
+      "3": {
+        "title": "Proaktive Evolution",
+        "desc": "Wir reagieren nicht nur auf Trends, wir antizipieren sie. Ihr System ist bereit für morgen."
+      },
+      "4": {
+        "title": "Radikale Transparenz",
+        "desc": "Keine versteckte Magie. Sie haben volle Einsicht in unsere Strategien und Metriken."
+      },
+      "5": {
+        "title": "Nachgewiesene Wirkung",
+        "desc": "Wir messen Erfolg in Umsatz, nicht in Vanity-Metrics. Unsere Systeme skalieren Unternehmen effektiv."
+      },
+      "6": {
+        "title": "Unermüdliche Leidenschaft",
+        "desc": "Wir sind digitale Architekten, die ihr Handwerk lieben. Wir bauen mit Präzision und Qualität."
+      }
+    }
+  },
+  "what_we_solve": {
+    "badge": "Unser Versprechen",
+    "title": "Das einzige Marketing, das zählt: Das Geld in Ihrer Tasche",
+    "desc": "Das einzige Marketing, das zählt, ist das, was Sie am Ende des Monats in Ihrer Tasche sehen. Wir verkaufen keine 'Sichtbarkeit' oder 'Likes'; wir bauen die strukturelle Maschine, die digitales Chaos in bares Geld verwandelt.",
+    "cards": {
+      "1": {
+        "title": "Operative Agilität",
+        "desc": "Während andere in der Planungsphase stecken bleiben, konzentrieren wir uns auf sofortige, wirkungsvolle Umsetzung. Wir treiben Ihre Projekte mit einer Intensität voran, die Sie dem Markt voraus sein lässt."
+      },
+      "2": {
+        "title": "Integrierte Wachstums-Ökosysteme",
+        "desc": "Hören Sie auf, in unzusammenhängende digitale Fragmente zu investieren. Wir entwerfen einheitliche Ökosysteme, in denen SEO, Content und Strategie als eine Einheit funktionieren."
+      },
+      "3": {
+        "title": "Revenue-First Engineering",
+        "desc": "Wir priorisieren die Kennzahlen, die sich direkt auf Ihren Geldbeutel auswirken. Wir konzentrieren uns auf die Stabilität Ihres Lead-Flusses und steigern Ihren Gewinn."
+      }
+    }
+  },
+  "contact_us": {
+    "badge": "KONTAKTIEREN SIE UNS",
+    "title": "Lassen Sie uns gemeinsam etwas Großartiges bauen",
+    "desc": "Bereit, Ihre digitale Präsenz zu transformieren? Kontaktieren Sie uns und lassen Sie uns besprechen, wie wir Ihnen helfen können, Ihre Ziele zu erreichen.",
+    "info_title": "In Kontakt treten",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "location": "Standort",
+    "location_text": "Bukarest, Rumänien<br />Remote-Beratungen weltweit verfügbar",
+    "response_time": "Wir antworten in der Regel innerhalb von 24 Stunden. Für dringende Angelegenheiten rufen Sie uns bitte direkt an.",
+    "form_title": "Erzählen Sie uns von Ihrem Projekt",
+    "form": {
+      "name_label": "Name *",
+      "name_placeholder": "Max Mustermann",
+      "email_label": "E-Mail *",
+      "email_placeholder": "max@firma.de",
+      "phone_label": "Telefon",
+      "phone_placeholder": "+49 123 456789",
+      "location_label": "Standort *",
+      "location_placeholder": "Stadt, Land",
+      "industry_label": "In welcher Branche sind Sie tätig? *",
+      "industry_default": "Branche auswählen...",
+      "business_type_label": "Welche Art von Geschäft haben Sie? *",
+      "business_type_placeholder": "z.B. Online-Shop, Lokales Dienstleistungsunternehmen, SaaS-Plattform...",
+      "challenge_label": "Was ist Ihre größte Herausforderung im digitalen Marketing? *",
+      "challenge_placeholder": "z.B. Nicht genügend qualifizierte Leads, niedrige Konversionsraten, mangelnde Sichtbarkeit...",
+      "message_label": "Erzählen Sie uns mehr über Ihr Projekt *",
+      "message_placeholder": "Teilen Sie weitere Details darüber mit, was Sie suchen, Ihre Ziele, Zeitplan oder spezifische Fragen...",
+      "btn_send": "Nachricht Senden",
+      "btn_sending": "Wird gesendet..."
+    },
+    "errors": {
+      "name": "Name ist erforderlich",
+      "email": "Ungültige E-Mail-Adresse",
+      "location": "Standort ist erforderlich",
+      "industry": "Bitte wählen Sie Ihre Branche",
+      "business_type": "Bitte beschreiben Sie Ihren Geschäftstyp",
+      "challenge": "Bitte erzählen Sie uns von Ihrer Hauptherausforderung",
+      "message": "Nachricht muss mindestens 10 Zeichen lang sein"
+    }
+  },
+  "process_page": {
+    "badge": "UNSER PROZESS",
+    "title": "Die Nächsten Schritte",
+    "desc": "Ein klarer und transparenter Prozess, entwickelt um Ihren digitalen Erfolg aufzubauen, Schritt für Schritt — vom ersten Gespräch bis zu messbaren Ergebnissen.",
+    "steps": {
+      "1": {
+        "title": "Kontaktieren Sie Uns",
+        "desc": "Alles beginnt mit einem offenen, unverbindlichen Gespräch, in dem wir sicherstellen, dass wir perfekt zu Ihren Zielen passen."
+      },
+      "2": {
+        "title": "Beratung Vereinbaren",
+        "desc": "Wir analysieren den Kern Ihres Unternehmens und erstellen eine strategische Roadmap mit klaren Schritten und einem 100% transparenten Angebot."
+      },
+      "3": {
+        "title": "Paket Auswählen",
+        "desc": "Gemeinsam wählen wir das richtige Paket aus und unsere Partnerschaft wird offiziell. Ab hier arbeiten wir als Erweiterung Ihres Teams."
+      },
+      "4": {
+        "title": "Werden Sie Unser Partner",
+        "desc": "Wir setzen den Wachstumsmotor in Gang und beginnen, Ihren sichtbaren und messbaren Erfolg aufzubauen."
+      }
+    },
+    "info_title": "Einfach, Transparent, Effizient",
+    "info_desc_1": "Jeder Schritt wird sorgfältig geplant, um die bestmöglichen Ergebnisse zu gewährleisten. Wir versprechen keine Wunder — wir versprechen einen klaren, messbaren und ergebnisorientierten Prozess.",
+    "info_desc_2": "Vom ersten Gespräch bis zu einer langfristigen Partnerschaft arbeiten wir als Erweiterung Ihres Teams, immer fokussiert auf Ihren Erfolg.",
+    "btn_start": "Jetzt Starten"
+  },
+  "products_page": {
+    "badge": "UNSERE DIENSTLEISTUNGEN",
+    "title": "Komplette Digitale Lösungen",
+    "desc": "Von Markenidentität bis Umsatzwachstum bieten wir umfassende Dienstleistungen, die darauf ausgelegt sind, Ihre digitale Präsenz zu transformieren und messbare Geschäftsergebnisse zu erzielen.",
+    "labels": {
+      "process": "Unser Prozess",
+      "benefits": "Was Sie Erhalten"
+    },
+    "services": {
+      "brand_design": {
+        "title": "Brand Design",
+        "desc": "Erstellen Sie eine visuelle Identität, die bei Ihrer Zielgruppe ankommt und Sie von der Konkurrenz abhebt.",
+        "process": [
+            "Markenstrategie und Positionierungsanalyse",
+            "Logo-Design und Entwicklung der visuellen Identität",
+            "Auswahl von Farbpalette und Typografie",
+            "Erstellung von Markenrichtlinien und Styleguide",
+            "Visuelle Assets für alle Kontaktpunkte"
+        ],
+        "benefits": [
+            "Professionelle Markenpräsenz",
+            "Konsistente visuelle Identität über alle Kanäle",
+            "Erhöhte Markenbekanntheit und Erinnerung",
+            "Stärkere emotionale Verbindung zur Zielgruppe"
+        ]
+      },
+      "social_media": {
+        "title": "Social Media Management",
+        "desc": "Bauen Sie eine loyale Community auf den Plattformen auf, auf denen Ihre Zielgruppe ihre Zeit verbringt.",
+        "process": [
+            "Plattformstrategie und Zielgruppenanalyse",
+            "Redaktionsplan und Kampagnenplanung",
+            "Kreative Content-Erstellung (Grafik, Video, Text)",
+            "Community Management und Engagement",
+            "Leistungsmessung und Optimierung"
+        ],
+        "benefits": [
+            "Aktive, engagierte Community",
+            "Erhöhte Markensichtbarkeit und Reichweite",
+            "Direkte Kommunikation mit der Zielgruppe",
+            "Datengetriebene Content-Optimierung"
+        ]
+      },
+      "digital_marketing": {
+        "title": "Digitales Marketing",
+        "desc": "Umfassende Marketingstrategien, die qualifizierte Leads und messbares Wachstum fördern.",
+        "process": [
+            "Marktforschung und Wettbewerbsanalyse",
+            "Entwicklung einer Multi-Channel-Marketingstrategie",
+            "Kampagnenerstellung und -ausführung",
+            "Systeme zur Lead-Generierung und -Pflege",
+            "Conversion-Optimierung und ROI-Analyse"
+        ],
+        "benefits": [
+            "Konstanter Fluss qualifizierter Leads",
+            "Multi-Channel-Präsenz und Reichweite",
+            "Messbarer ROI und Leistungskennzahlen",
+            "Skalierbare Marketingsysteme"
+        ]
+      },
+      "email_marketing": {
+        "title": "E-Mail Marketing",
+        "desc": "Pflegen Sie Beziehungen und fördern Sie Konversionen durch strategische, personalisierte E-Mail-Kampagnen.",
+        "process": [
+            "E-Mail-Listen-Segmentierung und Strategie",
+            "Entwicklung automatisierter E-Mail-Sequenzen",
+            "Kampagnendesign und Copywriting",
+            "A/B-Tests und Optimierung",
+            "Leistungsanalyse und Reporting"
+        ],
+        "benefits": [
+            "Direkter Kommunikationskanal zu Kunden",
+            "Automatisierte Nurturing-Sequenzen",
+            "Hoher ROI bei Marketinginvestitionen",
+            "Personalisierte Kundenerlebnisse"
+        ]
+      },
+      "website_dev": {
+        "title": "Website Entwicklung",
+        "desc": "Schnelle, konversionsorientierte Websites, die Besucher in Kunden verwandeln.",
+        "process": [
+            "Planung von User Experience und Conversion-Optimierung",
+            "Individuelles Design und Entwicklung",
+            "Mobile-Responsive Implementierung",
+            "SEO-Struktur und technische Optimierung",
+            "Laufende Wartung und Updates"
+        ],
+        "benefits": [
+            "Professionelle Online-Präsenz",
+            "Für Mobilgeräte optimiertes Erlebnis",
+            "Schnelle Ladezeiten und SEO-freundliche Struktur",
+            "Konversionsorientiertes Design"
+        ]
+      },
+      "growth": {
+        "title": "Wachstumsstrategie & Beratung",
+        "desc": "Strategische Beratung zur Beschleunigung Ihres Geschäftswachstums und Überwindung von Hindernissen.",
+        "process": [
+            "Geschäftsaudit und Chancenanalyse",
+            "Entwicklung der Wachstumsstrategie",
+            "Erstellung der Implementierungs-Roadmap",
+            "Einrichtung von Leistungsmessung und KPIs",
+            "Laufende strategische Beratung"
+        ],
+        "benefits": [
+            "Klare Wachstums-Roadmap",
+            "Datengetriebene Entscheidungsfindung",
+            "Strategische Ausrichtung über alle Kanäle",
+            "Expertenrat und Unterstützung"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Maßgeschneiderte Lösungen für Ihr Unternehmen",
+      "desc": "Wir verstehen, dass jedes Unternehmen einzigartig ist. Deshalb erstellen wir maßgeschneiderte Pakete, die auf Ihre spezifischen Bedürfnisse, Ziele und Ihr Budget zugeschnitten sind. Keine Standardlösungen — nur strategische Dienstleistungen für die Ergebnisse, die Sie benötigen.",
+      "text": "Bereit, über Ihr Projekt zu sprechen? Lassen Sie uns erkunden, wie wir Ihnen helfen können, Ihre Ziele zu erreichen.",
+      "btn": "Individuelles Angebot Anfordern"
+    }
+  },
+  "what_we_solve_page": {
+    "badge": "WAS WIR LÖSEN",
+    "title": "Unser Versprechen",
+    "hero_subtitle": "Das einzige Marketing, das zählt: Das Geld in Ihrer Tasche",
+    "hero_desc": "Das einzige Marketing, das zählt, ist das, das Sie am Ende des Monats in Ihren Taschen sehen können. Wir verkaufen keine 'Sichtbarkeit' oder 'Likes'; wir bauen die strukturelle Maschinerie, die digitales Chaos mit absoluter Vorhersehbarkeit in bares Geld verwandelt.",
+    "cards": {
+      "agility": {
+        "title": "Operative Agilität",
+        "desc": "Während andere sich in der Planungsphase verlieren, konzentrieren wir uns auf sofortige, wirkungsvolle Umsetzung. Wir treiben Ihre Projekte mit einer Intensität und Präzision voran, die sicherstellt, dass Sie dem Markt voraus sind und schneller Ergebnisse sehen."
+      },
+      "ecosystems": {
+        "title": "Integrierte Wachstums-Ökosysteme",
+        "desc": "Hören Sie auf, in unzusammenhängende digitale Fragmente zu investieren. Wir architektonieren vereinheitlichte Ökosysteme, in denen SEO, Inhalt und Strategie als eine einzige, kohärente Architektur funktionieren, die darauf ausgelegt ist, Ihre idealen Leads rund um die Uhr anzuziehen, zu binden und zu konvertieren."
+      },
+      "engineering": {
+        "title": "Umsatz-First Engineering",
+        "desc": "Wir priorisieren die Kennzahlen, die sich direkt auf Ihren Geldbeutel und Ihre Ausgabegewohnheiten auswirken: Wir konzentrieren uns auf die Stabilität Ihres Lead-Flusses und steigern Ihren Gewinn, ganz einfach."
+      }
+    },
+    "content_title": "Was Wir Tun",
+    "content_desc": "Wir verwandeln Ihre digitale Präsenz in eine umsatzgenerierende Maschine. Unser Ansatz ist systematisch, messbar und auf eine Sache fokussiert: das Wachstum Ihres Unternehmens.",
+    "approach_title": "Unser Ansatz",
+    "approach_p1": "Bei Nuklias glauben wir nicht an Einheitslösungen. Jedes Unternehmen ist einzigartig, und Ihre digitale Strategie sollte das widerspiegeln. Wir beginnen damit, Ihre spezifischen Herausforderungen, Ziele und Marktposition zu verstehen.",
+    "approach_p2": "Unser Team kombiniert tiefes technisches Fachwissen mit strategischem Geschäftsdenken. Wir bauen Systeme, die nicht nur heute funktionieren, sondern sich mit Ihrem Unternehmen weiterentwickeln.",
+    "approach_p3": "Wir messen Erfolg in echten Ergebnissen: gesteigerter Umsatz, qualifizierte Leads und nachhaltiges Wachstum. Keine Vanity-Metrics. Keine leeren Versprechungen. Nur bewährte Systeme, die messbare Ergebnisse liefern.",
+    "cta_title": "Bereit, Ihre Digitale Präsenz zu Transformieren?",
+    "cta_desc": "Lassen Sie uns besprechen, wie wir einen Wachstumsmotor bauen können, der speziell auf Ihr Unternehmen zugeschnitten ist.",
+    "btn": "Kontaktieren Sie Uns Heute"
+  },
+  "not_found": {
+    "title": "404 Seite Nicht Gefunden",
+    "desc": "Die gesuchte Seite existiert nicht."
+  },
+  "products_section": {
+    "title": "Erstellen Sie Ihre Website",
+    "subtitle": "Wählen Sie die Struktur aus, die heute zu Ihrem Unternehmen passt. Jede Option ist auf Geschwindigkeit, Klarheit und Konversion ausgelegt.",
+    "most_popular": "Beliebteste",
+    "request_quote": "Angebot Anfordern",
+    "tiers": {
+      "bronze": {
+        "title": "Website Basic",
+        "subtitle": "Essenzielle Präsenz",
+        "features": {
+          "1": "3–5 seitige Website (Home, Über uns, Dienste, Kontakt)",
+          "2": "Modernes, responsives Design für alle Geräte",
+          "3": "Basis On-Page SEO Struktur (Titel, Meta)",
+          "4": "Kontaktformular und Kartenintegration",
+          "5": "Performance-orientiertes Layout"
+        }
+      },
+      "silver": {
+        "title": "Website + Hosting",
+        "subtitle": "Verwaltetes Fundament",
+        "features": {
+          "1": "Alles in Website Basic",
+          "2": "Premium Hosting, sicher und verwaltet",
+          "3": "Domain-Einrichtung & SSL-Zertifikat",
+          "4": "Monatliche Überwachung von Uptime & Performance",
+          "5": "Technische Wartung, keine Server-Arbeit"
+        }
+      },
+      "gold": {
+        "title": "Website + Host + Growth",
+        "subtitle": "Updates & Entwicklung",
+        "features": {
+          "1": "Alles in Website + Hosting",
+          "2": "Monatliche Content- & Design-Updates",
+          "3": "Entwicklung neuer Seiten bei Bedarf",
+          "4": "Laufende UX- und Conversion-Optimierung",
+          "5": "Priorisierter Support für Experimente"
+        }
+      }
+    }
+  },
+  "cookie": {
+    "text": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Sie können akzeptieren, ablehnen oder Ihre Einstellungen anpassen.",
+    "policy_link": "Datenschutzrichtlinie",
+    "accept": "Alle Akzeptieren",
+    "refuse": "Ablehnen",
+    "customize": "Anpassen"
+  }
+}

@@ -1,0 +1,340 @@
+{
+  "navbar": {
+    "home": "Acasă",
+    "what_we_solve": "Ce Rezolvăm",
+    "products": "Produse",
+    "process": "Proces",
+    "contact": "Contact"
+  },
+  "footer": {
+    "privacy": "Politica de Confidențialitate",
+    "terms": "Termeni și Condiții",
+    "copyright": "© 2025 Nuklias Arhitecți Digitali. Toate drepturile rezervate.",
+    "marketing": "NUKLIAS MARKETING"
+  },
+  "hero": {
+    "badge": "CĂLĂTORIA TA",
+    "title_start": "De la Haos la Claritate:",
+    "title_end": "Motorul Tău de Creștere Digitală",
+    "description": "Construim ecosisteme automate care transformă urmăritorii pasivi în clienți loiali.",
+    "cta_audit": "Rezervă un Audit Strategic",
+    "cta_plans": "Vezi Planurile Noastre"
+  },
+  "why_us": {
+    "title": "De ce Nuklias?",
+    "subtitle": "De ce să alegi Nuklias ca partenerul tău de creștere digitală?",
+    "cards": {
+      "1": {
+        "title": "Mentalitate de Client",
+        "desc": "Gândim ca antreprenori, nu doar prestatori. Fiecare leu investit trebuie să aducă profit."
+      },
+      "2": {
+        "title": "Arhitectură Full-Service",
+        "desc": "De la cod la conținut, gestionăm in-house fiecare strat al ecosistemului tău digital."
+      },
+      "3": {
+        "title": "Evoluție Proactivă",
+        "desc": "Nu doar reacționăm la trenduri, le anticipăm. Sistemul tău este mereu pregătit pentru viitor."
+      },
+      "4": {
+        "title": "Transparență Radicală",
+        "desc": "Fără 'magie' ascunsă. Ai vizibilitate totală asupra strategiilor și metricilor noastre."
+      },
+      "5": {
+        "title": "Impact Dovedit",
+        "desc": "Măsurăm succesul în venituri, nu în like-uri. Sistemele noastre scalează afaceri reale."
+      },
+      "6": {
+        "title": "Pasiune Neobosită",
+        "desc": "Suntem arhitecți digitali care iubesc ceea ce fac. Construim cu precizie, viteză și obsesie pentru calitate."
+      }
+    }
+  },
+  "what_we_solve": {
+    "badge": "Promisiunea Noastră",
+    "title": "Singurul marketing care contează: Banii din buzunarul tău",
+    "desc": "Singurul marketing care contează este cel pe care îl poți observa în buzunare la sfârșitul lunii. Nu vindem 'vizibilitate' sau 'like-uri'; construim mașinăria structurală care transformă haosul digital în bani lichizi cu predictibilitate totală.",
+    "cards": {
+      "1": {
+        "title": "Agilitate Operațională",
+        "desc": "În timp ce alții se pierd în planificare, noi ne concentrăm pe implementare imediată, cu impact major. Împingem proiectele tale înainte cu o intensitate și precizie care te mențin în fața pieței."
+      },
+      "2": {
+        "title": "Ecosisteme de Creștere Integrate",
+        "desc": "Nu mai investi în fragmente digitale deconectate. Arhitecturăm ecosisteme unificate unde SEO, Conținutul și Strategia funcționează ca un tot unitar, proiectat să atragă și să convertească 24/7."
+      },
+      "3": {
+        "title": "Inginerie Orientată spre Venit",
+        "desc": "Prioritizăm metricile care impactează direct portofelul. Ne concentrăm pe stabilitatea fluxului de clienți și amplificarea profitului, simplu ca bună ziua."
+      }
+    }
+  },
+  "contact_us": {
+    "badge": "CONTACT US",
+    "title": "Hai să Construim Ceva Măreț Împreună",
+    "desc": "Ești gata să îți transformi prezența digitală? Contactează-ne și hai să discutăm cum te putem ajuta să îți atingi obiectivele.",
+    "info_title": "Intră în Legătură",
+    "email": "Email",
+    "phone": "Telefon",
+    "location": "Locație",
+    "location_text": "București, România<br />Consultanță remote disponibilă global",
+    "response_time": "Răspundem de obicei în 24 de ore. Pentru urgențe, sună-ne direct.",
+    "form_title": "Spune-ne Despre Proiectul Tău",
+    "form": {
+      "name_label": "Nume *",
+      "name_placeholder": "Ion Popescu",
+      "email_label": "Email *",
+      "email_placeholder": "ion@companie.ro",
+      "phone_label": "Telefon",
+      "phone_placeholder": "+40 (700) 123-456",
+      "location_label": "Locație *",
+      "location_placeholder": "Oraș, Țară",
+      "industry_label": "În ce industrie activează afacerea ta? *",
+      "industry_default": "Selectează industria...",
+      "business_type_label": "Ce tip de afacere ai? *",
+      "business_type_placeholder": "ex: Magazin online, Servicii locale, Platformă SaaS...",
+      "challenge_label": "Care este principala ta provocare în marketing? *",
+      "challenge_placeholder": "ex: Nu am destule lead-uri, Rată de conversie mică, Lipsă de vizibilitate...",
+      "message_label": "Spune-ne mai multe despre proiect *",
+      "message_placeholder": "Împărtășește detalii despre ce cauți, obiectivele tale, timeline-ul sau întrebări specifice...",
+      "btn_send": "Trimite Mesajul",
+      "btn_sending": "Se trimite..."
+    },
+    "errors": {
+      "name": "Numele este obligatoriu",
+      "email": "Adresă de email invalidă",
+      "location": "Locația este obligatorie",
+      "industry": "Te rugăm să selectezi domeniul de activitate",
+      "business_type": "Te rugăm să descrii tipul afacerii",
+      "challenge": "Te rugăm să ne spui despre provocarea principală",
+      "message": "Mesajul trebuie să aibă cel puțin 10 caractere"
+    }
+  },
+  "process_page": {
+    "badge": "PROCESUL NOSTRU",
+    "title": "Următorii Pași",
+    "desc": "Un proces clar și transparent creat pentru a construi succesul tău digital, pas cu pas — de la prima conversație la rezultate măsurabile.",
+    "steps": {
+      "1": {
+        "title": "Contactează-ne",
+        "desc": "Totul începe cu o conversație deschisă, fără obligații, unde ne asigurăm că suntem potriviți pentru obiectivele tale."
+      },
+      "2": {
+        "title": "Programează o Consultanță",
+        "desc": "Analizăm nucleul afacerii tale și creăm o hartă strategică cu pași clari și o ofertă 100% transparentă."
+      },
+      "3": {
+        "title": "Alege un Pachet",
+        "desc": "Împreună selectăm pachetul potrivit, iar parteneriatul nostru devine oficial. De aici, lucrăm ca o extensie a echipei tale."
+      },
+      "4": {
+        "title": "Devino Partenerul Nostru",
+        "desc": "Punem motorul de creștere în mișcare și începem să construim succesul tău vizibil și măsurabil."
+      }
+    },
+    "info_title": "Simplu, Transparent, Eficient",
+    "info_desc_1": "Fiecare pas este planificat atent pentru a asigura cele mai bune rezultate. Nu promitem miracole — promitem un proces clar, măsurabil și orientat spre rezultate.",
+    "info_desc_2": "De la conversația inițială la un parteneriat pe termen lung, lucrăm ca o extensie a echipei tale, mereu concentrați pe succesul tău.",
+    "btn_start": "Începe Acum"
+  },
+  "products_page": {
+    "badge": "SERVICIILE NOASTRE",
+    "title": "Soluții Digitale Complete",
+    "desc": "De la identitate de brand la creșterea veniturilor, oferim servicii complete create pentru a transforma prezența ta digitală și a genera rezultate de business măsurabile.",
+    "labels": {
+      "process": "Procesul Nostru",
+      "benefits": "Ce Primești"
+    },
+    "services": {
+      "brand_design": {
+        "title": "Design de Brand",
+        "desc": "Creează o identitate vizuală care rezonează cu audiența ta și te diferențiază de competiție.",
+        "process": [
+            "Strategie de brand și analiză de poziționare",
+            "Design logo și dezvoltare identitate vizuală",
+            "Selecție paletă de culori și tipografie",
+            "Creare ghid de brand și stil",
+            "Asset-uri vizuale pentru toate punctele de contact"
+        ],
+        "benefits": [
+            "Prezență de brand profesională",
+            "Identitate vizuală consistentă pe toate canalele",
+            "Recunoaștere crescută a brandului",
+            "Conexiune emoțională mai puternică cu audiența"
+        ]
+      },
+      "social_media": {
+        "title": "Social Media Management",
+        "desc": "Construiește și implică o comunitate loială pe platformele unde audiența ta își petrece timpul.",
+        "process": [
+            "Strategie de platformă și analiză audiență",
+            "Calendar de conținut și planificare campanii",
+            "Creare conținut creativ (grafică, video, text)",
+            "Management comunitate și engagement",
+            "Urmărire performanță și optimizare"
+        ],
+        "benefits": [
+            "Comunitate activă și implicată",
+            "Vizibilitate și reach crescut al brandului",
+            "Comunicare directă cu audiența",
+            "Optimizare conținut bazată pe date"
+        ]
+      },
+      "digital_marketing": {
+        "title": "Marketing Digital",
+        "desc": "Strategii de marketing complete care aduc lead-uri calificate și creștere măsurabilă.",
+        "process": [
+            "Cercetare de piață și analiză competiție",
+            "Dezvoltare strategie marketing multi-channel",
+            "Creare și execuție campanii",
+            "Sisteme de generare și nurturing lead-uri",
+            "Optimizare conversie și analiză ROI"
+        ],
+        "benefits": [
+            "Flux constant de lead-uri calificate",
+            "Prezență și reach multi-channel",
+            "ROI măsurabil și metrici de performanță",
+            "Sisteme de marketing scalabile"
+        ]
+      },
+      "email_marketing": {
+        "title": "Email Marketing",
+        "desc": "Cultivă relații și generează conversii prin campanii de email strategice și personalizate.",
+        "process": [
+            "Segmentare listă email și strategie",
+            "Dezvoltare secvențe automate de email",
+            "Design campanie și copywriting",
+            "Testare A/B și optimizare",
+            "Analitică performanță și raportare"
+        ],
+        "benefits": [
+            "Canal direct de comunicare cu clienții",
+            "Secvențe automate de nurturing",
+            "ROI ridicat pe investiția de marketing",
+            "Experiențe personalizate pentru clienți"
+        ]
+      },
+      "website_dev": {
+        "title": "Dezvoltare Website",
+        "desc": "Website-uri rapide, axate pe conversie, care transformă vizitatorii în clienți.",
+        "process": [
+            "Planificare UX și optimizare conversie",
+            "Design și dezvoltare personalizată",
+            "Implementare responsive (mobile-friendly)",
+            "Structură SEO și optimizare tehnică",
+            "Mentenanță și update-uri continue"
+        ],
+        "benefits": [
+            "Prezență online profesională",
+            "Experiență optimizată pentru mobil",
+            "Timp de încărcare rapid și structură SEO-friendly",
+            "Design axat pe conversie"
+        ]
+      },
+      "growth": {
+        "title": "Strategie de Creștere & Consultanță",
+        "desc": "Ghidaj strategic pentru a accelera creșterea afacerii tale și a depăși obstacolele.",
+        "process": [
+            "Audit de business și analiză oportunități",
+            "Dezvoltare strategie de creștere",
+            "Creare roadmap de implementare",
+            "Setup urmărire performanță și KPI",
+            "Consultanță strategică continuă"
+        ],
+        "benefits": [
+            "Roadmap clar de creștere",
+            "Luare de decizii bazată pe date",
+            "Aliniere strategică pe toate canalele",
+            "Ghidaj și suport expert"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Soluții Personalizate pentru Afacerea Ta",
+      "desc": "Înțelegem că fiecare afacere este unică. De aceea creăm pachete personalizate adaptate nevoilor, obiectivelor și bugetului tău. Fără soluții generice—doar servicii strategice create să livreze rezultatele de care ai nevoie.",
+      "text": "Ești gata să discutăm proiectul tău? Hai să explorăm cum te putem ajuta să îți atingi obiectivele.",
+      "btn": "Cere o Ofertă Personalizată"
+    }
+  },
+  "what_we_solve_page": {
+    "badge": "CE REZOLVĂM",
+    "title": "Promisiunea Noastră",
+    "hero_subtitle": "Singurul marketing care contează: Banii din buzunarul tău",
+    "hero_desc": "Singurul marketing care contează este cel pe care îl poți observa în buzunare la sfârșitul lunii. Nu vindem 'vizibilitate' sau 'like-uri'; construim mecanismul structural care transformă haosul digital în bani lichizi cu o predictibilitate totală.",
+    "cards": {
+      "agility": {
+        "title": "Agilitate Operațională",
+        "desc": "În timp ce alții se pierd în faza de planificare, noi ne concentrăm pe implementare imediată, cu impact major. Împingem proiectele tale înainte cu un nivel de intensitate și precizie care asigură că rămâi în fața pieței și vezi rezultate mai rapid."
+      },
+      "ecosystems": {
+        "title": "Ecosisteme de Creștere Integrate",
+        "desc": "Nu mai investi în fragmente digitale deconectate. Arhitecturăm ecosisteme unificate unde SEO, Conținutul și Strategia funcționează ca o arhitectură unică, coezivă, creată să atragă, să implice și să convertească lead-urile tale ideale 24/7."
+      },
+      "engineering": {
+        "title": "Inginerie Prioritare Venituri",
+        "desc": "Prioritizăm metricile care impactează direct portofelul și obiceiurile tale de cheltuieli: Ne concentrăm pe stabilitatea fluxului tău de lead-uri și amplificăm profitul, simplu ca bună ziua."
+      }
+    },
+    "content_title": "Ce Facem Noi",
+    "content_desc": "Transformăm prezența ta digitală într-o mașinărie de generat venituri. Abordarea noastră este sistematică, măsurabilă și concentrată pe un singur lucru: creșterea afacerii tale.",
+    "approach_title": "Abordarea Noastră",
+    "approach_p1": "La Nuklias, nu credem în soluții universale. Fiecare afacere este unică, iar strategia ta digitală ar trebui să reflecte asta. Începem prin a înțelege provocările tale specifice, obiectivele și poziția în piață.",
+    "approach_p2": "Echipa noastră combină expertiza tehnică profundă cu gândirea strategică de business. Construim sisteme care funcționează nu doar azi, ci evoluează odată cu afacerea ta. De la analiza inițială la optimizarea continuă, suntem alături de tine la fiecare pas.",
+    "approach_p3": "Măsurăm succesul în rezultate reale: venituri crescute, lead-uri calificate și creștere sustenabilă. Fără metrici de vanitate. Fără promisiuni goale. Doar sisteme dovedite care livrează rezultate măsurabile.",
+    "cta_title": "Ești gata să îți Transformi Prezența Digitală?",
+    "cta_desc": "Hai să discutăm cum putem construi un motor de creștere adaptat specific afacerii tale.",
+    "btn": "Contactează-ne Azi"
+  },
+  "not_found": {
+    "title": "404 Pagina Nu a Fost Găsită",
+    "desc": "Pagina căutată nu există."
+  },
+  "products_section": {
+    "title": "Creează-ți Website-ul Personalizat",
+    "subtitle": "Alege structura care se potrivește afacerii tale azi. Fiecare opțiune este construită pentru viteză, claritate și conversie.",
+    "most_popular": "Cel Mai Popular",
+    "request_quote": "Cere o Ofertă",
+    "tiers": {
+      "bronze": {
+        "title": "Website Basic",
+        "subtitle": "Prezență Esențială",
+        "features": {
+          "1": "Website personalizat 3–5 pagini (Acasă, Despre, Servicii, Contact)",
+          "2": "Design modern, responsive pentru toate dispozitivele",
+          "3": "Structură SEO basic on-page (titluri, meta, headings)",
+          "4": "Formular de contact și integrare hartă",
+          "5": "Layout axat pe performanță pentru claritate și încredere"
+        }
+      },
+      "silver": {
+        "title": "Website + Hosting",
+        "subtitle": "Fundație Manageriată",
+        "features": {
+          "1": "Tot ce include Website Basic",
+          "2": "Hosting premium, securizat, complet gestionat",
+          "3": "Configurare domeniu personalizat & certificat SSL",
+          "4": "Monitorizare lunară uptime & performanță",
+          "5": "Mentenanță tehnică, nu atingi serverele"
+        }
+      },
+      "gold": {
+        "title": "Website + Host + Growth",
+        "subtitle": "Update-uri & Dezvoltare",
+        "features": {
+          "1": "Tot ce include Website + Hosting",
+          "2": "Update-uri lunare de conținut & design incluse",
+          "3": "Dezvoltare pagini noi pe măsură ce ofertele evoluează",
+          "4": "Optimizare continuă UX și conversie",
+          "5": "Suport prioritar pentru experimente și iterații"
+        }
+      }
+    }
+  },
+  "cookie": {
+    "text": "Folosim cookie-uri pentru a îmbunătăți experiența ta. Poți accepta, refuza sau personaliza preferințele.",
+    "policy_link": "Politica de Confidențialitate",
+    "accept": "Acceptă Tot",
+    "refuse": "Refuză",
+    "customize": "Personalizează"
+  }
+}

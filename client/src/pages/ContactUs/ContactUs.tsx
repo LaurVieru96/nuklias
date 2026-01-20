@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/Navbar";
+import { Navbar } from "@/components/Navbar/Navbar";
 import { useMessages } from "@/hooks/use-messages";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -6,6 +6,7 @@ import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
 import { MapPin, Mail, Phone, Send, Building2 } from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslation, Trans } from "react-i18next";
 
 const contactFormSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -32,6 +33,7 @@ const contactFormSchema = z.object({
 type ContactFormData = z.infer<typeof contactFormSchema>;
 
 export default function ContactUs() {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const { createMessage, isSubmitting } = useMessages();
 
@@ -104,13 +106,13 @@ ${data.message}
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent text-accent-foreground border border-accent/30 text-xs font-bold uppercase tracking-wider mb-6">
               <span className="w-2 h-2 rounded-full bg-accent-foreground animate-pulse" />
-              CONTACT US
+              {t('contact_us.badge')}
             </div>
             <h1 className="text-5xl lg:text-7xl font-bold font-display text-primary leading-[1.1] mb-6">
-              Let's Build Something Great Together
+              {t('contact_us.title')}
             </h1>
             <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-              Ready to transform your digital presence? Get in touch and let's discuss how we can help you achieve your goals.
+              {t('contact_us.desc')}
             </p>
           </motion.div>
         </div>
@@ -129,7 +131,7 @@ ${data.message}
             >
               <div className="bg-white dark:bg-card rounded-2xl shadow-lg p-8 border border-border sticky top-24">
                 <h2 className="text-2xl font-bold font-display text-primary mb-6">
-                  Get In Touch
+                  {t('contact_us.info_title')}
                 </h2>
                 
                 <div className="space-y-6">
@@ -138,7 +140,7 @@ ${data.message}
                       <Mail className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-foreground mb-1">Email</h3>
+                      <h3 className="font-bold text-foreground mb-1">{t('contact_us.email')}</h3>
                       <a href="mailto:contact@nuklias.com" className="text-muted-foreground hover:text-primary transition-colors">
                         contact@nuklias.com
                       </a>
@@ -150,7 +152,7 @@ ${data.message}
                       <Phone className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-foreground mb-1">Phone</h3>
+                      <h3 className="font-bold text-foreground mb-1">{t('contact_us.phone')}</h3>
                       <a href="tel:+1234567890" className="text-muted-foreground hover:text-primary transition-colors">
                         +1 (234) 567-890
                       </a>
@@ -162,10 +164,9 @@ ${data.message}
                       <MapPin className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-foreground mb-1">Location</h3>
+                      <h3 className="font-bold text-foreground mb-1">{t('contact_us.location')}</h3>
                       <p className="text-muted-foreground">
-                        Bucharest, Romania<br />
-                        Remote consultations available worldwide
+                        <Trans i18nKey="contact_us.location_text" components={{ br: <br /> }} />
                       </p>
                     </div>
                   </div>
@@ -173,7 +174,7 @@ ${data.message}
 
                 <div className="mt-8 pt-8 border-t border-border">
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    We typically respond within 24 hours. For urgent matters, please call us directly.
+                    {t('contact_us.response_time')}
                   </p>
                 </div>
               </div>
@@ -192,7 +193,7 @@ ${data.message}
                     <Building2 className="w-6 h-6 text-primary" />
                   </div>
                   <h2 className="text-3xl font-bold font-display text-primary">
-                    Tell Us About Your Project
+                    {t('contact_us.form_title')}
                   </h2>
                 </div>
 
@@ -200,11 +201,11 @@ ${data.message}
                   {/* Name and Email */}
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label className="text-sm font-bold text-foreground">Name *</label>
+                      <label className="text-sm font-bold text-foreground">{t('contact_us.form.name_label')}</label>
                       <input
                         {...form.register("name")}
                         className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-muted border border-gray-200 dark:border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
-                        placeholder="John Doe"
+                        placeholder={t('contact_us.form.name_placeholder')}
                       />
                       {form.formState.errors.name && (
                         <p className="text-red-500 text-xs">{form.formState.errors.name.message}</p>
@@ -212,12 +213,12 @@ ${data.message}
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-sm font-bold text-foreground">Email *</label>
+                      <label className="text-sm font-bold text-foreground">{t('contact_us.form.email_label')}</label>
                       <input
                         type="email"
                         {...form.register("email")}
                         className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-muted border border-gray-200 dark:border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
-                        placeholder="john@company.com"
+                        placeholder={t('contact_us.form.email_placeholder')}
                       />
                       {form.formState.errors.email && (
                         <p className="text-red-500 text-xs">{form.formState.errors.email.message}</p>
@@ -228,12 +229,12 @@ ${data.message}
                   {/* Phone and Location */}
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label className="text-sm font-bold text-foreground">Phone</label>
+                      <label className="text-sm font-bold text-foreground">{t('contact_us.form.phone_label')}</label>
                       <input
                         type="tel"
                         {...form.register("phone")}
                         className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-muted border border-gray-200 dark:border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
-                        placeholder="+1 (234) 567-890"
+                        placeholder={t('contact_us.form.phone_placeholder')}
                       />
                       {form.formState.errors.phone && (
                         <p className="text-red-500 text-xs">{form.formState.errors.phone.message}</p>
@@ -241,11 +242,11 @@ ${data.message}
                     </div>
 
                     <div className="space-y-2">
-                      <label className="text-sm font-bold text-foreground">Location *</label>
+                      <label className="text-sm font-bold text-foreground">{t('contact_us.form.location_label')}</label>
                       <input
                         {...form.register("location")}
                         className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-muted border border-gray-200 dark:border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
-                        placeholder="City, Country"
+                        placeholder={t('contact_us.form.location_placeholder')}
                       />
                       {form.formState.errors.location && (
                         <p className="text-red-500 text-xs">{form.formState.errors.location.message}</p>
@@ -255,12 +256,13 @@ ${data.message}
 
                   {/* Business Domain */}
                   <div className="space-y-2">
-                    <label className="text-sm font-bold text-foreground">What industry is your business in? *</label>
+                    <label className="text-sm font-bold text-foreground">{t('contact_us.form.industry_label')}</label>
                     <select
                       {...form.register("businessDomain")}
                       className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-muted border border-gray-200 dark:border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
+                      defaultValue=""
                     >
-                      <option value="">Select your industry...</option>
+                      <option value="" disabled>{t('contact_us.form.industry_default')}</option>
                       {businessDomains.map((domain) => (
                         <option key={domain.value} value={domain.value}>
                           {domain.label}
@@ -274,11 +276,11 @@ ${data.message}
 
                   {/* Business Type */}
                   <div className="space-y-2">
-                    <label className="text-sm font-bold text-foreground">What type of business do you have? *</label>
+                    <label className="text-sm font-bold text-foreground">{t('contact_us.form.business_type_label')}</label>
                     <input
                       {...form.register("businessType")}
                       className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-muted border border-gray-200 dark:border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
-                      placeholder="e.g., Online retail store, Local service business, SaaS platform..."
+                      placeholder={t('contact_us.form.business_type_placeholder')}
                     />
                     {form.formState.errors.businessType && (
                       <p className="text-red-500 text-xs">{form.formState.errors.businessType.message}</p>
@@ -287,12 +289,12 @@ ${data.message}
 
                   {/* Main Challenge */}
                   <div className="space-y-2">
-                    <label className="text-sm font-bold text-foreground">What's your main digital marketing challenge? *</label>
+                    <label className="text-sm font-bold text-foreground">{t('contact_us.form.challenge_label')}</label>
                     <textarea
                       {...form.register("mainChallenge")}
                       rows={3}
                       className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-muted border border-gray-200 dark:border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all resize-none"
-                      placeholder="e.g., Not getting enough qualified leads, Low conversion rates, Lack of brand visibility..."
+                      placeholder={t('contact_us.form.challenge_placeholder')}
                     />
                     {form.formState.errors.mainChallenge && (
                       <p className="text-red-500 text-xs">{form.formState.errors.mainChallenge.message}</p>
@@ -301,12 +303,12 @@ ${data.message}
 
                   {/* Message */}
                   <div className="space-y-2">
-                    <label className="text-sm font-bold text-foreground">Tell us more about your project *</label>
+                    <label className="text-sm font-bold text-foreground">{t('contact_us.form.message_label')}</label>
                     <textarea
                       {...form.register("message")}
                       rows={5}
                       className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-muted border border-gray-200 dark:border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all resize-none"
-                      placeholder="Share more details about what you're looking for, your goals, timeline, or any specific questions you have..."
+                      placeholder={t('contact_us.form.message_placeholder')}
                     />
                     {form.formState.errors.message && (
                       <p className="text-red-500 text-xs">{form.formState.errors.message.message}</p>
@@ -319,10 +321,10 @@ ${data.message}
                     className="w-full py-4 bg-accent text-accent-foreground font-bold rounded-xl hover:shadow-lg hover:shadow-accent/20 hover:-translate-y-0.5 active:translate-y-0 disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2"
                   >
                     {isSubmitting ? (
-                      <>Sending...</>
+                      <>{t('contact_us.form.btn_sending')}</>
                     ) : (
                       <>
-                        Send Message
+                        {t('contact_us.form.btn_send')}
                         <Send size={18} />
                       </>
                     )}

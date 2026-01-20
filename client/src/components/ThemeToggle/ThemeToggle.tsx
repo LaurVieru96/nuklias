@@ -7,7 +7,7 @@ export function ThemeToggle() {
   const isDark = theme === "dark";
 
   return (
-    <div className="fixed left-4 bottom-4 z-50">
+    <div className="fixed left-2 top-2 z-50">
       <div className="flex items-center gap-3 rounded-full border border-border bg-card/80 px-4 py-2 shadow-lg backdrop-blur-md">
         <Sun
           className={`h-4 w-4 transition-colors ${

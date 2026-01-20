@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/Navbar";
+import { Navbar } from "@/components/Navbar/Navbar";
 import { 
   Palette,
   Share2,
@@ -11,122 +11,59 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { useTranslation } from "react-i18next";
 
 export default function Products() {
+  const { t } = useTranslation();
+
   const services = [
     {
       icon: <Palette className="w-8 h-8" />,
-      title: "Brand Design",
+      title: t('products_page.services.brand_design.title'),
       color: "from-blue-500 to-cyan-500",
-      description: "Create a visual identity that resonates with your audience and sets you apart from competitors.",
-      process: [
-        "Brand strategy and positioning analysis",
-        "Logo design and visual identity development",
-        "Color palette and typography selection",
-        "Brand guidelines and style guide creation",
-        "Visual assets for all touchpoints"
-      ],
-      benefits: [
-        "Professional brand presence",
-        "Consistent visual identity across all channels",
-        "Increased brand recognition and recall",
-        "Stronger emotional connection with your audience"
-      ]
+      description: t('products_page.services.brand_design.desc'),
+      process: t('products_page.services.brand_design.process', { returnObjects: true }) as string[],
+      benefits: t('products_page.services.brand_design.benefits', { returnObjects: true }) as string[]
     },
     {
       icon: <Share2 className="w-8 h-8" />,
-      title: "Social Media Management",
+      title: t('products_page.services.social_media.title'),
       color: "from-purple-500 to-pink-500",
-      description: "Build and engage a loyal community on the platforms where your audience spends their time.",
-      process: [
-        "Platform strategy and audience analysis",
-        "Content calendar and campaign planning",
-        "Creative content creation (graphics, videos, copy)",
-        "Community management and engagement",
-        "Performance tracking and optimization"
-      ],
-      benefits: [
-        "Active, engaged community",
-        "Increased brand visibility and reach",
-        "Direct communication with your audience",
-        "Data-driven content optimization"
-      ]
+      description: t('products_page.services.social_media.desc'),
+      process: t('products_page.services.social_media.process', { returnObjects: true }) as string[],
+      benefits: t('products_page.services.social_media.benefits', { returnObjects: true }) as string[]
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
-      title: "Digital Marketing",
+      title: t('products_page.services.digital_marketing.title'),
       color: "from-orange-500 to-red-500",
-      description: "Comprehensive marketing strategies that drive qualified leads and measurable growth.",
-      process: [
-        "Market research and competitor analysis",
-        "Multi-channel marketing strategy development",
-        "Campaign creation and execution",
-        "Lead generation and nurturing systems",
-        "Conversion optimization and ROI analysis"
-      ],
-      benefits: [
-        "Consistent flow of qualified leads",
-        "Multi-channel presence and reach",
-        "Measurable ROI and performance metrics",
-        "Scalable marketing systems"
-      ]
+      description: t('products_page.services.digital_marketing.desc'),
+      process: t('products_page.services.digital_marketing.process', { returnObjects: true }) as string[],
+      benefits: t('products_page.services.digital_marketing.benefits', { returnObjects: true }) as string[]
     },
     {
       icon: <Mail className="w-8 h-8" />,
-      title: "Email Marketing",
+      title: t('products_page.services.email_marketing.title'),
       color: "from-green-500 to-emerald-500",
-      description: "Nurture relationships and drive conversions through strategic, personalized email campaigns.",
-      process: [
-        "Email list segmentation and strategy",
-        "Automated email sequence development",
-        "Campaign design and copywriting",
-        "A/B testing and optimization",
-        "Performance analytics and reporting"
-      ],
-      benefits: [
-        "Direct communication channel with customers",
-        "Automated nurturing sequences",
-        "High ROI on marketing investment",
-        "Personalized customer experiences"
-      ]
+      description: t('products_page.services.email_marketing.desc'),
+      process: t('products_page.services.email_marketing.process', { returnObjects: true }) as string[],
+      benefits: t('products_page.services.email_marketing.benefits', { returnObjects: true }) as string[]
     },
     {
       icon: <Globe className="w-8 h-8" />,
-      title: "Website Development",
+      title: t('products_page.services.website_dev.title'),
       color: "from-indigo-500 to-purple-500",
-      description: "Fast, conversion-focused websites that turn visitors into customers.",
-      process: [
-        "User experience and conversion optimization planning",
-        "Custom design and development",
-        "Mobile-responsive implementation",
-        "SEO structure and technical optimization",
-        "Ongoing maintenance and updates"
-      ],
-      benefits: [
-        "Professional online presence",
-        "Mobile-optimized experience",
-        "Fast loading times and SEO-friendly structure",
-        "Conversion-focused design"
-      ]
+      description: t('products_page.services.website_dev.desc'),
+      process: t('products_page.services.website_dev.process', { returnObjects: true }) as string[],
+      benefits: t('products_page.services.website_dev.benefits', { returnObjects: true }) as string[]
     },
     {
       icon: <Sparkles className="w-8 h-8" />,
-      title: "Growth Strategy & Consulting",
+      title: t('products_page.services.growth.title'),
       color: "from-yellow-500 to-amber-500",
-      description: "Strategic guidance to accelerate your business growth and overcome obstacles.",
-      process: [
-        "Business audit and opportunity analysis",
-        "Growth strategy development",
-        "Implementation roadmap creation",
-        "Performance tracking and KPIs setup",
-        "Ongoing strategic consulting"
-      ],
-      benefits: [
-        "Clear growth roadmap",
-        "Data-driven decision making",
-        "Strategic alignment across all channels",
-        "Expert guidance and support"
-      ]
+      description: t('products_page.services.growth.desc'),
+      process: t('products_page.services.growth.process', { returnObjects: true }) as string[],
+      benefits: t('products_page.services.growth.benefits', { returnObjects: true }) as string[]
     }
   ];
 
@@ -147,13 +84,13 @@ export default function Products() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent text-accent-foreground border border-accent/30 text-xs font-bold uppercase tracking-wider mb-6">
               <span className="w-2 h-2 rounded-full bg-accent-foreground animate-pulse" />
-              OUR SERVICES
+              {t('products_page.badge')}
             </div>
             <h1 className="text-5xl lg:text-7xl font-bold font-display text-primary leading-[1.1] mb-6">
-              Complete Digital Solutions
+              {t('products_page.title')}
             </h1>
             <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-              From brand identity to revenue growth, we offer comprehensive services designed to transform your digital presence and drive measurable business results.
+              {t('products_page.desc')}
             </p>
           </motion.div>
         </div>
@@ -187,9 +124,9 @@ export default function Products() {
                 <div className="p-8">
                   {/* Process */}
                   <div className="mb-6">
-                    <h3 className="text-lg font-bold text-foreground mb-4">Our Process</h3>
+                    <h3 className="text-lg font-bold text-foreground mb-4">{t('products_page.labels.process')}</h3>
                     <ul className="space-y-3">
-                      {service.process.map((step, idx) => (
+                      {Array.isArray(service.process) && service.process.map((step, idx) => (
                         <li key={idx} className="flex items-start gap-3">
                           <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                           <span className="text-muted-foreground">{step}</span>
@@ -200,9 +137,9 @@ export default function Products() {
 
                   {/* Benefits */}
                   <div>
-                    <h3 className="text-lg font-bold text-foreground mb-4">What You Get</h3>
+                    <h3 className="text-lg font-bold text-foreground mb-4">{t('products_page.labels.benefits')}</h3>
                     <ul className="space-y-2">
-                      {service.benefits.map((benefit, idx) => (
+                      {Array.isArray(service.benefits) && service.benefits.map((benefit, idx) => (
                         <li key={idx} className="flex items-start gap-3">
                           <div className="w-2 h-2 rounded-full bg-accent shrink-0 mt-2" />
                           <span className="text-muted-foreground">{benefit}</span>
@@ -228,17 +165,17 @@ export default function Products() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl font-bold font-display mb-6">
-              Custom Solutions for Your Business
+              {t('products_page.cta.title')}
             </h2>
             <p className="text-white/70 mb-8 text-lg leading-relaxed max-w-2xl mx-auto">
-              We understand that every business is unique. That's why we create custom packages tailored to your specific needs, goals, and budget. No cookie-cutter solutions—just strategic services designed to deliver the results you need.
+              {t('products_page.cta.desc')}
             </p>
             <p className="text-white/80 mb-8 font-semibold">
-              Ready to discuss your project? Let's explore how we can help you achieve your goals.
+              {t('products_page.cta.text')}
             </p>
             <Link href="/contact">
               <button className="px-8 py-4 bg-accent text-accent-foreground font-bold rounded-xl shadow-xl shadow-accent/20 hover:scale-105 transition-transform inline-flex items-center gap-2">
-                Get a Custom Quote
+                {t('products_page.cta.btn')}
                 <ArrowRight size={18} />
               </button>
             </Link>

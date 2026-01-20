@@ -3,13 +3,17 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/not-found";
-import Home from "@/pages/Home";
-import WhatWeSolve from "@/pages/WhatWeSolve";
-import Products from "@/pages/Products";
-import Process from "@/pages/Process";
-import ContactUs from "@/pages/ContactUs";
-import { ThemeToggle } from "@/components/ThemeToggle";
+import NotFound from "@/pages/NotFound/NotFound";
+import Home from "@/pages/Home/Home";
+import WhatWeSolve from "@/pages/WhatWeSolve/WhatWeSolve";
+import Products from "@/pages/Products/Products";
+import Process from "@/pages/Process/Process";
+import ContactUs from "@/pages/ContactUs/ContactUs";
+import { ThemeToggle } from "@/components/ThemeToggle/ThemeToggle";
+import { ScrollToTop } from "@/components/ScrollToTop/ScrollToTop";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher/LanguageSwitcher";
+import { CookieConsent } from "@/components/CookieConsent/CookieConsent";
+import "./lib/i18n";
 
 function Router() {
   return (
@@ -29,7 +33,12 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Router />
-        <ThemeToggle />
+        <ScrollToTop />
+        <div className="fixed bottom-4 right-4 z-50 flex items-center gap-2">
+          <LanguageSwitcher />
+          <ThemeToggle />
+        </div>
+        <CookieConsent />
         <Toaster />
       </TooltipProvider>
     </QueryClientProvider>

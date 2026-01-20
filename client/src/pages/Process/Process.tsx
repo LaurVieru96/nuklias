@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/Navbar";
+import { Navbar } from "@/components/Navbar/Navbar";
 import { 
   Smartphone,
   Mail,
@@ -8,49 +8,47 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
+import { useTranslation } from "react-i18next";
 
 export default function Process() {
+  const { t } = useTranslation();
   const steps = [
     {
       number: 1,
       icon: <Smartphone className="w-8 h-8" />,
-      title: "Contact Us",
-      description:
-        "Everything starts with an open, no-obligation conversation, where we make sure we’re the perfect fit for your goals.",
+      title: t('process_page.steps.1.title'),
+      description: t('process_page.steps.1.desc'),
       color: "purple",
       bgGradient: "from-purple-600 to-purple-800"
     },
     {
       number: 2,
       icon: <Mail className="w-8 h-8" />,
-      title: "Schedule a Consultation",
-      description:
-        "We analyze the core of your business and create a strategic roadmap with clear steps and a 100% transparent offer.",
+      title: t('process_page.steps.2.title'),
+      description: t('process_page.steps.2.desc'),
       color: "purple",
       bgGradient: "from-purple-600 to-purple-800"
     },
     {
       number: 3,
       icon: <Scale className="w-8 h-8" />,
-      title: "Choose a Package",
-      description:
-        "Together, we select the right package, and our partnership becomes official. From here on, we work as an extension of your team.",
+      title: t('process_page.steps.3.title'),
+      description: t('process_page.steps.3.desc'),
       color: "green",
       bgGradient: "from-green-600 to-emerald-700"
     },
     {
       number: 4,
       icon: <TrendingUp className="w-8 h-8" />,
-      title: "Become Our Partner",
-      description:
-        "We set the growth engine in motion and start building your visible and measurable success.",
+      title: t('process_page.steps.4.title'),
+      description: t('process_page.steps.4.desc'),
       color: "green",
       bgGradient: "from-green-600 to-emerald-700"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-background font-sans bg-gradient-to-b from-background to-gray-950 dark:to-black">
+    <div className="min-h-screen bg-background font-sans">
       <Navbar />
 
       {/* Hero Section */}
@@ -66,13 +64,13 @@ export default function Process() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent text-accent-foreground border border-accent/30 text-xs font-bold uppercase tracking-wider mb-6">
               <span className="w-2 h-2 rounded-full bg-accent-foreground animate-pulse" />
-              OUR PROCESS
+              {t('process_page.badge')}
             </div>
-            <h1 className="text-5xl lg:text-7xl font-bold font-display text-white mb-6 drop-shadow-lg">
-              The Next Steps
+            <h1 className="text-5xl lg:text-7xl font-bold font-display text-primary dark:text-white mb-6 drop-shadow-lg">
+              {t('process_page.title')}
             </h1>
-            <p className="text-lg text-white/70 mb-8 max-w-3xl mx-auto leading-relaxed">
-              A clear and transparent process designed to build your digital success, step by step — from the first conversation to measurable results.
+            <p className="text-lg text-muted-foreground dark:text-white/70 mb-8 max-w-3xl mx-auto leading-relaxed">
+              {t('process_page.desc')}
             </p>
           </motion.div>
         </div>
@@ -114,13 +112,13 @@ export default function Process() {
                     </div>
 
                     <div className="text-center px-2">
-                      <div className={`inline-block px-2 py-1 rounded-full text-xs font-bold mb-3 ${step.color === "purple" ? "bg-purple-500/20 text-purple-300" : "bg-green-500/20 text-green-300"}`}>
+                      <div className={`inline-block px-2 py-1 rounded-full text-xs font-bold mb-3 ${step.color === "purple" ? "bg-purple-500/20 text-purple-600 dark:text-purple-300" : "bg-green-500/20 text-green-600 dark:text-green-300"}`}>
                         STEP {step.number}
                       </div>
-                      <h3 className="text-xl font-bold font-display text-white mb-3">
+                      <h3 className="text-xl font-bold font-display text-foreground dark:text-white mb-3">
                         {step.title}
                       </h3>
-                      <p className="text-white/60 text-sm leading-relaxed">
+                      <p className="text-muted-foreground dark:text-white/60 text-sm leading-relaxed">
                         {step.description}
                       </p>
                     </div>
@@ -146,18 +144,18 @@ export default function Process() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold font-display text-white mb-6">
-              Simple, Transparent, Efficient
+            <h2 className="text-3xl font-bold font-display text-foreground dark:text-white mb-6">
+              {t('process_page.info_title')}
             </h2>
-            <p className="text-white/70 mb-8 text-lg leading-relaxed">
-              Every step is carefully planned to ensure the best possible results. We don’t promise miracles — we promise a clear, measurable, and results-driven process.
+            <p className="text-muted-foreground dark:text-white/70 mb-8 text-lg leading-relaxed">
+              {t('process_page.info_desc_1')}
             </p>
-            <p className="text-white/60 mb-8 leading-relaxed">
-              From the initial conversation to a long-term partnership, we work as an extension of your team, always focused on your success.
+            <p className="text-muted-foreground/80 dark:text-white/60 mb-8 leading-relaxed">
+              {t('process_page.info_desc_2')}
             </p>
             <Link href="/contact">
               <button className="px-8 py-4 bg-accent text-accent-foreground font-bold rounded-xl shadow-xl shadow-accent/20 hover:scale-105 transition-transform inline-flex items-center gap-2">
-                Get Started
+                {t('process_page.btn_start')}
                 <ArrowRight size={18} />
               </button>
             </Link>
