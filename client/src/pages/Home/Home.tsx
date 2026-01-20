@@ -57,7 +57,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+      <section className="relative pt-32 pb-10 lg:pt-48 lg:pb-22 overflow-hidden">
         {/* Abstract Background Element */}
         <div className="absolute top-0 right-0 -z-10 w-[800px] h-[800px] bg-primary/5 dark:bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
         
@@ -143,7 +143,7 @@ export default function Home() {
       </section>
 
       {/* The What we Solve Section */}
-      <section className="py-24 bg-primary text-white relative overflow-hidden">
+      {/* <section className="py-24 bg-primary text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -190,7 +190,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Products Section */}
       <section className="py-24 bg-gray-50 dark:bg-background">

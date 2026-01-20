@@ -348,5 +348,111 @@
     "cancel": "Anulează",
     "save": "Salvează Preferințele",
     "privacy_title": "Politica de Confidențialitate"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Politica de Confidențialitate",
+      "intro": {
+        "title": "1. Introducere",
+        "content": "Nuklias Arhitecți Digitali ('noi', 'a noastră') se angajează să protejeze confidențialitatea dvs. Această Politică de Confidențialitate explică modul în care colectăm, utilizăm, dezvăluim și protejăm informațiile dvs. atunci când vizitați site-ul nostru sau utilizați serviciile noastre. Prin utilizarea serviciilor, sunteți de acord cu colectarea și utilizarea informațiilor în conformitate cu această politică."
+      },
+      "collection": {
+        "title": "2. Informații pe care le colectăm",
+        "content": "Colectăm informații pe care ni le furnizați direct, precum și date colectate automat atunci când utilizați serviciile noastre.",
+        "list": {
+          "personal": "<strong>Date Personale:</strong> Nume, adresă de email, număr de telefon, adresă de facturare și alte informații de contact pe care le furnizați voluntar prin formulare sau contracte.",
+          "usage": "<strong>Date de Utilizare:</strong> Informații despre modul în care accesați și utilizați site-ul nostru, inclusiv adresa IP, tipul browserului, sistemul de operare și paginile vizitate.",
+          "cookies": "<strong>Tehnologii de Urmărire:</strong> Folosim cookie-uri, beacon-uri și script-uri pentru a urmări activitatea și a stoca anumite informații."
+        }
+      },
+      "usage": {
+        "title": "3. Cum folosim informațiile dvs.",
+        "content": "Folosim datele colectate în diverse scopuri:",
+        "list": [
+          "Pentru a furniza și menține Serviciul nostru",
+          "Pentru a vă notifica despre modificări ale Serviciului",
+          "Pentru a vă permite să participați la funcții interactive",
+          "Pentru a oferi asistență clienților",
+          "Pentru a colecta analize sau informații valoroase pentru îmbunătățirea Serviciului",
+          "Pentru a monitoriza utilizarea Serviciului",
+          "Pentru a detecta, preveni și aborda probleme tehnice",
+          "Pentru a vă oferi noutăți, oferte speciale și informații generale despre alte bunuri, servicii și evenimente"
+        ]
+      },
+      "retention": {
+        "title": "4. Retenția Datelor",
+        "content": "Vom păstra Datele Personale doar atât timp cât este necesar pentru scopurile stabilite în această Politică de Confidențialitate. Vom păstra și utiliza Datele Personale în măsura necesară pentru a ne conforma obligațiilor legale (de exemplu, dacă suntem obligați să păstrăm datele dvs. pentru a respecta legile aplicabile), pentru a rezolva dispute și pentru a aplica acordurile și politicile noastre legale."
+      },
+      "transfer": {
+        "title": "5. Transferul de Date",
+        "content": "Informațiile dvs., inclusiv Datele Personale, pot fi transferate către — și menținute pe — computere situate în afara statului, provinciei, țării sau altei jurisdicții guvernamentale unde legile privind protecția datelor pot fi diferite. Vom lua toate măsurile necesare în mod rezonabil pentru a ne asigura că datele dvs. sunt tratate în siguranță și în conformitate cu această Politică de Confidențialitate."
+      },
+      "rights": {
+        "title": "6. Drepturile dvs. GDPR",
+        "content": "Dacă sunteți rezident în Spațiul Economic European (SEE), aveți anumite drepturi de protecție a datelor:",
+        "list": {
+          "access": "<strong>Dreptul de Acces:</strong> Puteți solicita copii ale datelor dvs. personale.",
+          "rectification": "<strong>Dreptul la Rectificare:</strong> Puteți solicita corectarea datelor inexacte.",
+          "erasure": "<strong>Dreptul la Ștergere:</strong> Puteți solicita ștergerea datelor dvs. personale ('Dreptul de a fi uitat').",
+          "restrict": "<strong>Dreptul la Restricționare:</strong> Puteți solicita restricționarea prelucrării datelor dvs.",
+          "portability": "<strong>Dreptul la Portabilitate:</strong> Puteți solicita transferul datelor dvs. către o altă organizație.",
+          "object": "<strong>Dreptul la Opoziție:</strong> Vă puteți opune prelucrării datelor dvs."
+        }
+      },
+      "security": {
+        "title": "7. Securitatea Datelor",
+        "content": "Securitatea datelor dvs. este importantă pentru noi, dar rețineți că nicio metodă de transmitere prin Internet sau stocare electronică nu este 100% sigură. Deși ne străduim să folosim mijloace acceptabile comercial pentru a vă proteja Datele Personale, nu putem garanta securitatea absolută a acestora."
+      },
+      "contact": {
+        "title": "8. Contactați-ne",
+        "content": "Dacă aveți întrebări despre această Politică de Confidențialitate, vă rugăm să ne contactați prin formularul de pe site sau direct prin email."
+      }
+    },
+    "terms": {
+      "title": "Termeni și Condiții",
+      "intro": {
+        "title": "1. Acceptarea Termenilor",
+        "content": "Prin accesarea și utilizarea site-ului și serviciilor Nuklias Arhitecți Digitali, acceptați și sunteți de acord să respectați acești Termeni și Condiții. Dacă nu sunteți de acord cu acești termeni, vă rugăm să nu utilizați serviciile noastre."
+      },
+      "services": {
+        "title": "2. Descrierea Serviciilor",
+        "content": "Nuklias Arhitecți Digitali oferă marketing digital, dezvoltare web, SEO și servicii digitale conexe ('Servicii'). Ne rezervăm dreptul de a modifica, suspenda sau întrerupe orice serviciu în orice moment, fără notificare prealabilă."
+      },
+      "responsibilities": {
+        "title": "3. Responsabilitățile Utilizatorului",
+        "content": "Prin utilizarea Serviciilor noastre, sunteți de acord să:",
+        "list": [
+          "Furnizați informații exacte și complete atunci când este necesar.",
+          "Utilizați serviciile noastre doar în scopuri legale și în conformitate cu acești Termeni.",
+          "Nu interferați cu sau perturbați securitatea sau performanța serviciilor noastre.",
+          "Respectați toate drepturile de proprietate intelectuală și acordurile de confidențialitate.",
+          "Nu încercați să obțineți acces neautorizat la nicio parte a serviciilor sau sistemelor noastre."
+        ]
+      },
+      "intellectual_property": {
+        "title": "4. Proprietate Intelectuală",
+        "content": "Tot conținutul, funcțiile și funcționalitățile (inclusiv, dar fără a se limita la software, text, afișaje, imagini, video și audio, precum și designul, selecția și aranjarea acestora) sunt deținute de Nuklias Arhitecți Digitali, licențiatorii săi sau alți furnizori de astfel de materiale și sunt protejate de legile privind drepturile de autor, mărcile comerciale și alte drepturi de proprietate intelectuală."
+      },
+      "payment": {
+        "title": "5. Plată și Facturare",
+        "content": "Termenii de plată vor fi specificați în acordurile individuale de servicii sau facturi. Toate taxele sunt scadente conform acordului. Facturile neplătite pot duce la suspendarea serviciilor. Prețurile pot fi modificate cu notificare prealabilă."
+      },
+      "liability": {
+        "title": "6. Limitarea Răspunderii",
+        "content": "În măsura maximă permisă de lege, Nuklias Arhitecți Digitali nu va fi răspunzătoare pentru nicio daună indirectă, incidentală, specială, consecventă sau punitivă, inclusiv, fără limitare, pierderi de profit, date, utilizare, fond comercial sau alte pierderi intangibile, rezultate din (i) accesul sau utilizarea sau imposibilitatea de a accesa sau utiliza Serviciul; (ii) orice conduită sau conținut al oricărei terțe părți pe Serviciu; și (iii) accesul neautorizat, utilizarea sau modificarea transmisiilor sau conținutului dvs."
+      },
+      "termination": {
+        "title": "7. Încetare",
+        "content": "Putem termina sau suspenda accesul dvs. la serviciile noastre imediat, fără notificare prealabilă sau răspundere, pentru orice motiv, inclusiv, fără limitare, dacă încălcați Termenii. La încetare, dreptul dvs. de a utiliza Serviciul va înceta imediat."
+      },
+      "governing": {
+        "title": "8. Legea Aplicabilă",
+        "content": "Acești Termeni vor fi guvernați și interpretați în conformitate cu legile din România și Uniunea Europeană, fără a ține cont de prevederile privind conflictul de legi."
+      },
+      "changes": {
+        "title": "9. Modificări ale Termenilor",
+        "content": "Ne rezervăm dreptul, la discreția noastră, de a modifica sau înlocui acești Termeni în orice moment. Continuând să accesați sau să utilizați Serviciul nostru după ce acele revizuiri devin efective, sunteți de acord să respectați termenii revizuiți."
+      }
+    }
   }
 }
