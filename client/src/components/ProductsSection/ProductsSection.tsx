@@ -42,30 +42,28 @@ export function ProductsSection() {
   ]), [t]);
 
   return (
-    <section className="py-24 bg-gray-50 dark:bg-background">
+    <section className="py-24 bg-gray-50 dark:bg-card/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mt-20 max-w-7xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold font-display text-primary mb-3">
-              {t('products_section.title')}
-            </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              {t('products_section.subtitle')}
-            </p>
-          </div>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-bold font-display text-primary mb-4 md:text-5xl">
+            {t('products_section.title')}
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+            {t('products_section.subtitle')}
+          </p>
+        </div>
 
-          <div className="grid md:grid-cols-3 gap-8 items-stretch">
-            {tiers.map((item) => (
-              <ServiceCard
-                key={item.tier}
-                title={t(`products_section.tiers.${item.tier}.title`)}
-                subtitle={t(`products_section.tiers.${item.tier}.subtitle`)}
-                tier={item.tier}
-                delay={item.delay}
-                features={item.features}
-              />
-            ))}
-          </div>
+        <div className="grid md:grid-cols-3 gap-8 items-stretch">
+          {tiers.map((item) => (
+            <ServiceCard
+              key={item.tier}
+              title={t(`products_section.tiers.${item.tier}.title`)}
+              subtitle={t(`products_section.tiers.${item.tier}.subtitle`)}
+              tier={item.tier}
+              delay={item.delay}
+              features={item.features}
+            />
+          ))}
         </div>
       </div>
     </section>
