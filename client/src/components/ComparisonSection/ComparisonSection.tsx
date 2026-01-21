@@ -45,7 +45,7 @@ export function ComparisonSection() {
         <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-red-600/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -59,7 +59,7 @@ export function ComparisonSection() {
           <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-4 leading-tight">
             {t('comparison.subtitle')}
           </h2>
-        </motion.div>
+        </motion.div> */}
 
         <div className="rounded-[2.5rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-border/50">
           {/* Header Row */}
