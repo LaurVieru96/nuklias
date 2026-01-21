@@ -36,6 +36,6 @@ export default defineConfig({
       strict: true,
       deny: ["**/.*"],
     },
-    allowedHosts: "e2a7485a-39a3-4e4a-a22a-8f3a759e2061-00-1rbm73pq3t7em.spock.replit.dev",
+    allowedHosts: ["e2a7485a-39a3-4e4a-a22a-8f3a759e2061-00-1rbm73pq3t7em.spock.replit.dev"],
   },
 });
