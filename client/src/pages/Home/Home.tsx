@@ -2,6 +2,7 @@ import { Navbar } from "@/components/Navbar/Navbar";
 import { ServiceCard } from "@/components/ServiceCard/ServiceCard";
 import { LegalModal } from "@/components/LegalModal/LegalModal";
 import { ClientJourney } from "@/components/ClientJourney/ClientJourney";
+import { ComparisonSection } from "@/components/ComparisonSection/ComparisonSection";
 import { useMessages } from "@/hooks/use-messages";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -58,7 +59,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-10 lg:pt-48 lg:pb-22 overflow-hidden">
+      <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
         {/* Abstract Background Element */}
         <div className="absolute top-0 right-0 -z-10 w-[800px] h-[800px] bg-primary/5 dark:bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
         
@@ -68,7 +69,7 @@ export default function Home() {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="w-full max-w-5xl"
+              className="w-full max-w-7xl"
             >
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent text-accent-foreground border border-accent/30 text-xs font-bold uppercase tracking-wider mb-6">
                 <span className="w-2 h-2 rounded-full bg-accent-foreground animate-pulse" />
@@ -97,19 +98,18 @@ export default function Home() {
                 </Link>
               </div>
             </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative w-full max-w-5xl"
-            >
-              {/* Client Journey Roadmap */}
-              <ClientJourney />
-            </motion.div>
           </div>
         </div>
       </section>
+      {/* Client Journey Section */}
+      <section className="py-24 bg-background overflow-hidden border-t border-border/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+           <ClientJourney />
+        </div>
+      </section>
+
+      {/* Comparison Section */}
+      <ComparisonSection />
 
       {/* The What we Solve Section */}
       {/* <section className="py-24 bg-primary text-white relative overflow-hidden">
@@ -166,7 +166,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Custom Website Subsection */}
-          <div className="mt-20 max-w-6xl mx-auto">
+          <div className="mt-20 max-w-7xl mx-auto">
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold font-display text-primary mb-3">
                 {t('products_section.title')}

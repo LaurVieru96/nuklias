@@ -46,6 +46,30 @@
       }
     }
   },
+  "comparison": {
+    "title": "Warum Nuklias wählen?",
+    "subtitle": "Traditionelle Agenturen vs. Unsere digitale Wachstumsmaschine",
+    "nuklias_title": "NUKLIAS",
+    "traditional_title": "TRADITIONELLE AGENTUR",
+    "rows": {
+      "1": {
+        "nuklias": "Strategische Umsatzinfrastruktur",
+        "traditional": "Fokus auf Vanity-Metriken"
+      },
+      "2": {
+        "nuklias": "Integrierte digitale Ökosysteme und proaktive Systemarchitektur",
+        "traditional": "Inkrementelle Verbesserungen"
+      },
+      "3": {
+        "nuklias": "Engineering-Ökosysteme, die Datenlogik nutzen, um Marktveränderungen zu antizipieren und der Kurve voraus zu skalieren.",
+        "traditional": "Reaktiv auf Markttrends"
+      },
+      "4": {
+        "nuklias": "Maßgeschneiderte, innovative Lösungen, die speziell für Ihre einzigartigen Geschäftsanforderungen entwickelt wurden",
+        "traditional": "Standardansätze (Cookie-Cutter)"
+      }
+    }
+  },
   "why_us": {
     "title": "Warum Nuklias?",
     "subtitle": "Warum Nuklias als Ihr Partner für digitales Wachstum?",

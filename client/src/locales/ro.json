@@ -46,6 +46,30 @@
       }
     }
   },
+  "comparison": {
+    "title": "De ce să alegi Nuklias?",
+    "subtitle": "Agenții Tradiționale vs. Motorul Nostru de Creștere Digitală",
+    "nuklias_title": "NUKLIAS",
+    "traditional_title": "AGENȚIE TRADIȚIONALĂ",
+    "rows": {
+      "1": {
+        "nuklias": "Infrastructură Strategică de Venituri",
+        "traditional": "Focus pe metrici de vanitate"
+      },
+      "2": {
+        "nuklias": "Ecosisteme Digitale Integrate și Arhitectură de Sistem Proactivă",
+        "traditional": "Îmbunătățiri incrementale"
+      },
+      "3": {
+        "nuklias": "Ingineria ecosistemelor care utilizează logica datelor pentru a anticipa schimbările pieței și a scala înaintea curbei.",
+        "traditional": "Reactivi la trendurile pieței"
+      },
+      "4": {
+        "nuklias": "Soluții personalizate, inovatoare, construite special pentru nevoile unice ale afacerii tale",
+        "traditional": "Abordări șablon (cookie-cutter)"
+      }
+    }
+  },
   "why_us": {
     "title": "De ce Nuklias?",
     "subtitle": "De ce să alegi Nuklias ca partenerul tău de creștere digitală?",
