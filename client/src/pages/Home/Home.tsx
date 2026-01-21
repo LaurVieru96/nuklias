@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar/Navbar";
 import { ServiceCard } from "@/components/ServiceCard/ServiceCard";
 import { LegalModal } from "@/components/LegalModal/LegalModal";
+import { ClientJourney } from "@/components/ClientJourney/ClientJourney";
 import { useMessages } from "@/hooks/use-messages";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -103,40 +104,8 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative w-full max-w-5xl"
             >
-              {/* Abstract Tech Visual */}
-              {/* <div className="rounded-3xl bg-gradient-to-br from-primary to-purple-900 dark:from-primary/80 dark:to-purple-950 p-1"> */}
-                {/* <div className="w-full rounded-[20px] bg-white/10 dark:bg-black/20 backdrop-blur-sm overflow-hidden relative"> */}
-                   {/* Decorative Abstract Image - Network Nodes */}
-                   {/* <img 
-                    src={heroImage}
-                    alt="Digital Network Abstract" 
-                    className="w-full object-fit  mix-blend-overlay"
-                  /> */}
-                  
-                  {/* Floating Cards Overlay */}
-                  {/* <div className="absolute top-1/4 left-1/4 p-4 bg-white/90 backdrop-blur rounded-xl shadow-lg border border-white/20 max-w-[200px]">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="p-2 bg-accent rounded-lg">
-                        <BarChart3 size={16} className="text-primary" />
-                      </div>
-                      <span className="text-xs font-bold text-primary">Conversion Rate</span>
-                    </div>
-                    <div className="text-2xl font-bold text-primary">+145%</div>
-                  </div> 
-
-                  <div className="absolute bottom-1/4 right-12 p-4 bg-primary/90 backdrop-blur rounded-xl shadow-lg border border-primary/20 max-w-[200px]">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="p-2 bg-white/10 rounded-lg">
-                        <Cpu size={16} className="text-accent" />
-                      </div>
-                      <span className="text-xs font-bold text-white">System Load</span>
-                    </div>
-                    <div className="w-full bg-white/20 h-1.5 rounded-full overflow-hidden">
-                      <div className="h-full bg-accent w-3/4" />
-                    </div>
-                  </div> */}
-                {/* </div> */}
-              {/* </div> */}
+              {/* Client Journey Roadmap */}
+              <ClientJourney />
             </motion.div>
           </div>
         </div>

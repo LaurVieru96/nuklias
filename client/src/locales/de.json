@@ -9,16 +9,42 @@
   "footer": {
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
-    "copyright": "© 2026 Nuklias Digital Architects. Alle Rechte vorbehalten.",
+    "copyright": "© 2026 Nuklias Digital Architects. Alle Rechte vorbehalten",
     "marketing": "NUKLIAS MARKETING"
   },
   "hero": {
     "badge": "IHRE REISE",
     "title_start": "Vom Chaos zur Klarheit:",
     "title_end": "Ihr Motor für Digitales Wachstum",
-    "description": "Wir entwickeln automatisierte Ökosysteme, die passive Follower in treue Kunden verwandeln.",
+    "description": "Wir entwickeln automatisierte Ökosysteme, die passive Follower in treue Kunden verwandeln",
     "cta_audit": "Strategisches Audit Buchen",
     "cta_plans": "Unsere Pläne Erkunden"
+  },
+  "client_journey": {
+    "title": "Kundenreise",
+    "subtitle": "Ein transparenter, schrittweiser Prozess, der darauf ausgelegt ist, Ihre digitale Präsenz in eine umsatzgenerierende Maschine zu verwandeln",
+    "steps": {
+      "1": {
+        "title": "Geschäftsaudit",
+        "desc": "Ziele, Budget und Projektumfang vor Beginn definieren"
+      },
+      "2": {
+        "title": "Ressourcenzuweisung",
+        "desc": "Ressourcen zuweisen und den ersten Rahmen des Projekts festlegen"
+      },
+      "3": {
+        "title": "Ausführung",
+        "desc": "Projekt gemäß Plan ausführen und Fortschritt überwachen"
+      },
+      "4": {
+        "title": "Überwachung",
+        "desc": "Regelmäßige Verfolgung und Analyse des Fortschritts zur Zielerreichung"
+      },
+      "5": {
+        "title": "Abschluss",
+        "desc": "Alle Ergebnisse fertigstellen und Projektabschluss durchführen"
+      }
+    }
   },
   "why_us": {
     "title": "Warum Nuklias?",
@@ -26,59 +52,59 @@
     "cards": {
       "1": {
         "title": "Kundenorientierte Denkweise",
-        "desc": "Wir denken wie Unternehmer. Jeder investierte Euro muss eine Rendite bringen."
+        "desc": "Wir denken wie Unternehmer. Jeder investierte Euro muss eine Rendite bringen"
       },
       "2": {
         "title": "Full-Service-Architektur",
-        "desc": "Von Code bis Content steuern wir jede Ebene Ihres digitalen Ökosystems intern."
+        "desc": "Von Code bis Content steuern wir jede Ebene Ihres digitalen Ökosystems intern"
       },
       "3": {
         "title": "Proaktive Evolution",
-        "desc": "Wir reagieren nicht nur auf Trends, wir antizipieren sie. Ihr System ist bereit für morgen."
+        "desc": "Wir reagieren nicht nur auf Trends, wir antizipieren sie. Ihr System ist bereit für morgen"
       },
       "4": {
         "title": "Radikale Transparenz",
-        "desc": "Keine versteckte Magie. Sie haben volle Einsicht in unsere Strategien und Metriken."
+        "desc": "Keine versteckte Magie. Sie haben volle Einsicht in unsere Strategien und Metriken"
       },
       "5": {
         "title": "Nachgewiesene Wirkung",
-        "desc": "Wir messen Erfolg in Umsatz, nicht in Vanity-Metrics. Unsere Systeme skalieren Unternehmen effektiv."
+        "desc": "Wir messen Erfolg in Umsatz, nicht in Vanity-Metrics. Unsere Systeme skalieren Unternehmen effektiv"
       },
       "6": {
         "title": "Unermüdliche Leidenschaft",
-        "desc": "Wir sind digitale Architekten, die ihr Handwerk lieben. Wir bauen mit Präzision und Qualität."
+        "desc": "Wir sind digitale Architekten, die ihr Handwerk lieben. Wir bauen mit Präzision und Qualität"
       }
     }
   },
   "what_we_solve": {
     "badge": "Unser Versprechen",
     "title": "Das einzige Marketing, das zählt: Das Geld in Ihrer Tasche",
-    "desc": "Das einzige Marketing, das zählt, ist das, was Sie am Ende des Monats in Ihrer Tasche sehen. Wir verkaufen keine 'Sichtbarkeit' oder 'Likes'; wir bauen die strukturelle Maschine, die digitales Chaos in bares Geld verwandelt.",
+    "desc": "Das einzige Marketing, das zählt, ist das, was Sie am Ende des Monats in Ihrer Tasche sehen. Wir verkaufen keine 'Sichtbarkeit' oder 'Likes'; wir bauen die strukturelle Maschine, die digitales Chaos in bares Geld verwandelt",
     "cards": {
       "1": {
         "title": "Operative Agilität",
-        "desc": "Während andere in der Planungsphase stecken bleiben, konzentrieren wir uns auf sofortige, wirkungsvolle Umsetzung. Wir treiben Ihre Projekte mit einer Intensität voran, die Sie dem Markt voraus sein lässt."
+        "desc": "Während andere in der Planungsphase stecken bleiben, konzentrieren wir uns auf sofortige, wirkungsvolle Umsetzung. Wir treiben Ihre Projekte mit einer Intensität voran, die Sie dem Markt voraus sein lässt"
       },
       "2": {
         "title": "Integrierte Wachstums-Ökosysteme",
-        "desc": "Hören Sie auf, in unzusammenhängende digitale Fragmente zu investieren. Wir entwerfen einheitliche Ökosysteme, in denen SEO, Content und Strategie als eine Einheit funktionieren."
+        "desc": "Hören Sie auf, in unzusammenhängende digitale Fragmente zu investieren. Wir entwerfen einheitliche Ökosysteme, in denen SEO, Content und Strategie als eine Einheit funktionieren"
       },
       "3": {
         "title": "Revenue-First Engineering",
-        "desc": "Wir priorisieren die Kennzahlen, die sich direkt auf Ihren Geldbeutel auswirken. Wir konzentrieren uns auf die Stabilität Ihres Lead-Flusses und steigern Ihren Gewinn."
+        "desc": "Wir priorisieren die Kennzahlen, die sich direkt auf Ihren Geldbeutel auswirken. Wir konzentrieren uns auf die Stabilität Ihres Lead-Flusses und steigern Ihren Gewinn"
       }
     }
   },
   "contact_us": {
     "badge": "KONTAKTIEREN SIE UNS",
     "title": "Lassen Sie uns gemeinsam etwas Großartiges bauen",
-    "desc": "Bereit, Ihre digitale Präsenz zu transformieren? Kontaktieren Sie uns und lassen Sie uns besprechen, wie wir Ihnen helfen können, Ihre Ziele zu erreichen.",
+    "desc": "Bereit, Ihre digitale Präsenz zu transformieren? Kontaktieren Sie uns und lassen Sie uns besprechen, wie wir Ihnen helfen können, Ihre Ziele zu erreichen",
     "info_title": "In Kontakt treten",
     "email": "E-Mail",
     "phone": "Telefon",
     "location": "Standort",
     "location_text": "Bukarest, Rumänien<br />Remote-Beratungen weltweit verfügbar",
-    "response_time": "Wir antworten in der Regel innerhalb von 24 Stunden. Für dringende Angelegenheiten rufen Sie uns bitte direkt an.",
+    "response_time": "Wir antworten in der Regel innerhalb von 24 Stunden. Für dringende Angelegenheiten rufen Sie uns bitte direkt an",
     "form_title": "Erzählen Sie uns von Ihrem Projekt",
     "form": {
       "name_label": "Name *",
@@ -90,15 +116,15 @@
       "location_label": "Standort *",
       "location_placeholder": "Stadt, Land",
       "industry_label": "In welcher Branche sind Sie tätig? *",
-      "industry_default": "Branche auswählen...",
+      "industry_default": "Branche auswählen.",
       "business_type_label": "Welche Art von Geschäft haben Sie? *",
-      "business_type_placeholder": "z.B. Online-Shop, Lokales Dienstleistungsunternehmen, SaaS-Plattform...",
+      "business_type_placeholder": "z.B. Online-Shop, Lokales Dienstleistungsunternehmen, SaaS-Plattform.",
       "challenge_label": "Was ist Ihre größte Herausforderung im digitalen Marketing? *",
-      "challenge_placeholder": "z.B. Nicht genügend qualifizierte Leads, niedrige Konversionsraten, mangelnde Sichtbarkeit...",
+      "challenge_placeholder": "z.B. Nicht genügend qualifizierte Leads, niedrige Konversionsraten, mangelnde Sichtbarkeit.",
       "message_label": "Erzählen Sie uns mehr über Ihr Projekt *",
-      "message_placeholder": "Teilen Sie weitere Details darüber mit, was Sie suchen, Ihre Ziele, Zeitplan oder spezifische Fragen...",
+      "message_placeholder": "Teilen Sie weitere Details darüber mit, was Sie suchen, Ihre Ziele, Zeitplan oder spezifische Fragen.",
       "btn_send": "Nachricht Senden",
-      "btn_sending": "Wird gesendet..."
+      "btn_sending": "Wird gesendet.."
     },
     "errors": {
       "name": "Name ist erforderlich",
@@ -113,35 +139,35 @@
   "process_page": {
     "badge": "UNSER PROZESS",
     "title": "Die Nächsten Schritte",
-    "desc": "Ein klarer und transparenter Prozess, entwickelt um Ihren digitalen Erfolg aufzubauen, Schritt für Schritt — vom ersten Gespräch bis zu messbaren Ergebnissen.",
+    "desc": "Ein klarer und transparenter Prozess, entwickelt um Ihren digitalen Erfolg aufzubauen, Schritt für Schritt — vom ersten Gespräch bis zu messbaren Ergebnissen",
     "steps": {
       "1": {
         "title": "Kontaktieren Sie Uns",
-        "desc": "Alles beginnt mit einem offenen, unverbindlichen Gespräch, in dem wir sicherstellen, dass wir perfekt zu Ihren Zielen passen."
+        "desc": "Alles beginnt mit einem offenen, unverbindlichen Gespräch, in dem wir sicherstellen, dass wir perfekt zu Ihren Zielen passen"
       },
       "2": {
         "title": "Beratung Vereinbaren",
-        "desc": "Wir analysieren den Kern Ihres Unternehmens und erstellen eine strategische Roadmap mit klaren Schritten und einem 100% transparenten Angebot."
+        "desc": "Wir analysieren den Kern Ihres Unternehmens und erstellen eine strategische Roadmap mit klaren Schritten und einem 100% transparenten Angebot"
       },
       "3": {
         "title": "Paket Auswählen",
-        "desc": "Gemeinsam wählen wir das richtige Paket aus und unsere Partnerschaft wird offiziell. Ab hier arbeiten wir als Erweiterung Ihres Teams."
+        "desc": "Gemeinsam wählen wir das richtige Paket aus und unsere Partnerschaft wird offiziell. Ab hier arbeiten wir als Erweiterung Ihres Teams"
       },
       "4": {
         "title": "Werden Sie Unser Partner",
-        "desc": "Wir setzen den Wachstumsmotor in Gang und beginnen, Ihren sichtbaren und messbaren Erfolg aufzubauen."
+        "desc": "Wir setzen den Wachstumsmotor in Gang und beginnen, Ihren sichtbaren und messbaren Erfolg aufzubauen"
       }
     },
     "info_title": "Einfach, Transparent, Effizient",
-    "info_desc_1": "Jeder Schritt wird sorgfältig geplant, um die bestmöglichen Ergebnisse zu gewährleisten. Wir versprechen keine Wunder — wir versprechen einen klaren, messbaren und ergebnisorientierten Prozess.",
-    "info_desc_2": "Vom ersten Gespräch bis zu einer langfristigen Partnerschaft arbeiten wir als Erweiterung Ihres Teams, immer fokussiert auf Ihren Erfolg.",
+    "info_desc_1": "Jeder Schritt wird sorgfältig geplant, um die bestmöglichen Ergebnisse zu gewährleisten. Wir versprechen keine Wunder — wir versprechen einen klaren, messbaren und ergebnisorientierten Prozess",
+    "info_desc_2": "Vom ersten Gespräch bis zu einer langfristigen Partnerschaft arbeiten wir als Erweiterung Ihres Teams, immer fokussiert auf Ihren Erfolg",
     "btn_start": "Jetzt Starten",
     "step": "SCHRITT"
   },
   "products_page": {
     "badge": "UNSERE DIENSTLEISTUNGEN",
     "title": "Komplette Digitale Lösungen",
-    "desc": "Von Markenidentität bis Umsatzwachstum bieten wir umfassende Dienstleistungen, die darauf ausgelegt sind, Ihre digitale Präsenz zu transformieren und messbare Geschäftsergebnisse zu erzielen.",
+    "desc": "Von Markenidentität bis Umsatzwachstum bieten wir umfassende Dienstleistungen, die darauf ausgelegt sind, Ihre digitale Präsenz zu transformieren und messbare Geschäftsergebnisse zu erzielen",
     "labels": {
       "process": "Unser Prozess",
       "benefits": "Was Sie Erhalten"
@@ -149,7 +175,7 @@
     "services": {
       "brand_design": {
         "title": "Brand Design",
-        "desc": "Erstellen Sie eine visuelle Identität, die bei Ihrer Zielgruppe ankommt und Sie von der Konkurrenz abhebt.",
+        "desc": "Erstellen Sie eine visuelle Identität, die bei Ihrer Zielgruppe ankommt und Sie von der Konkurrenz abhebt",
         "process": [
             "Markenstrategie und Positionierungsanalyse",
             "Logo-Design und Entwicklung der visuellen Identität",
@@ -166,7 +192,7 @@
       },
       "social_media": {
         "title": "Social Media Management",
-        "desc": "Bauen Sie eine loyale Community auf den Plattformen auf, auf denen Ihre Zielgruppe ihre Zeit verbringt.",
+        "desc": "Bauen Sie eine loyale Community auf den Plattformen auf, auf denen Ihre Zielgruppe ihre Zeit verbringt",
         "process": [
             "Plattformstrategie und Zielgruppenanalyse",
             "Redaktionsplan und Kampagnenplanung",
@@ -183,7 +209,7 @@
       },
       "digital_marketing": {
         "title": "Digitales Marketing",
-        "desc": "Umfassende Marketingstrategien, die qualifizierte Leads und messbares Wachstum fördern.",
+        "desc": "Umfassende Marketingstrategien, die qualifizierte Leads und messbares Wachstum fördern",
         "process": [
             "Marktforschung und Wettbewerbsanalyse",
             "Entwicklung einer Multi-Channel-Marketingstrategie",
@@ -200,7 +226,7 @@
       },
       "email_marketing": {
         "title": "E-Mail Marketing",
-        "desc": "Pflegen Sie Beziehungen und fördern Sie Konversionen durch strategische, personalisierte E-Mail-Kampagnen.",
+        "desc": "Pflegen Sie Beziehungen und fördern Sie Konversionen durch strategische, personalisierte E-Mail-Kampagnen",
         "process": [
             "E-Mail-Listen-Segmentierung und Strategie",
             "Entwicklung automatisierter E-Mail-Sequenzen",
@@ -217,7 +243,7 @@
       },
       "website_dev": {
         "title": "Website Entwicklung",
-        "desc": "Schnelle, konversionsorientierte Websites, die Besucher in Kunden verwandeln.",
+        "desc": "Schnelle, konversionsorientierte Websites, die Besucher in Kunden verwandeln",
         "process": [
             "Planung von User Experience und Conversion-Optimierung",
             "Individuelles Design und Entwicklung",
@@ -234,7 +260,7 @@
       },
       "growth": {
         "title": "Wachstumsstrategie & Beratung",
-        "desc": "Strategische Beratung zur Beschleunigung Ihres Geschäftswachstums und Überwindung von Hindernissen.",
+        "desc": "Strategische Beratung zur Beschleunigung Ihres Geschäftswachstums und Überwindung von Hindernissen",
         "process": [
             "Geschäftsaudit und Chancenanalyse",
             "Entwicklung der Wachstumsstrategie",
@@ -252,8 +278,8 @@
     },
     "cta": {
       "title": "Maßgeschneiderte Lösungen für Ihr Unternehmen",
-      "desc": "Wir verstehen, dass jedes Unternehmen einzigartig ist. Deshalb erstellen wir maßgeschneiderte Pakete, die auf Ihre spezifischen Bedürfnisse, Ziele und Ihr Budget zugeschnitten sind. Keine Standardlösungen — nur strategische Dienstleistungen für die Ergebnisse, die Sie benötigen.",
-      "text": "Bereit, über Ihr Projekt zu sprechen? Lassen Sie uns erkunden, wie wir Ihnen helfen können, Ihre Ziele zu erreichen.",
+      "desc": "Wir verstehen, dass jedes Unternehmen einzigartig ist. Deshalb erstellen wir maßgeschneiderte Pakete, die auf Ihre spezifischen Bedürfnisse, Ziele und Ihr Budget zugeschnitten sind. Keine Standardlösungen — nur strategische Dienstleistungen für die Ergebnisse, die Sie benötigen",
+      "text": "Bereit, über Ihr Projekt zu sprechen? Lassen Sie uns erkunden, wie wir Ihnen helfen können, Ihre Ziele zu erreichen",
       "btn": "Individuelles Angebot Anfordern"
     }
   },
@@ -261,38 +287,38 @@
     "badge": "WAS WIR LÖSEN",
     "title": "Unser Versprechen",
     "hero_subtitle": "Das einzige Marketing, das zählt: Das Geld in Ihrer Tasche",
-    "hero_desc": "Das einzige Marketing, das zählt, ist das, das Sie am Ende des Monats in Ihren Taschen sehen können. Wir verkaufen keine 'Sichtbarkeit' oder 'Likes'; wir bauen die strukturelle Maschinerie, die digitales Chaos mit absoluter Vorhersehbarkeit in bares Geld verwandelt.",
+    "hero_desc": "Das einzige Marketing, das zählt, ist das, das Sie am Ende des Monats in Ihren Taschen sehen können. Wir verkaufen keine 'Sichtbarkeit' oder 'Likes'; wir bauen die strukturelle Maschinerie, die digitales Chaos mit absoluter Vorhersehbarkeit in bares Geld verwandelt",
     "cards": {
       "agility": {
         "title": "Operative Agilität",
-        "desc": "Während andere sich in der Planungsphase verlieren, konzentrieren wir uns auf sofortige, wirkungsvolle Umsetzung. Wir treiben Ihre Projekte mit einer Intensität und Präzision voran, die sicherstellt, dass Sie dem Markt voraus sind und schneller Ergebnisse sehen."
+        "desc": "Während andere sich in der Planungsphase verlieren, konzentrieren wir uns auf sofortige, wirkungsvolle Umsetzung. Wir treiben Ihre Projekte mit einer Intensität und Präzision voran, die sicherstellt, dass Sie dem Markt voraus sind und schneller Ergebnisse sehen"
       },
       "ecosystems": {
         "title": "Integrierte Wachstums-Ökosysteme",
-        "desc": "Hören Sie auf, in unzusammenhängende digitale Fragmente zu investieren. Wir architektonieren vereinheitlichte Ökosysteme, in denen SEO, Inhalt und Strategie als eine einzige, kohärente Architektur funktionieren, die darauf ausgelegt ist, Ihre idealen Leads rund um die Uhr anzuziehen, zu binden und zu konvertieren."
+        "desc": "Hören Sie auf, in unzusammenhängende digitale Fragmente zu investieren. Wir architektonieren vereinheitlichte Ökosysteme, in denen SEO, Inhalt und Strategie als eine einzige, kohärente Architektur funktionieren, die darauf ausgelegt ist, Ihre idealen Leads rund um die Uhr anzuziehen, zu binden und zu konvertieren"
       },
       "engineering": {
         "title": "Umsatz-First Engineering",
-        "desc": "Wir priorisieren die Kennzahlen, die sich direkt auf Ihren Geldbeutel und Ihre Ausgabegewohnheiten auswirken: Wir konzentrieren uns auf die Stabilität Ihres Lead-Flusses und steigern Ihren Gewinn, ganz einfach."
+        "desc": "Wir priorisieren die Kennzahlen, die sich direkt auf Ihren Geldbeutel und Ihre Ausgabegewohnheiten auswirken: Wir konzentrieren uns auf die Stabilität Ihres Lead-Flusses und steigern Ihren Gewinn, ganz einfach"
       }
     },
     "content_title": "Was Wir Tun",
-    "content_desc": "Wir verwandeln Ihre digitale Präsenz in eine umsatzgenerierende Maschine. Unser Ansatz ist systematisch, messbar und auf eine Sache fokussiert: das Wachstum Ihres Unternehmens.",
+    "content_desc": "Wir verwandeln Ihre digitale Präsenz in eine umsatzgenerierende Maschine. Unser Ansatz ist systematisch, messbar und auf eine Sache fokussiert: das Wachstum Ihres Unternehmens",
     "approach_title": "Unser Ansatz",
-    "approach_p1": "Bei Nuklias glauben wir nicht an Einheitslösungen. Jedes Unternehmen ist einzigartig, und Ihre digitale Strategie sollte das widerspiegeln. Wir beginnen damit, Ihre spezifischen Herausforderungen, Ziele und Marktposition zu verstehen.",
-    "approach_p2": "Unser Team kombiniert tiefes technisches Fachwissen mit strategischem Geschäftsdenken. Wir bauen Systeme, die nicht nur heute funktionieren, sondern sich mit Ihrem Unternehmen weiterentwickeln.",
-    "approach_p3": "Wir messen Erfolg in echten Ergebnissen: gesteigerter Umsatz, qualifizierte Leads und nachhaltiges Wachstum. Keine Vanity-Metrics. Keine leeren Versprechungen. Nur bewährte Systeme, die messbare Ergebnisse liefern.",
+    "approach_p1": "Bei Nuklias glauben wir nicht an Einheitslösungen. Jedes Unternehmen ist einzigartig, und Ihre digitale Strategie sollte das widerspiegeln. Wir beginnen damit, Ihre spezifischen Herausforderungen, Ziele und Marktposition zu verstehen",
+    "approach_p2": "Unser Team kombiniert tiefes technisches Fachwissen mit strategischem Geschäftsdenken. Wir bauen Systeme, die nicht nur heute funktionieren, sondern sich mit Ihrem Unternehmen weiterentwickeln",
+    "approach_p3": "Wir messen Erfolg in echten Ergebnissen: gesteigerter Umsatz, qualifizierte Leads und nachhaltiges Wachstum. Keine Vanity-Metrics. Keine leeren Versprechungen. Nur bewährte Systeme, die messbare Ergebnisse liefern",
     "cta_title": "Bereit, Ihre Digitale Präsenz zu Transformieren?",
-    "cta_desc": "Lassen Sie uns besprechen, wie wir einen Wachstumsmotor bauen können, der speziell auf Ihr Unternehmen zugeschnitten ist.",
+    "cta_desc": "Lassen Sie uns besprechen, wie wir einen Wachstumsmotor bauen können, der speziell auf Ihr Unternehmen zugeschnitten ist",
     "btn": "Kontaktieren Sie Uns Heute"
   },
   "not_found": {
     "title": "404 Seite Nicht Gefunden",
-    "desc": "Die gesuchte Seite existiert nicht."
+    "desc": "Die gesuchte Seite existiert nicht"
   },
   "products_section": {
     "title": "Erstellen Sie Ihre Website",
-    "subtitle": "Wählen Sie die Struktur aus, die heute zu Ihrem Unternehmen passt. Jede Option ist auf Geschwindigkeit, Klarheit und Konversion ausgelegt.",
+    "subtitle": "Wählen Sie die Struktur aus, die heute zu Ihrem Unternehmen passt. Jede Option ist auf Geschwindigkeit, Klarheit und Konversion ausgelegt",
     "most_popular": "Beliebteste",
     "request_quote": "Angebot Anfordern",
     "tiers": {
@@ -332,19 +358,19 @@
     }
   },
   "cookie": {
-    "text": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Sie können akzeptieren, ablehnen oder Ihre Einstellungen anpassen.",
+    "text": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Sie können akzeptieren, ablehnen oder Ihre Einstellungen anpassen",
     "policy_link": "Datenschutzrichtlinie",
     "accept": "Alle Akzeptieren",
     "refuse": "Ablehnen",
     "customize": "Anpassen",
     "preferences": "Cookie-Einstellungen",
-    "customize_desc": "Verwalten Sie Ihre Cookie-Einstellungen. Unbedingt erforderliche Cookies sind immer aktiviert.",
+    "customize_desc": "Verwalten Sie Ihre Cookie-Einstellungen. Unbedingt erforderliche Cookies sind immer aktiviert",
     "necessary_title": "Unbedingt erforderlich",
-    "necessary_desc": "Erforderlich für die ordnungsgemäße Funktion der Website.",
+    "necessary_desc": "Erforderlich für die ordnungsgemäße Funktion der Website",
     "analytics_title": "Analytik",
-    "analytics_desc": "Helfen Sie uns zu verstehen, wie Besucher mit der Website interagieren.",
+    "analytics_desc": "Helfen Sie uns zu verstehen, wie Besucher mit der Website interagieren",
     "marketing_title": "Marketing",
-    "marketing_desc": "Dient zur Bereitstellung relevanter Werbung und zur Leistungsverfolgung.",
+    "marketing_desc": "Dient zur Bereitstellung relevanter Werbung und zur Leistungsverfolgung",
     "cancel": "Abbrechen",
     "save": "Einstellungen Speichern",
     "privacy_title": "Datenschutzrichtlinie"
@@ -354,15 +380,15 @@
       "title": "Datenschutzrichtlinie",
       "intro": {
         "title": "1. Einführung",
-        "content": "Nuklias Digital Architects ('wir', 'unsere' oder 'uns') verpflichtet sich, Ihre Privatsphäre zu schützen. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Website besuchen oder unsere Dienste nutzen. Durch die Nutzung der Dienste stimmen Sie der Sammlung und Nutzung von Informationen gemäß dieser Richtlinie zu."
+        "content": "Nuklias Digital Architects ('wir', 'unsere' oder 'uns') verpflichtet sich, Ihre Privatsphäre zu schützen. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Website besuchen oder unsere Dienste nutzen. Durch die Nutzung der Dienste stimmen Sie der Sammlung und Nutzung von Informationen gemäß dieser Richtlinie zu"
       },
       "collection": {
         "title": "2. Informationen, die wir sammeln",
-        "content": "Wir sammeln Informationen, die Sie uns direkt zur Verfügung stellen, sowie Daten, die automatisch gesammelt werden, wenn Sie unsere Dienste nutzen.",
+        "content": "Wir sammeln Informationen, die Sie uns direkt zur Verfügung stellen, sowie Daten, die automatisch gesammelt werden, wenn Sie unsere Dienste nutzen",
         "list": {
-          "personal": "<strong>Personenbezogene Daten:</strong> Name, E-Mail-Adresse, Telefonnummer, Rechnungsadresse und andere Kontaktinformationen, die Sie freiwillig über Formulare oder Verträge angeben.",
-          "usage": "<strong>Nutzungsdaten:</strong> Informationen darüber, wie Sie auf unsere Website zugreifen und diese nutzen, einschließlich IP-Adresse, Browsertyp, Betriebssystem und besuchte Seiten.",
-          "cookies": "<strong>Tracking-Technologien:</strong> Wir verwenden Cookies, Beacons und Skripte, um Aktivitäten zu verfolgen und bestimmte Informationen zu speichern."
+          "personal": "<strong>Personenbezogene Daten:</strong> Name, E-Mail-Adresse, Telefonnummer, Rechnungsadresse und andere Kontaktinformationen, die Sie freiwillig über Formulare oder Verträge angeben",
+          "usage": "<strong>Nutzungsdaten:</strong> Informationen darüber, wie Sie auf unsere Website zugreifen und diese nutzen, einschließlich IP-Adresse, Browsertyp, Betriebssystem und besuchte Seiten",
+          "cookies": "<strong>Tracking-Technologien:</strong> Wir verwenden Cookies, Beacons und Skripte, um Aktivitäten zu verfolgen und bestimmte Informationen zu speichern"
         }
       },
       "usage": {
@@ -381,77 +407,77 @@
       },
       "retention": {
         "title": "4. Datenspeicherung",
-        "content": "Wir speichern Ihre personenbezogenen Daten nur so lange, wie es für die in dieser Datenschutzrichtlinie festgelegten Zwecke erforderlich ist. Wir werden Ihre personenbezogenen Daten speichern und nutzen, soweit dies erforderlich ist, um unseren gesetzlichen Verpflichtungen nachzukommen (z. B. wenn wir verpflichtet sind, Ihre Daten zur Einhaltung geltender Gesetze aufzubewahren), Streitigkeiten beizulegen und unsere rechtlichen Vereinbarungen und Richtlinien durchzusetzen."
+        "content": "Wir speichern Ihre personenbezogenen Daten nur so lange, wie es für die in dieser Datenschutzrichtlinie festgelegten Zwecke erforderlich ist. Wir werden Ihre personenbezogenen Daten speichern und nutzen, soweit dies erforderlich ist, um unseren gesetzlichen Verpflichtungen nachzukommen (z. B. wenn wir verpflichtet sind, Ihre Daten zur Einhaltung geltender Gesetze aufzubewahren), Streitigkeiten beizulegen und unsere rechtlichen Vereinbarungen und Richtlinien durchzusetzen"
       },
       "transfer": {
         "title": "5. Datenübertragung",
-        "content": "Ihre Informationen, einschließlich personenbezogener Daten, können auf Computer übertragen und dort gespeichert werden, die sich außerhalb Ihres Staates, Ihrer Provinz, Ihres Landes oder einer anderen staatlichen Gerichtsbarkeit befinden, in der die Datenschutzgesetze von denen Ihrer Gerichtsbarkeit abweichen können. Wir werden alle vernünftigerweise notwendigen Schritte unternehmen, um sicherzustellen, dass Ihre Daten sicher und in Übereinstimmung mit dieser Datenschutzrichtlinie behandelt werden."
+        "content": "Ihre Informationen, einschließlich personenbezogener Daten, können auf Computer übertragen und dort gespeichert werden, die sich außerhalb Ihres Staates, Ihrer Provinz, Ihres Landes oder einer anderen staatlichen Gerichtsbarkeit befinden, in der die Datenschutzgesetze von denen Ihrer Gerichtsbarkeit abweichen können. Wir werden alle vernünftigerweise notwendigen Schritte unternehmen, um sicherzustellen, dass Ihre Daten sicher und in Übereinstimmung mit dieser Datenschutzrichtlinie behandelt werden"
       },
       "rights": {
         "title": "6. Ihre Datenschutzrechte (DSGVO)",
         "content": "Wenn Sie im Europäischen Wirtschaftsraum (EWR) ansässig sind, haben Sie bestimmte Datenschutzrechte:",
         "list": {
-          "access": "<strong>Recht auf Auskunft:</strong> Sie können Kopien Ihrer personenbezogenen Daten anfordern.",
-          "rectification": "<strong>Recht auf Berichtigung:</strong> Sie können die Korrektur ungenauer Daten verlangen.",
-          "erasure": "<strong>Recht auf Löschung:</strong> Sie können die Löschung Ihrer personenbezogenen Daten verlangen ('Recht auf Vergessenwerden').",
-          "restrict": "<strong>Recht auf Einschränkung:</strong> Sie können die Einschränkung der Verarbeitung Ihrer Daten verlangen.",
-          "portability": "<strong>Recht auf Datenübertragbarkeit:</strong> Sie können die Übertragung Ihrer Daten an eine andere Organisation verlangen.",
-          "object": "<strong>Recht auf Widerspruch:</strong> Sie können der Verarbeitung Ihrer Daten widersprechen."
+          "access": "<strong>Recht auf Auskunft:</strong> Sie können Kopien Ihrer personenbezogenen Daten anfordern",
+          "rectification": "<strong>Recht auf Berichtigung:</strong> Sie können die Korrektur ungenauer Daten verlangen",
+          "erasure": "<strong>Recht auf Löschung:</strong> Sie können die Löschung Ihrer personenbezogenen Daten verlangen ('Recht auf Vergessenwerden')",
+          "restrict": "<strong>Recht auf Einschränkung:</strong> Sie können die Einschränkung der Verarbeitung Ihrer Daten verlangen",
+          "portability": "<strong>Recht auf Datenübertragbarkeit:</strong> Sie können die Übertragung Ihrer Daten an eine andere Organisation verlangen",
+          "object": "<strong>Recht auf Widerspruch:</strong> Sie können der Verarbeitung Ihrer Daten widersprechen"
         }
       },
       "security": {
         "title": "7. Datensicherheit",
-        "content": "Die Sicherheit Ihrer Daten ist uns wichtig, aber denken Sie daran, dass keine Methode der Übertragung über das Internet oder Methode der elektronischen Speicherung 100% sicher ist. Obwohl wir bestrebt sind, kommerziell akzeptable Mittel zum Schutz Ihrer personenbezogenen Daten zu verwenden, können wir deren absolute Sicherheit nicht garantieren."
+        "content": "Die Sicherheit Ihrer Daten ist uns wichtig, aber denken Sie daran, dass keine Methode der Übertragung über das Internet oder Methode der elektronischen Speicherung 100% sicher ist. Obwohl wir bestrebt sind, kommerziell akzeptable Mittel zum Schutz Ihrer personenbezogenen Daten zu verwenden, können wir deren absolute Sicherheit nicht garantieren"
       },
       "contact": {
         "title": "8. Kontaktieren Sie uns",
-        "content": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns bitte über unser Website-Kontaktformular oder direkt per E-Mail."
+        "content": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns bitte über unser Website-Kontaktformular oder direkt per E-Mail"
       }
     },
     "terms": {
       "title": "Nutzungsbedingungen",
       "intro": {
         "title": "1. Akzeptanz der Bedingungen",
-        "content": "Durch den Zugriff auf und die Nutzung der Website und Dienste von Nuklias Digital Architects akzeptieren Sie diese Nutzungsbedingungen und stimmen zu, an diese gebunden zu sein. Wenn Sie diesen Bedingungen nicht zustimmen, nutzen Sie unsere Dienste bitte nicht."
+        "content": "Durch den Zugriff auf und die Nutzung der Website und Dienste von Nuklias Digital Architects akzeptieren Sie diese Nutzungsbedingungen und stimmen zu, an diese gebunden zu sein. Wenn Sie diesen Bedingungen nicht zustimmen, nutzen Sie unsere Dienste bitte nicht"
       },
       "services": {
         "title": "2. Leistungsbeschreibung",
-        "content": "Nuklias Digital Architects bietet digitales Marketing, Website-Entwicklung, SEO und damit verbundene digitale Dienstleistungen ('Dienste'). Wir behalten uns das Recht vor, jeden Dienst jederzeit ohne Vorankündigung zu ändern, auszusetzen oder einzustellen."
+        "content": "Nuklias Digital Architects bietet digitales Marketing, Website-Entwicklung, SEO und damit verbundene digitale Dienstleistungen ('Dienste'). Wir behalten uns das Recht vor, jeden Dienst jederzeit ohne Vorankündigung zu ändern, auszusetzen oder einzustellen"
       },
       "responsibilities": {
         "title": "3. Benutzerverantwortung",
         "content": "Durch die Nutzung unserer Dienste stimmen Sie zu:",
         "list": [
-          "Genaue und vollständige Informationen bereitzustellen, wenn erforderlich.",
-          "Unsere Dienste nur für rechtmäßige Zwecke und in Übereinstimmung mit diesen Bedingungen zu nutzen.",
-          "Die Sicherheit oder Leistung unserer Dienste nicht zu stören oder zu beeinträchtigen.",
-          "Alle geistigen Eigentumsrechte und Vertraulichkeitsvereinbarungen zu respektieren.",
-          "Nicht zu versuchen, unbefugten Zugriff auf Teile unserer Dienste oder Systeme zu erlangen."
+          "Genaue und vollständige Informationen bereitzustellen, wenn erforderlich",
+          "Unsere Dienste nur für rechtmäßige Zwecke und in Übereinstimmung mit diesen Bedingungen zu nutzen",
+          "Die Sicherheit oder Leistung unserer Dienste nicht zu stören oder zu beeinträchtigen",
+          "Alle geistigen Eigentumsrechte und Vertraulichkeitsvereinbarungen zu respektieren",
+          "Nicht zu versuchen, unbefugten Zugriff auf Teile unserer Dienste oder Systeme zu erlangen"
         ]
       },
       "intellectual_property": {
         "title": "4. Geistiges Eigentum",
-        "content": "Alle Inhalte, Funktionen und Funktionalitäten (einschließlich, aber nicht beschränkt auf Software, Text, Anzeigen, Bilder, Video und Audio sowie deren Design, Auswahl und Anordnung) sind Eigentum von Nuklias Digital Architects, seinen Lizenzgebern oder anderen Anbietern solchen Materials und sind durch Urheberrechte, Markenrechte, Patentrechte, Geschäftsgeheimnisse und andere Gesetze zum geistigen Eigentum oder Eigentumsrechten geschützt."
+        "content": "Alle Inhalte, Funktionen und Funktionalitäten (einschließlich, aber nicht beschränkt auf Software, Text, Anzeigen, Bilder, Video und Audio sowie deren Design, Auswahl und Anordnung) sind Eigentum von Nuklias Digital Architects, seinen Lizenzgebern oder anderen Anbietern solchen Materials und sind durch Urheberrechte, Markenrechte, Patentrechte, Geschäftsgeheimnisse und andere Gesetze zum geistigen Eigentum oder Eigentumsrechten geschützt"
       },
       "payment": {
         "title": "5. Zahlung & Abrechnung",
-        "content": "Zahlungsbedingungen werden in individuellen Serviceverträgen oder Rechnungen festgelegt. Alle Gebühren sind wie vereinbart fällig. Unbezahlte Rechnungen können zur Aussetzung von Dienstleistungen führen. Preise können mit vorheriger Ankündigung geändert werden."
+        "content": "Zahlungsbedingungen werden in individuellen Serviceverträgen oder Rechnungen festgelegt. Alle Gebühren sind wie vereinbart fällig. Unbezahlte Rechnungen können zur Aussetzung von Dienstleistungen führen. Preise können mit vorheriger Ankündigung geändert werden"
       },
       "liability": {
         "title": "6. Haftungsbeschränkung",
-        "content": "Soweit gesetzlich zulässig, haftet Nuklias Digital Architects nicht für indirekte, zufällige, besondere, Folge- oder Strafschäden, einschließlich, aber nicht beschränkt auf entgangenen Gewinn, Datenverlust, Nutzungsausfall, Geschäfts- oder Firmenwert oder andere immaterielle Verluste, die sich aus (i) Ihrem Zugriff auf oder Ihrer Nutzung oder der Unmöglichkeit des Zugriffs oder der Nutzung des Dienstes ergeben; (ii) jeglichem Verhalten oder Inhalt Dritter im Dienst; und (iii) unbefugtem Zugriff, Nutzung oder Änderung Ihrer Übertragungen oder Inhalte."
+        "content": "Soweit gesetzlich zulässig, haftet Nuklias Digital Architects nicht für indirekte, zufällige, besondere, Folge- oder Strafschäden, einschließlich, aber nicht beschränkt auf entgangenen Gewinn, Datenverlust, Nutzungsausfall, Geschäfts- oder Firmenwert oder andere immaterielle Verluste, die sich aus (i) Ihrem Zugriff auf oder Ihrer Nutzung oder der Unmöglichkeit des Zugriffs oder der Nutzung des Dienstes ergeben; (ii) jeglichem Verhalten oder Inhalt Dritter im Dienst; und (iii) unbefugtem Zugriff, Nutzung oder Änderung Ihrer Übertragungen oder Inhalte"
       },
       "termination": {
         "title": "7. Kündigung",
-        "content": "Wir können Ihren Zugriff auf unsere Dienste sofort, ohne Vorankündigung oder Haftung, aus irgendeinem Grund kündigen oder aussetzen, einschließlich, aber nicht beschränkt darauf, wenn Sie die Bedingungen verletzen. Bei Kündigung erlischt Ihr Recht zur Nutzung des Dienstes sofort."
+        "content": "Wir können Ihren Zugriff auf unsere Dienste sofort, ohne Vorankündigung oder Haftung, aus irgendeinem Grund kündigen oder aussetzen, einschließlich, aber nicht beschränkt darauf, wenn Sie die Bedingungen verletzen. Bei Kündigung erlischt Ihr Recht zur Nutzung des Dienstes sofort"
       },
       "governing": {
         "title": "8. Anwendbares Recht",
-        "content": "Diese Bedingungen unterliegen den Gesetzen von Rumänien und der Europäischen Union und werden in Übereinstimmung mit diesen ausgelegt, ohne Rücksicht auf kollisionsrechtliche Bestimmungen."
+        "content": "Diese Bedingungen unterliegen den Gesetzen von Rumänien und der Europäischen Union und werden in Übereinstimmung mit diesen ausgelegt, ohne Rücksicht auf kollisionsrechtliche Bestimmungen"
       },
       "changes": {
         "title": "9. Änderungen der Bedingungen",
-        "content": "Wir behalten uns das Recht vor, diese Bedingungen nach eigenem Ermessen jederzeit zu ändern oder zu ersetzen. Durch die fortgesetzte Nutzung unseres Dienstes nach Inkrafttreten dieser Änderungen stimmen Sie zu, an die überarbeiteten Bedingungen gebunden zu sein."
+        "content": "Wir behalten uns das Recht vor, diese Bedingungen nach eigenem Ermessen jederzeit zu ändern oder zu ersetzen. Durch die fortgesetzte Nutzung unseres Dienstes nach Inkrafttreten dieser Änderungen stimmen Sie zu, an die überarbeiteten Bedingungen gebunden zu sein"
       }
     }
   }

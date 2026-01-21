@@ -9,16 +9,42 @@
   "footer": {
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "copyright": "© 2026 Nuklias Digital Architects. All rights reserved.",
+    "copyright": "© 2026 Nuklias Digital Architects. All rights reserved",
     "marketing": "NUKLIAS MARKETING"
   },
   "hero": {
     "badge": "YOUR JOURNEY",
     "title_start": "From Chaos to Clarity:",
     "title_end": "Your Digital Growth Engine",
-    "description": "We engineer automated ecosystems that convert passive followers into loyal customers.",
+    "description": "We engineer automated ecosystems that convert passive followers into loyal customers",
     "cta_audit": "Book a Strategic Audit",
     "cta_plans": "Explore Our Plans"
+  },
+  "client_journey": {
+    "title": "Client Journey",
+    "subtitle": "A transparent, step-by-step process designed to transform your digital presence into a revenue-generating machine",
+    "steps": {
+      "1": {
+        "title": "Business Audit",
+        "desc": "Define the goals, budget, and project scope before starting"
+      },
+      "2": {
+        "title": "Resource Allocation",
+        "desc": "Allocate resources and map the initial framework on the project"
+      },
+      "3": {
+        "title": "Execution",
+        "desc": "Execute the project according to the plan and monitor progress"
+      },
+      "4": {
+        "title": "Monitoring",
+        "desc": "Regularly track and analyze progress to ensure goals are met"
+      },
+      "5": {
+        "title": "Completion",
+        "desc": "Complete all deliverables and conduct project closeout"
+      }
+    }
   },
   "why_us": {
     "title": "Why Nuklias?",
@@ -26,59 +52,59 @@
     "cards": {
       "1": {
         "title": "Client-First Mentality",
-        "desc": "We think like business owners, not just service providers. Every dollar invested must yield a return."
+        "desc": "We think like business owners, not just service providers. Every dollar invested must yield a return"
       },
       "2": {
         "title": "Full-Service Architecture",
-        "desc": "From code to content, we handle every layer of your digital ecosystem in-house, ensuring total cohesion."
+        "desc": "From code to content, we handle every layer of your digital ecosystem in-house, ensuring total cohesion"
       },
       "3": {
         "title": "Proactive Evolution",
-        "desc": "We don't just react to trends; we anticipate them. Your system is always ready for tomorrow's market."
+        "desc": "We don't just react to trends; we anticipate them. Your system is always ready for tomorrow's market"
       },
       "4": {
         "title": "Radical Transparency",
-        "desc": "No black-box magic. You have full visibility into our strategies, metrics, and the logic behind every move."
+        "desc": "No black-box magic. You have full visibility into our strategies, metrics, and the logic behind every move"
       },
       "5": {
         "title": "Proven Impact",
-        "desc": "We measure success in revenue, not vanity metrics. Our systems effectively scale businesses and saturate capacities."
+        "desc": "We measure success in revenue, not vanity metrics. Our systems effectively scale businesses and saturate capacities"
       },
       "6": {
         "title": "Relentless Passion",
-        "desc": "We are digital architects who love the craft. We build with precision, speed, and an obsession for quality."
+        "desc": "We are digital architects who love the craft. We build with precision, speed, and an obsession for quality"
       }
     }
   },
   "what_we_solve": {
     "badge": "Our Promise",
     "title": "The only marketing that matters: The money in your pocket",
-    "desc": "The only marketing that matters is the one you can observe in your pockets at the end of the month. We do not sell 'visibility' or 'likes'; we build the structural machinery that turns digital chaos into liquid cash with total predictability.",
+    "desc": "The only marketing that matters is the one you can observe in your pockets at the end of the month. We do not sell 'visibility' or 'likes'; we build the structural machinery that turns digital chaos into liquid cash with total predictability",
     "cards": {
       "1": {
         "title": "Operational Agility",
-        "desc": "While others get lost in the planning phase, we focus on immediate, high-impact implementation. We drive your projects forward with a level of intensity and precision that ensures you stay ahead of the market and see results faster."
+        "desc": "While others get lost in the planning phase, we focus on immediate, high-impact implementation. We drive your projects forward with a level of intensity and precision that ensures you stay ahead of the market and see results faster"
       },
       "2": {
         "title": "Integrated Growth Ecosystems",
-        "desc": "Stop investing in disconnected digital fragments. We architect unified ecosystems where SEO, Content, and Strategy function as a single, cohesive architecture designed to attract, engage, and convert your ideal leads 24/7."
+        "desc": "Stop investing in disconnected digital fragments. We architect unified ecosystems where SEO, Content, and Strategy function as a single, cohesive architecture designed to attract, engage, and convert your ideal leads 24/7"
       },
       "3": {
         "title": "Revenue-First Engineering",
-        "desc": "We prioritize the metrics that directly impact your wallet and spending habits: We focus on the stability of your lead flow and amplify your profit, simple as that."
+        "desc": "We prioritize the metrics that directly impact your wallet and spending habits: We focus on the stability of your lead flow and amplify your profit, simple as that"
       }
     }
   },
   "contact_us": {
     "badge": "CONTACT US",
     "title": "Let's Build Something Great Together",
-    "desc": "Ready to transform your digital presence? Get in touch and let's discuss how we can help you achieve your goals.",
+    "desc": "Ready to transform your digital presence? Get in touch and let's discuss how we can help you achieve your goals",
     "info_title": "Get In Touch",
     "email": "Email",
     "phone": "Phone",
     "location": "Location",
     "location_text": "Bucharest, Romania<br />Remote consultations available worldwide",
-    "response_time": "We typically respond within 24 hours. For urgent matters, please call us directly.",
+    "response_time": "We typically respond within 24 hours. For urgent matters, please call us directly",
     "form_title": "Tell Us About Your Project",
     "form": {
       "name_label": "Name *",
@@ -90,15 +116,15 @@
       "location_label": "Location *",
       "location_placeholder": "City, Country",
       "industry_label": "What industry is your business in? *",
-      "industry_default": "Select your industry...",
+      "industry_default": "Select your industry.",
       "business_type_label": "What type of business do you have? *",
-      "business_type_placeholder": "e.g., Online retail store, Local service business, SaaS platform...",
+      "business_type_placeholder": "e.g., Online retail store, Local service business, SaaS platform.",
       "challenge_label": "What's your main digital marketing challenge? *",
-      "challenge_placeholder": "e.g., Not getting enough qualified leads, Low conversion rates, Lack of brand visibility...",
+      "challenge_placeholder": "e.g., Not getting enough qualified leads, Low conversion rates, Lack of brand visibility.",
       "message_label": "Tell us more about your project *",
-      "message_placeholder": "Share more details about what you're looking for, your goals, timeline, or any specific questions you have...",
+      "message_placeholder": "Share more details about what you're looking for, your goals, timeline, or any specific questions you have.",
       "btn_send": "Send Message",
-      "btn_sending": "Sending..."
+      "btn_sending": "Sending.."
     },
     "errors": {
       "name": "Name is required",
@@ -113,35 +139,35 @@
   "process_page": {
     "badge": "OUR PROCESS",
     "title": "The Next Steps",
-    "desc": "A clear and transparent process designed to build your digital success, step by step — from the first conversation to measurable results.",
+    "desc": "A clear and transparent process designed to build your digital success, step by step — from the first conversation to measurable results",
     "steps": {
       "1": {
         "title": "Contact Us",
-        "desc": "Everything starts with an open, no-obligation conversation, where we make sure we’re the perfect fit for your goals."
+        "desc": "Everything starts with an open, no-obligation conversation, where we make sure we’re the perfect fit for your goals"
       },
       "2": {
         "title": "Schedule a Consultation",
-        "desc": "We analyze the core of your business and create a strategic roadmap with clear steps and a 100% transparent offer."
+        "desc": "We analyze the core of your business and create a strategic roadmap with clear steps and a 100% transparent offer"
       },
       "3": {
         "title": "Choose a Package",
-        "desc": "Together, we select the right package, and our partnership becomes official. From here on, we work as an extension of your team."
+        "desc": "Together, we select the right package, and our partnership becomes official. From here on, we work as an extension of your team"
       },
       "4": {
         "title": "Become Our Partner",
-        "desc": "We set the growth engine in motion and start building your visible and measurable success."
+        "desc": "We set the growth engine in motion and start building your visible and measurable success"
       }
     },
     "info_title": "Simple, Transparent, Efficient",
-    "info_desc_1": "Every step is carefully planned to ensure the best possible results. We don’t promise miracles — we promise a clear, measurable, and results-driven process.",
-    "info_desc_2": "From the initial conversation to a long-term partnership, we work as an extension of your team, always focused on your success.",
+    "info_desc_1": "Every step is carefully planned to ensure the best possible results. We don’t promise miracles — we promise a clear, measurable, and results-driven process",
+    "info_desc_2": "From the initial conversation to a long-term partnership, we work as an extension of your team, always focused on your success",
     "btn_start": "Get Started",
     "step": "STEP"
   },
   "products_page": {
     "badge": "OUR SERVICES",
     "title": "Complete Digital Solutions",
-    "desc": "From brand identity to revenue growth, we offer comprehensive services designed to transform your digital presence and drive measurable business results.",
+    "desc": "From brand identity to revenue growth, we offer comprehensive services designed to transform your digital presence and drive measurable business results",
     "labels": {
       "process": "Our Process",
       "benefits": "What You Get"
@@ -149,7 +175,7 @@
     "services": {
       "brand_design": {
         "title": "Brand Design",
-        "desc": "Create a visual identity that resonates with your audience and sets you apart from competitors.",
+        "desc": "Create a visual identity that resonates with your audience and sets you apart from competitors",
         "process": [
             "Brand strategy and positioning analysis",
             "Logo design and visual identity development",
@@ -166,7 +192,7 @@
       },
       "social_media": {
         "title": "Social Media Management",
-        "desc": "Build and engage a loyal community on the platforms where your audience spends their time.",
+        "desc": "Build and engage a loyal community on the platforms where your audience spends their time",
         "process": [
             "Platform strategy and audience analysis",
             "Content calendar and campaign planning",
@@ -183,7 +209,7 @@
       },
       "digital_marketing": {
         "title": "Digital Marketing",
-        "desc": "Comprehensive marketing strategies that drive qualified leads and measurable growth.",
+        "desc": "Comprehensive marketing strategies that drive qualified leads and measurable growth",
         "process": [
             "Market research and competitor analysis",
             "Multi-channel marketing strategy development",
@@ -200,7 +226,7 @@
       },
       "email_marketing": {
         "title": "Email Marketing",
-        "desc": "Nurture relationships and drive conversions through strategic, personalized email campaigns.",
+        "desc": "Nurture relationships and drive conversions through strategic, personalized email campaigns",
         "process": [
             "Email list segmentation and strategy",
             "Automated email sequence development",
@@ -217,7 +243,7 @@
       },
       "website_dev": {
         "title": "Website Development",
-        "desc": "Fast, conversion-focused websites that turn visitors into customers.",
+        "desc": "Fast, conversion-focused websites that turn visitors into customers",
         "process": [
             "User experience and conversion optimization planning",
             "Custom design and development",
@@ -234,7 +260,7 @@
       },
       "growth": {
         "title": "Growth Strategy & Consulting",
-        "desc": "Strategic guidance to accelerate your business growth and overcome obstacles.",
+        "desc": "Strategic guidance to accelerate your business growth and overcome obstacles",
         "process": [
             "Business audit and opportunity analysis",
             "Growth strategy development",
@@ -252,8 +278,8 @@
     },
     "cta": {
       "title": "Custom Solutions for Your Business",
-      "desc": "We understand that every business is unique. That's why we create custom packages tailored to your specific needs, goals, and budget. No cookie-cutter solutions—just strategic services designed to deliver the results you need.",
-      "text": "Ready to discuss your project? Let's explore how we can help you achieve your goals.",
+      "desc": "We understand that every business is unique. That's why we create custom packages tailored to your specific needs, goals, and budget. No cookie-cutter solutions—just strategic services designed to deliver the results you need",
+      "text": "Ready to discuss your project? Let's explore how we can help you achieve your goals",
       "btn": "Get a Custom Quote"
     }
   },
@@ -261,38 +287,38 @@
     "badge": "WHAT WE SOLVE",
     "title": "Our Promise",
     "hero_subtitle": "The only marketing that matters: The money in your pocket",
-    "hero_desc": "The only marketing that matters is the one you can observe in your pockets at the end of the month. We do not sell 'visibility' or 'likes'; we build the structural machinery that turns digital chaos into liquid cash with total predictability.",
+    "hero_desc": "The only marketing that matters is the one you can observe in your pockets at the end of the month. We do not sell 'visibility' or 'likes'; we build the structural machinery that turns digital chaos into liquid cash with total predictability",
     "cards": {
       "agility": {
         "title": "Operational Agility",
-        "desc": "While others get lost in the planning phase, we focus on immediate, high-impact implementation. We drive your projects forward with a level of intensity and precision that ensures you stay ahead of the market and see results faster."
+        "desc": "While others get lost in the planning phase, we focus on immediate, high-impact implementation. We drive your projects forward with a level of intensity and precision that ensures you stay ahead of the market and see results faster"
       },
       "ecosystems": {
         "title": "Integrated Growth Ecosystems",
-        "desc": "Stop investing in disconnected digital fragments. We architect unified ecosystems where SEO, Content, and Strategy function as a single, cohesive architecture designed to attract, engage, and convert your ideal leads 24/7."
+        "desc": "Stop investing in disconnected digital fragments. We architect unified ecosystems where SEO, Content, and Strategy function as a single, cohesive architecture designed to attract, engage, and convert your ideal leads 24/7"
       },
       "engineering": {
         "title": "Revenue-First Engineering",
-        "desc": "We prioritize the metrics that directly impact your wallet and spending habits: We focus on the stability of your lead flow and amplify your profit, simple as that."
+        "desc": "We prioritize the metrics that directly impact your wallet and spending habits: We focus on the stability of your lead flow and amplify your profit, simple as that"
       }
     },
     "content_title": "What We Do",
-    "content_desc": "We transform your digital presence into a revenue-generating machine. Our approach is systematic, measurable, and focused on one thing: growing your business.",
+    "content_desc": "We transform your digital presence into a revenue-generating machine. Our approach is systematic, measurable, and focused on one thing: growing your business",
     "approach_title": "Our Approach",
-    "approach_p1": "At Nuklias, we don't believe in one-size-fits-all solutions. Every business is unique, and your digital strategy should reflect that. We start by understanding your specific challenges, goals, and market position.",
-    "approach_p2": "Our team combines deep technical expertise with strategic business thinking. We build systems that work not just today, but evolve with your business. From initial analysis to ongoing optimization, we're with you every step of the way.",
-    "approach_p3": "We measure success in real results: increased revenue, qualified leads, and sustainable growth. No vanity metrics. No empty promises. Just proven systems that deliver measurable outcomes for your business.",
+    "approach_p1": "At Nuklias, we don't believe in one-size-fits-all solutions. Every business is unique, and your digital strategy should reflect that. We start by understanding your specific challenges, goals, and market position",
+    "approach_p2": "Our team combines deep technical expertise with strategic business thinking. We build systems that work not just today, but evolve with your business. From initial analysis to ongoing optimization, we're with you every step of the way",
+    "approach_p3": "We measure success in real results: increased revenue, qualified leads, and sustainable growth. No vanity metrics. No empty promises. Just proven systems that deliver measurable outcomes for your business",
     "cta_title": "Ready to Transform Your Digital Presence?",
-    "cta_desc": "Let's discuss how we can build a growth engine tailored specifically to your business.",
+    "cta_desc": "Let's discuss how we can build a growth engine tailored specifically to your business",
     "btn": "Contact Us Today"
   },
   "not_found": {
     "title": "404 Page Not Found",
-    "desc": "Page not found."
+    "desc": "Page not found"
   },
   "products_section": {
     "title": "Create Your Custom Website",
-    "subtitle": "Pick the structure that matches where your business is today. Every option is built to be fast, clear, and conversion-focused.",
+    "subtitle": "Pick the structure that matches where your business is today. Every option is built to be fast, clear, and conversion-focused",
     "most_popular": "Most Popular",
     "request_quote": "Request a Quote",
     "tiers": {
@@ -332,19 +358,19 @@
     }
   },
   "cookie": {
-    "text": "We use cookies to improve your experience. You can accept, reject or customize your preferences.",
+    "text": "We use cookies to improve your experience. You can accept, reject or customize your preferences",
     "policy_link": "Privacy Policy",
     "accept": "Accept All",
     "refuse": "Refuse",
     "customize": "Customize",
     "preferences": "Cookie Preferences",
-    "customize_desc": "Manage your cookie settings. Strictly necessary cookies are always enabled.",
+    "customize_desc": "Manage your cookie settings. Strictly necessary cookies are always enabled",
     "necessary_title": "Strictly Necessary",
-    "necessary_desc": "Required for the website to function properly.",
+    "necessary_desc": "Required for the website to function properly",
     "analytics_title": "Analytics",
-    "analytics_desc": "Help us understand how visitors interact with the website.",
+    "analytics_desc": "Help us understand how visitors interact with the website",
     "marketing_title": "Marketing",
-    "marketing_desc": "Used to deliver relevant advertisements and track performance.",
+    "marketing_desc": "Used to deliver relevant advertisements and track performance",
     "cancel": "Cancel",
     "save": "Save Preferences",
     "privacy_title": "Privacy Policy"
@@ -354,15 +380,15 @@
       "title": "Privacy Policy",
       "intro": {
         "title": "1. Introduction",
-        "content": "Nuklias Digital Architects ('we', 'our', or 'us') is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. By using our services, you agree to the collection and use of information in accordance with this policy."
+        "content": "Nuklias Digital Architects ('we', 'our', or 'us') is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. By using our services, you agree to the collection and use of information in accordance with this policy"
       },
       "collection": {
         "title": "2. Information We Collect",
-        "content": "We collect information that you provide directly to us, as well as data collected automatically when you use our services.",
+        "content": "We collect information that you provide directly to us, as well as data collected automatically when you use our services",
         "list": {
-          "personal": "<strong>Personal Data:</strong> Name, email address, phone number, billing address, and other contact information you voluntarily provide via forms or contracts.",
-          "usage": "<strong>Usage Data:</strong> Information about how you access and use our website, including IP address, browser type, operating system, and pages visited.",
-          "cookies": "<strong>Tracking Technologies:</strong> We use cookies, beacons, and scripts to track activity and store certain information."
+          "personal": "<strong>Personal Data:</strong> Name, email address, phone number, billing address, and other contact information you voluntarily provide via forms or contracts",
+          "usage": "<strong>Usage Data:</strong> Information about how you access and use our website, including IP address, browser type, operating system, and pages visited",
+          "cookies": "<strong>Tracking Technologies:</strong> We use cookies, beacons, and scripts to track activity and store certain information"
         }
       },
       "usage": {
@@ -381,77 +407,77 @@
       },
       "retention": {
         "title": "4. Data Retention",
-        "content": "We will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies."
+        "content": "We will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies"
       },
       "transfer": {
         "title": "5. Transfer of Data",
-        "content": "Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction. We will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy."
+        "content": "Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction. We will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy"
       },
       "rights": {
         "title": "6. Your Data Protection Rights (GDPR)",
         "content": "If you are a resident of the European Economic Area (EEA), you have certain data protection rights:",
         "list": {
-          "access": "<strong>Right to Access:</strong> You can request copies of your personal data.",
-          "rectification": "<strong>Right to Rectification:</strong> You can request correction of inaccurate data.",
-          "erasure": "<strong>Right to Erasure:</strong> You can request deletion of your personal data ('Right to be Forgotten').",
-          "restrict": "<strong>Right to Restrict Processing:</strong> You can request restriction of processing your data.",
-          "portability": "<strong>Right to Data Portability:</strong> You can request transfer of your data to another organization.",
-          "object": "<strong>Right to Object:</strong> You can object to our processing of your data."
+          "access": "<strong>Right to Access:</strong> You can request copies of your personal data",
+          "rectification": "<strong>Right to Rectification:</strong> You can request correction of inaccurate data",
+          "erasure": "<strong>Right to Erasure:</strong> You can request deletion of your personal data ('Right to be Forgotten')",
+          "restrict": "<strong>Right to Restrict Processing:</strong> You can request restriction of processing your data",
+          "portability": "<strong>Right to Data Portability:</strong> You can request transfer of your data to another organization",
+          "object": "<strong>Right to Object:</strong> You can object to our processing of your data"
         }
       },
       "security": {
         "title": "7. Security of Data",
-        "content": "The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security."
+        "content": "The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security"
       },
       "contact": {
         "title": "8. Contact Us",
-        "content": "If you have any questions about this Privacy Policy, please contact us via our website contact form or directly via email."
+        "content": "If you have any questions about this Privacy Policy, please contact us via our website contact form or directly via email"
       }
     },
     "terms": {
       "title": "Terms of Service",
       "intro": {
         "title": "1. Acceptance of Terms",
-        "content": "By accessing and using the Nuklias Digital Architects website and services, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services."
+        "content": "By accessing and using the Nuklias Digital Architects website and services, you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services"
       },
       "services": {
         "title": "2. Services Description",
-        "content": "Nuklias Digital Architects provides digital marketing, website development, SEO, and related digital services ('Services'). We reserve the right to modify, suspend, or discontinue any service at any time without notice."
+        "content": "Nuklias Digital Architects provides digital marketing, website development, SEO, and related digital services ('Services'). We reserve the right to modify, suspend, or discontinue any service at any time without notice"
       },
       "responsibilities": {
         "title": "3. User Responsibilities",
         "content": "By using our Services, you agree to:",
         "list": [
-          "Provide accurate and complete information when required.",
-          "Use our services only for lawful purposes and in accordance with these Terms.",
-          "Not interfere with or disrupt the security or performance of our services.",
-          "Respect all intellectual property rights and confidentiality agreements.",
-          "Not attempt to gain unauthorized access to any part of our services or systems."
+          "Provide accurate and complete information when required",
+          "Use our services only for lawful purposes and in accordance with these Terms",
+          "Not interfere with or disrupt the security or performance of our services",
+          "Respect all intellectual property rights and confidentiality agreements",
+          "Not attempt to gain unauthorized access to any part of our services or systems"
         ]
       },
       "intellectual_property": {
         "title": "4. Intellectual Property",
-        "content": "All content, features, and functionality (including but not limited to software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof) are owned by Nuklias Digital Architects, its licensors, or other providers of such material and are protected by copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws."
+        "content": "All content, features, and functionality (including but not limited to software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof) are owned by Nuklias Digital Architects, its licensors, or other providers of such material and are protected by copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws"
       },
       "payment": {
         "title": "5. Payment & Billing",
-        "content": "Payment terms will be specified in individual service agreements or invoices. All fees are due as agreed upon. Unpaid invoices may result in the suspension of services. Prices are subject to change with prior notice."
+        "content": "Payment terms will be specified in individual service agreements or invoices. All fees are due as agreed upon. Unpaid invoices may result in the suspension of services. Prices are subject to change with prior notice"
       },
       "liability": {
         "title": "6. Limitation of Liability",
-        "content": "To the maximum extent permitted by law, Nuklias Digital Architects shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content."
+        "content": "To the maximum extent permitted by law, Nuklias Digital Architects shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content"
       },
       "termination": {
         "title": "7. Termination",
-        "content": "We may terminate or suspend your access to our services immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. Upon termination, your right to use the Service will immediately cease."
+        "content": "We may terminate or suspend your access to our services immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. Upon termination, your right to use the Service will immediately cease"
       },
       "governing": {
         "title": "8. Governing Law",
-        "content": "These Terms shall be governed and construed in accordance with the laws of Romania and the European Union, without regard to its conflict of law provisions."
+        "content": "These Terms shall be governed and construed in accordance with the laws of Romania and the European Union, without regard to its conflict of law provisions"
       },
       "changes": {
         "title": "9. Changes to Terms",
-        "content": "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms."
+        "content": "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms"
       }
     }
   }
