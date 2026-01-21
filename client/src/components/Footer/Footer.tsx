@@ -49,13 +49,13 @@ export function Footer() {
       <LegalModal
         open={privacyOpen}
         onOpenChange={setPrivacyOpen}
-        title="Privacy Policy"
+        title={t('legal.privacy.title')}
         content={<PrivacyPolicyContent />}
       />
       <LegalModal
         open={termsOpen}
         onOpenChange={setTermsOpen}
-        title="Terms of Service"
+        title={t('legal.terms.title')}
         content={<TermsOfServiceContent />}
       />
     </>

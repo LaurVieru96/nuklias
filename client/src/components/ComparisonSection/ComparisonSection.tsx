@@ -51,30 +51,15 @@ export function ComparisonSection() {
 
   return (
     <section className="py-24 bg-background relative overflow-hidden">
-        {/* Background Decorative Elements */}
-        <div className="absolute top-1/4 -left-20 w-80 h-80 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
-        <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-red-600/5 rounded-full blur-[100px] pointer-events-none" />
+        {/* Background Decorative Elements - Reduced blur for perf */}
+        <div className="absolute top-1/4 -left-20 w-60 h-60 md:w-80 md:h-80 bg-primary/5 rounded-full blur-3xl md:blur-[100px] pointer-events-none will-change-transform" />
+        <div className="absolute bottom-1/4 -right-20 w-60 h-60 md:w-80 md:h-80 bg-red-600/5 rounded-full blur-3xl md:blur-[100px] pointer-events-none will-change-transform" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20 text-xs font-bold uppercase tracking-wider mb-4">
-            <Zap size={14} />
-            {t('comparison.title')}
-          </div>
-          <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-4 leading-tight">
-            {t('comparison.subtitle')}
-          </h2>
-        </motion.div> */}
-
-        <div className="rounded-[2.5rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-border/50">
-          {/* Header Row */}
-          <div className="grid grid-cols-2">
+        
+        <div className="rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.05)] md:shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-border/50">
+          {/* Header Row - Hidden on mobile to save space, shown on md+ */}
+          <div className="hidden md:grid md:grid-cols-2">
             <div className="bg-red-600/10 dark:bg-red-900/20 p-8 md:p-12 text-center border-b border-border/50">
                <span className="text-xl md:text-3xl font-black font-display text-red-600 dark:text-red-500 tracking-tighter">
                 {t('comparison.traditional_title')}
@@ -95,36 +80,47 @@ export function ComparisonSection() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.5 }}
-              className="grid grid-cols-2 group"
+              className="grid grid-cols-1 md:grid-cols-2 group border-b border-white/5 last:border-0"
             >
               {/* Traditional Side */}
-              <div className={`${row.bgTraditional} p-8 md:p-12 border-r border-white/10 flex flex-col items-center justify-center text-center transition-colors duration-500 group-hover:bg-red-600/100 dark:group-hover:bg-red-900/50`}>
+              <div className={`${row.bgTraditional} p-6 md:p-12 border-b md:border-b-0 md:border-r border-white/10 flex flex-col items-center justify-center text-center transition-colors duration-500 group-hover:bg-red-600/100 dark:group-hover:bg-red-900/50 relative overflow-hidden`}>
+                {/* Mobile Label */}
+                <span className="md:hidden text-xs font-bold uppercase tracking-widest text-white/50 mb-4 bg-black/20 px-3 py-1 rounded-full">
+                  {t('comparison.traditional_title')}
+                </span>
+
                 {row.iconTraditional && (
-                   <motion.div 
-                     whileHover={{ scale: 1.1, rotate: 10 }}
-                     className="mb-6 p-4 bg-white/10 rounded-2xl backdrop-blur-md"
+                   <div 
+                     className="mb-4 md:mb-6 p-3 md:p-4 bg-white/10 rounded-2xl backdrop-blur-md transform transition-transform group-hover:scale-110 duration-300"
                    >
                      {row.iconTraditional}
-                   </motion.div>
+                   </div>
                 )}
-                <p className="text-white md:text-xl font-medium leading-relaxed max-w-sm">
+                <p className="text-white text-lg md:text-xl font-medium leading-relaxed max-w-sm">
                   {row.traditional}
                 </p>
               </div>
 
               {/* Nuklias Side */}
-              <div className={`${row.bgNuklias} p-8 md:p-12 flex flex-col items-center justify-center text-center transition-colors duration-500 group-hover:bg-primary/100 dark:group-hover:bg-primary/90`}>
+              <div className={`${row.bgNuklias} p-6 md:p-12 flex flex-col items-center justify-center text-center transition-colors duration-500 group-hover:bg-primary/100 dark:group-hover:bg-primary/90 relative overflow-hidden`}>
+                {/* Mobile Label */}
+                <span className="md:hidden text-xs font-bold uppercase tracking-widest text-white/50 mb-4 bg-black/20 px-3 py-1 rounded-full">
+                   {t('comparison.nuklias_title')}
+                </span>
+
                 {row.iconNuklias && (
-                   <motion.div 
-                     whileHover={{ scale: 1.1, rotate: -10 }}
-                     className="mb-6 p-4 bg-white/10 rounded-2xl backdrop-blur-md"
+                   <div 
+                     className="mb-4 md:mb-6 p-3 md:p-4 bg-white/10 rounded-2xl backdrop-blur-md transform transition-transform group-hover:scale-110 duration-300 shadow-lg"
                    >
                      {row.iconNuklias}
-                   </motion.div>
+                   </div>
                 )}
-                <p className="text-white md:text-xl font-bold leading-relaxed max-w-sm drop-shadow-sm">
+                <p className="text-white text-lg md:text-xl font-bold leading-relaxed max-w-sm drop-shadow-sm">
                   {row.nuklias}
                 </p>
+                
+                {/* Mobile accent indicator */}
+                <div className="md:hidden absolute bottom-0 left-0 right-0 h-1 bg-white/20" />
               </div>
             </motion.div>
           ))}

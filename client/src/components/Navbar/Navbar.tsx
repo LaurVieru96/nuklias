@@ -67,30 +67,34 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white dark:bg-card border-t border-border"
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="md:hidden bg-white/95 dark:bg-card/95 border-t border-border backdrop-blur-xl overflow-hidden"
           >
-            <div className="px-4 py-4 space-y-4">
+            <div className="px-4 py-6 space-y-4 shadow-inner">
               {links.map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
                   onClick={() => handleNav(link.href)}
-                  className={`block w-full text-left py-2 font-medium transition-colors ${
+                  className={`block w-full text-left py-3 px-4 rounded-lg font-medium transition-colors text-lg ${
                     location === link.href 
-                      ? "text-primary font-bold" 
-                      : "text-foreground/80 hover:text-primary"
+                      ? "bg-accent/10 text-primary font-bold border-l-4 border-accent" 
+                      : "text-foreground/80 hover:text-primary hover:bg-black/5 dark:hover:bg-white/5 active:bg-black/10"
                   }`}
                 >
                   {link.label}
                 </Link>
               ))}
-              <Link 
-                href="/contact"
-                onClick={() => handleNav("/contact")}
-                className="block w-full bg-accent text-accent-foreground py-3 rounded-lg font-bold shadow-md active:scale-95 transition-transform text-center"
-              >
-                {t('hero.cta_audit')}
-              </Link>
+              <div className="pt-4 mt-4 border-t border-border/50">
+                <Link 
+                  href="/contact"
+                  onClick={() => handleNav("/contact")}
+                >
+                  <button className="w-full bg-accent text-accent-foreground py-4 rounded-xl font-bold shadow-lg shadow-accent/20 active:scale-[0.98] transition-all text-center text-lg touch-manipulation">
+                   {t('hero.cta_audit')}
+                  </button>
+                </Link>
+              </div>
             </div>
           </motion.div>
         )}
