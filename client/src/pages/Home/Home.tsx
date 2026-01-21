@@ -90,7 +90,7 @@ export default function Home() {
                   </button>
                 </Link>
                 <Link href="/products">
-                  <button className="px-8 py-4 bg-white dark:bg-card border border-border text-primary font-bold rounded-xl hover:bg-gray-50 dark:hover:bg-card/80 transition-colors">
+                  <button className="px-8 py-4 bg-white/80 dark:bg-card/90 backdrop-blur-md border-2 border-border dark:border-primary/40 text-primary dark:text-white font-bold rounded-xl hover:bg-gray-50 dark:hover:bg-card dark:hover:border-primary/60 transition-all shadow-sm">
                     {t('hero.cta_plans')}
                   </button>
                 </Link>
@@ -104,14 +104,14 @@ export default function Home() {
               className="relative w-full max-w-5xl"
             >
               {/* Abstract Tech Visual */}
-              <div className="rounded-3xl bg-gradient-to-br from-primary to-purple-900 dark:from-primary/80 dark:to-purple-950 p-1">
-                <div className="w-full rounded-[20px] bg-white/10 dark:bg-black/20 backdrop-blur-sm overflow-hidden relative">
+              {/* <div className="rounded-3xl bg-gradient-to-br from-primary to-purple-900 dark:from-primary/80 dark:to-purple-950 p-1"> */}
+                {/* <div className="w-full rounded-[20px] bg-white/10 dark:bg-black/20 backdrop-blur-sm overflow-hidden relative"> */}
                    {/* Decorative Abstract Image - Network Nodes */}
-                   <img 
+                   {/* <img 
                     src={heroImage}
                     alt="Digital Network Abstract" 
                     className="w-full object-fit  mix-blend-overlay"
-                  />
+                  /> */}
                   
                   {/* Floating Cards Overlay */}
                   {/* <div className="absolute top-1/4 left-1/4 p-4 bg-white/90 backdrop-blur rounded-xl shadow-lg border border-white/20 max-w-[200px]">
@@ -135,8 +135,8 @@ export default function Home() {
                       <div className="h-full bg-accent w-3/4" />
                     </div>
                   </div> */}
-                </div>
-              </div>
+                {/* </div> */}
+              {/* </div> */}
             </motion.div>
           </div>
         </div>

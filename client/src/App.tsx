@@ -9,7 +9,7 @@ import WhatWeSolve from "@/pages/WhatWeSolve/WhatWeSolve";
 import Products from "@/pages/Products/Products";
 import Process from "@/pages/Process/Process";
 import ContactUs from "@/pages/ContactUs/ContactUs";
-import { ThemeToggle } from "@/components/ThemeToggle/ThemeToggle";
+// import { ThemeToggle } from "@/components/ThemeToggle/ThemeToggle";
 import { ScrollToTop } from "@/components/ScrollToTop/ScrollToTop";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher/LanguageSwitcher";
 import { CookieConsent } from "@/components/CookieConsent/CookieConsent";
@@ -36,7 +36,9 @@ function App() {
         <ScrollToTop />
         <div className="fixed bottom-4 right-4 z-50 flex items-center gap-2">
           <LanguageSwitcher />
-          <ThemeToggle />
+
+          {/* Removed for the moment */}
+          {/* <ThemeToggle /> */}
         </div>
         <CookieConsent />
         <Toaster />

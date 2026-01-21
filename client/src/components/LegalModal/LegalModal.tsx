@@ -25,7 +25,7 @@ export function LegalModal({ open, onOpenChange, title, content }: LegalModalPro
           </DialogDescription>
         </DialogHeader>
         <ScrollArea className="max-h-[calc(90vh-120px)] px-6 py-6">
-          <div className="prose prose-sm max-w-none text-foreground/80 leading-relaxed">
+          <div className="prose dark:prose-invert prose-sm max-w-none text-foreground/80 leading-relaxed">
             {content}
           </div>
         </ScrollArea>

@@ -5,14 +5,15 @@ export type Theme = "light" | "dark";
 const STORAGE_KEY = "theme";
 
 function getInitialTheme(): Theme {
-  if (typeof window === "undefined") return "light";
+  // if (typeof window === "undefined") return "light";
 
-  const stored = window.localStorage.getItem(STORAGE_KEY);
-  if (stored === "light" || stored === "dark") return stored;
+  // const stored = window.localStorage.getItem(STORAGE_KEY);
+  // if (stored === "light" || stored === "dark") return stored;
 
-  const prefersDark =
-    window.matchMedia?.("(prefers-color-scheme: dark)")?.matches ?? false;
-  return prefersDark ? "dark" : "light";
+  // const prefersDark =
+  //   window.matchMedia?.("(prefers-color-scheme: dark)")?.matches ?? false;
+  // return prefersDark ? "dark" : "light";
+  return "dark";
 }
 
 export function useTheme() {
