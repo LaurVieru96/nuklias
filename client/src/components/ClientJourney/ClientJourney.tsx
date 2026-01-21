@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { 
   FileText, 
@@ -21,7 +22,7 @@ interface JourneyStep {
 export function ClientJourney() {
   const { t } = useTranslation();
 
-  const journeySteps: JourneyStep[] = [
+  const journeySteps: JourneyStep[] = useMemo(() => [
     {
       id: "step1",
       icon: <FileText className="w-7 h-7" />,
@@ -57,7 +58,7 @@ export function ClientJourney() {
       descKey: "client_journey.steps.5.desc",
       gradient: "from-violet-500 to-purple-600",
     },
-  ];
+  ], []);
 
   return (
     <div className="relative w-full max-w-7xl mx-auto">
