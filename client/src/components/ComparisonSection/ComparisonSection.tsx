@@ -1,11 +1,22 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useMemo } from "react";
 import { Search, Lightbulb, TrendingUp, Cpu, Globe, Zap, Target } from "lucide-react";
+
+interface ComparisonRow {
+  id: number;
+  traditional: string;
+  nuklias: string;
+  iconTraditional?: React.ReactNode;
+  iconNuklias?: React.ReactNode;
+  bgTraditional: string;
+  bgNuklias: string;
+}
 
 export function ComparisonSection() {
   const { t } = useTranslation();
 
-  const comparisonData = [
+  const comparisonData = useMemo<ComparisonRow[]>(() => [
     {
       id: 1,
       traditional: t('comparison.rows.1.traditional'),
@@ -36,7 +47,7 @@ export function ComparisonSection() {
       bgTraditional: "bg-red-600/60 dark:bg-red-900/10",
       bgNuklias: "bg-primary/70 dark:bg-primary/60"
     }
-  ];
+  ], [t]);
 
   return (
     <section className="py-24 bg-background relative overflow-hidden">
