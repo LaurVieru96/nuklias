@@ -119,10 +119,10 @@ export default function Login() {
           <div className="mt-6 p-4 bg-muted rounded-md text-sm">
             <p className="font-semibold mb-2">{t('auth.test_credentials')}:</p>
             <p className="text-muted-foreground">
-              <strong>Admin:</strong> admin@nuklias.com / Admin123!
+              {/* <strong>Admin:</strong> admin@nuklias.com / Admin123! */}
             </p>
             <p className="text-muted-foreground">
-              <strong>Member:</strong> member@nuklias.com / Member123!
+              {/* <strong>Member:</strong> member@nuklias.com / Member123! */}
             </p>
           </div>
         </div>
