@@ -9,6 +9,7 @@ import passport from 'passport';
 
 // Import routes
 import authRoutes from './routes/auth';
+import userRoutes from './routes/users';
 
 // Load environment variables
 dotenv.config();
@@ -69,13 +70,14 @@ app.get('/api/health', (req, res) => {
 // Authentication routes
 app.use('/api/auth', authRoutes);
 
+// Users routes (admin only)
+app.use('/api/users', userRoutes);
+
 // TODO: Add more routes
-// import userRoutes from './routes/users';
 // import leadRoutes from './routes/leads';
 // import taskRoutes from './routes/tasks';
 // import statsRoutes from './routes/stats';
 
-// app.use('/api/users', userRoutes);
 // app.use('/api/leads', leadRoutes);
 // app.use('/api/tasks', taskRoutes);
 // app.use('/api/stats', statsRoutes);

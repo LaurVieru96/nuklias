@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
+import { DashboardLayout } from "@/layouts/DashboardLayout";
 import NotFound from "@/pages/NotFound/NotFound";
 import Home from "@/pages/Home/Home";
 import WhatWeSolve from "@/pages/WhatWeSolve/WhatWeSolve";
@@ -13,6 +14,9 @@ import Process from "@/pages/Process/Process";
 import ContactUs from "@/pages/ContactUs/ContactUs";
 import Login from "@/pages/Login/Login";
 import DashboardHome from "@/pages/DashboardHome/DashboardHome";
+import Users from "@/pages/Users/Users";
+import Leads from "@/pages/Leads/Leads";
+import Tasks from "@/pages/Tasks/Tasks";
 // import { ThemeToggle } from "@/components/ThemeToggle/ThemeToggle";
 import { ScrollToTop } from "@/components/ScrollToTop/ScrollToTop";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher/LanguageSwitcher";
@@ -35,7 +39,33 @@ function Router() {
       {/* Dashboard Routes */}
       <Route path="/dashboard">
         <ProtectedRoute>
-          <DashboardHome />
+          <DashboardLayout>
+            <DashboardHome />
+          </DashboardLayout>
+        </ProtectedRoute>
+      </Route>
+
+      <Route path="/dashboard/leads">
+        <ProtectedRoute>
+          <DashboardLayout>
+            <Leads />
+          </DashboardLayout>
+        </ProtectedRoute>
+      </Route>
+
+      <Route path="/dashboard/tasks">
+        <ProtectedRoute>
+          <DashboardLayout>
+            <Tasks />
+          </DashboardLayout>
+        </ProtectedRoute>
+      </Route>
+
+      <Route path="/dashboard/users">
+        <ProtectedRoute allowedRoles={['admin']}>
+          <DashboardLayout>
+            <Users />
+          </DashboardLayout>
         </ProtectedRoute>
       </Route>
       
