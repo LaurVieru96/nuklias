@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 import { Redirect } from 'wouter';
 import { useAuth } from '@/contexts/AuthContext';
-import type { UserRole } from '@shared/types';
+import type { UserRole } from '@/types';
 
 interface ProtectedRouteProps {
   children: ReactNode;

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { api } from '@/lib/api';
-import type { Lead, CreateLeadInput, UpdateLeadInput, LeadStatus, LeadPriority } from '@shared/types';
+import type { Lead, CreateLeadInput, UpdateLeadInput, LeadStatus, LeadPriority } from '@/types';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Plus, Search, Edit, Trash2, Filter } from 'lucide-react';

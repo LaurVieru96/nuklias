@@ -1,4 +1,4 @@
-import type { ApiError, ApiSuccess, User, LoginInput } from '@shared/types';
+import type { ApiError, ApiSuccess, User, LoginInput } from '@/types';
 
 // API base URL - uses environment variable in production
 const API_URL = import.meta.env.VITE_API_URL || '';

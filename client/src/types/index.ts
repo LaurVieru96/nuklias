@@ -1,4 +1,4 @@
-// Shared types between client and server
+// Frontend types for Nuklias Dashboard
 
 // ============================================
 // USER TYPES
@@ -17,11 +17,6 @@ export interface User {
   createdAt: Date;
   updatedAt: Date;
   deletedAt?: Date | null;
-}
-
-// Internal type with password (never exposed to client)
-export interface UserWithPassword extends User {
-  password: string;
 }
 
 export interface CreateUserInput {
@@ -55,23 +50,19 @@ export type LeadSource = 'website_form' | 'manual' | 'import';
 
 export interface Lead {
   id: string;
-  // Contact Info
   name: string;
   email: string;
   phone?: string | null;
   location: string;
-  // Business Info
   industry: string;
   businessType: string;
   challenge: string;
   message: string;
-  // CRM Fields
   status: LeadStatus;
   priority: LeadPriority;
-  assignedTo?: string | null; // User ID
+  assignedTo?: string | null;
   estimatedValue?: number | null;
   source: LeadSource;
-  // Metadata
   createdAt: Date;
   updatedAt: Date;
   deletedAt?: Date | null;
@@ -108,20 +99,6 @@ export interface UpdateLeadInput {
   estimatedValue?: number | null;
 }
 
-export interface LeadFilters {
-  status?: LeadStatus[];
-  priority?: LeadPriority[];
-  assignedTo?: string;
-  timeRange?: 'today' | 'week' | 'month' | 'last30';
-  startDate?: string;
-  endDate?: string;
-  search?: string;
-  sortBy?: 'createdAt' | 'updatedAt' | 'priority' | 'name';
-  sortOrder?: 'asc' | 'desc';
-  limit?: number;
-  offset?: number;
-}
-
 // ============================================
 // TASK TYPES
 // ============================================
@@ -133,18 +110,13 @@ export interface Task {
   id: string;
   title: string;
   description?: string;
-  // Assignment
-  assignedTo: string; // User ID
-  createdBy: string; // User ID
-  // Status & Priority
+  assignedTo: string;
+  createdBy: string;
   status: TaskStatus;
   priority: TaskPriority;
-  // Dates
   dueDate?: Date;
   completedAt?: Date;
-  // Relations
   relatedLeadId?: string;
-  // Metadata
   createdAt: Date;
   updatedAt: Date;
   deletedAt?: Date;
@@ -171,43 +143,9 @@ export interface UpdateTaskInput {
   relatedLeadId?: string;
 }
 
-export interface TaskFilters {
-  status?: TaskStatus[];
-  priority?: TaskPriority[];
-  assignedTo?: string;
-  dueDate?: 'overdue' | 'today' | 'week' | 'month';
-  search?: string;
-  sortBy?: 'createdAt' | 'dueDate' | 'priority';
-  sortOrder?: 'asc' | 'desc';
-  limit?: number;
-  offset?: number;
-}
-
-// ============================================
-// DASHBOARD STATS TYPES
-// ============================================
-
-export interface DashboardStats {
-  newLeadsThisMonth: number;
-  newLeadsChange: number; // % vs last month
-  activeTasks: number;
-  urgentTasks: number;
-  conversionRate: number; // won / (won + lost)
-  conversionChange: number; // % vs last month
-  teamActivity: number; // active users last 7 days
-}
-
 // ============================================
 // API RESPONSE TYPES
 // ============================================
-
-export interface PaginatedResponse<T> {
-  data: T[];
-  total: number;
-  limit: number;
-  offset: number;
-  hasMore: boolean;
-}
 
 export interface ApiError {
   error: string;
