@@ -15,32 +15,32 @@ export function WhyUs() {
 
   const features = useMemo(() => [
     {
-      icon: <Trophy className="w-8 h-8 text-accent" />,
+      icon: <Trophy className="w-8 h-8 text-primary" />,
       title: t('why_us.cards.1.title'),
       desc: t('why_us.cards.1.desc')
     },
     {
-      icon: <Layers className="w-8 h-8 text-accent" />,
+      icon: <Layers className="w-8 h-8 text-primary" />,
       title: t('why_us.cards.2.title'),
       desc: t('why_us.cards.2.desc')
     },
     {
-      icon: <Zap className="w-8 h-8 text-accent" />,
+      icon: <Zap className="w-8 h-8 text-primary" />,
       title: t('why_us.cards.3.title'),
       desc: t('why_us.cards.3.desc')
     },
     {
-      icon: <MessageCircle className="w-8 h-8 text-accent" />,
+      icon: <MessageCircle className="w-8 h-8 text-primary" />,
       title: t('why_us.cards.4.title'),
       desc: t('why_us.cards.4.desc')
     },
     {
-      icon: <BarChart3 className="w-8 h-8 text-accent" />,
+      icon: <BarChart3 className="w-8 h-8 text-primary" />,
       title: t('why_us.cards.5.title'),
       desc: t('why_us.cards.5.desc')
     },
     {
-      icon: <Heart className="w-8 h-8 text-accent" />,
+      icon: <Heart className="w-8 h-8 text-primary" />,
       title: t('why_us.cards.6.title'),
       desc: t('why_us.cards.6.desc')
     }
@@ -52,7 +52,7 @@ export function WhyUs() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold font-display text-primary mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold font-display text-accent mb-4">
             {t('why_us.title')}
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -70,10 +70,10 @@ export function WhyUs() {
               viewport={{ once: true }}
               className="bg-card border border-border p-8 rounded-2xl shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group"
             >
-              <div className="mb-6 w-14 h-14 rounded-xl bg-accent/10 dark:bg-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <div className="mb-6 w-14 h-14 rounded-xl bg-primary/10 dark:bg-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                 {item.icon}
               </div>
-              <h3 className="text-xl font-bold font-display text-primary mb-3">
+              <h3 className="text-xl font-bold font-display text-accent mb-3">
                 {item.title}
               </h3>
               <p className="text-muted-foreground leading-relaxed">

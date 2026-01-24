@@ -45,7 +45,7 @@ export function ProductsSection() {
     <section className="py-24 bg-gray-50 dark:bg-card/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold font-display text-primary mb-4 md:text-5xl">
+          <h2 className="text-3xl font-bold font-display text-accent mb-4 md:text-5xl">
             {t('products_section.title')}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">

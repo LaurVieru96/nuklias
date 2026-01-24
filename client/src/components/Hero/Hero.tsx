@@ -45,12 +45,6 @@ export function Hero() {
                   {t('hero.cta_audit')}
                   <ArrowRight size={18} />
               </Link>
-              <Link 
-                href="/products" 
-                className="w-full sm:w-auto px-8 py-4 bg-white/80 dark:bg-card/90 backdrop-blur-md border border-border dark:border-primary/20 text-primary dark:text-white font-bold rounded-xl hover:bg-gray-50 dark:hover:bg-card/80 hover:border-primary/40 active:scale-95 transition-all duration-200 shadow-sm flex items-center justify-center touch-manipulation"
-              >
-                  {t('hero.cta_plans')}
-              </Link>
             </div>
           </motion.div>
         </div>

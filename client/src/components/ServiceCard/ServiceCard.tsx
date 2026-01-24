@@ -53,7 +53,7 @@ export function ServiceCard({ title, subtitle, features, tier, delay = 0 }: Serv
       )}
 
       <div className="mb-6">
-        <h3 className="text-2xl font-bold font-display text-primary mb-2">{title}</h3>
+        <h3 className="text-2xl font-bold font-display text-accent mb-2">{title}</h3>
         <p className="text-muted-foreground text-sm font-medium">{subtitle}</p>
       </div>
 
