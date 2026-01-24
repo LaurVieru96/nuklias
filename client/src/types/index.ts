@@ -158,3 +158,11 @@ export interface ApiSuccess<T = any> {
   data: T;
   message?: string;
 }
+
+export interface PaginatedResponse<T> {
+  data: T[];
+  total: number;
+  limit: number;
+  offset: number;
+  hasMore: boolean;
+}
