@@ -10,7 +10,8 @@ class ApiClient {
   private baseUrl: string;
 
   constructor(baseUrl: string = API_URL) {
-    this.baseUrl = baseUrl;
+    // Remove trailing slash to avoid double slashes
+    this.baseUrl = baseUrl.replace(/\/$/, '');
   }
 
   private async request<T>(
