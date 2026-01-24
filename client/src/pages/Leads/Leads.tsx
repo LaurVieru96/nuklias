@@ -31,6 +31,7 @@ import {
 } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { useTranslation } from 'react-i18next';
 
 const STATUS_COLORS: Record<LeadStatus, string> = {
   new: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
@@ -49,6 +50,7 @@ const PRIORITY_COLORS: Record<LeadPriority, string> = {
 
 export default function Leads() {
   const { toast } = useToast();
+  const { t } = useTranslation();
   const queryClient = useQueryClient();
   const [search, setSearch] = useState('');
   const [statusFilter, setStatusFilter] = useState<LeadStatus | 'all'>('all');
@@ -80,13 +82,13 @@ export default function Leads() {
       queryClient.invalidateQueries({ queryKey: ['leads'] });
       setIsCreateModalOpen(false);
       toast({
-        title: 'Success',
+        title: t('dashboard.common.success'),
         description: 'Lead created successfully',
       });
     },
     onError: (error: any) => {
       toast({
-        title: 'Error',
+        title: t('dashboard.common.error'),
         description: error.message || 'Failed to create lead',
         variant: 'destructive',
       });
@@ -103,13 +105,13 @@ export default function Leads() {
       setIsEditModalOpen(false);
       setSelectedLead(null);
       toast({
-        title: 'Success',
+        title: t('dashboard.common.success'),
         description: 'Lead updated successfully',
       });
     },
     onError: (error: any) => {
       toast({
-        title: 'Error',
+        title: t('dashboard.common.error'),
         description: error.message || 'Failed to update lead',
         variant: 'destructive',
       });
@@ -124,13 +126,13 @@ export default function Leads() {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['leads'] });
       toast({
-        title: 'Success',
+        title: t('dashboard.common.success'),
         description: 'Lead deleted successfully',
       });
     },
     onError: (error: any) => {
       toast({
-        title: 'Error',
+        title: t('dashboard.common.error'),
         description: error.message || 'Failed to delete lead',
         variant: 'destructive',
       });
@@ -142,14 +144,14 @@ export default function Leads() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-2xl font-bold">Leads</h2>
+          <h2 className="text-2xl font-bold">{t('dashboard.leads.title')}</h2>
           <p className="text-muted-foreground mt-1">
-            Manage your sales pipeline and customer relationships
+            {t('dashboard.leads.subtitle')}
           </p>
         </div>
         <Button onClick={() => setIsCreateModalOpen(true)}>
           <Plus className="w-4 h-4 mr-2" />
-          Add Lead
+          {t('dashboard.leads.add_lead')}
         </Button>
       </div>
 
@@ -158,7 +160,7 @@ export default function Leads() {
         <div className="relative flex-1">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
           <Input
-            placeholder="Search leads..."
+            placeholder={t('dashboard.common.search') + "..."}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="pl-10"
@@ -166,27 +168,27 @@ export default function Leads() {
         </div>
         <Select value={statusFilter} onValueChange={(v) => setStatusFilter(v as any)}>
           <SelectTrigger className="w-full sm:w-[180px]">
-            <SelectValue placeholder="Status" />
+            <SelectValue placeholder={t('dashboard.leads.columns.status')} />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">All Status</SelectItem>
-            <SelectItem value="new">New</SelectItem>
-            <SelectItem value="contacted">Contacted</SelectItem>
-            <SelectItem value="qualified">Qualified</SelectItem>
-            <SelectItem value="proposal_sent">Proposal Sent</SelectItem>
-            <SelectItem value="won">Won</SelectItem>
-            <SelectItem value="lost">Lost</SelectItem>
+            <SelectItem value="all">{t('dashboard.status.all')}</SelectItem>
+            <SelectItem value="new">{t('dashboard.status.new')}</SelectItem>
+            <SelectItem value="contacted">{t('dashboard.status.contacted')}</SelectItem>
+            <SelectItem value="qualified">{t('dashboard.status.qualified')}</SelectItem>
+            <SelectItem value="proposal_sent">{t('dashboard.status.proposal_sent')}</SelectItem>
+            <SelectItem value="won">{t('dashboard.status.won')}</SelectItem>
+            <SelectItem value="lost">{t('dashboard.status.lost')}</SelectItem>
           </SelectContent>
         </Select>
         <Select value={priorityFilter} onValueChange={(v) => setPriorityFilter(v as any)}>
           <SelectTrigger className="w-full sm:w-[180px]">
-            <SelectValue placeholder="Priority" />
+            <SelectValue placeholder={t('dashboard.leads.columns.priority')} />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">All Priority</SelectItem>
-            <SelectItem value="high">High</SelectItem>
-            <SelectItem value="medium">Medium</SelectItem>
-            <SelectItem value="low">Low</SelectItem>
+            <SelectItem value="all">{t('dashboard.priority.all')}</SelectItem>
+            <SelectItem value="high">{t('dashboard.priority.high')}</SelectItem>
+            <SelectItem value="medium">{t('dashboard.priority.medium')}</SelectItem>
+            <SelectItem value="low">{t('dashboard.priority.low')}</SelectItem>
           </SelectContent>
         </Select>
       </div>
@@ -196,25 +198,25 @@ export default function Leads() {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead>Name</TableHead>
-              <TableHead>Email</TableHead>
-              <TableHead>Industry</TableHead>
-              <TableHead>Status</TableHead>
-              <TableHead>Priority</TableHead>
-              <TableHead className="text-right">Actions</TableHead>
+              <TableHead>{t('dashboard.leads.columns.name')}</TableHead>
+              <TableHead>{t('dashboard.leads.columns.email')}</TableHead>
+              <TableHead>{t('dashboard.leads.columns.industry')}</TableHead>
+              <TableHead>{t('dashboard.leads.columns.status')}</TableHead>
+              <TableHead>{t('dashboard.leads.columns.priority')}</TableHead>
+              <TableHead className="text-right">{t('dashboard.common.actions')}</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {isLoading ? (
               <TableRow>
                 <TableCell colSpan={6} className="text-center py-8">
-                  Loading...
+                  {t('dashboard.common.loading')}
                 </TableCell>
               </TableRow>
             ) : !data || data.length === 0 ? (
               <TableRow>
                 <TableCell colSpan={6} className="text-center py-8 text-muted-foreground">
-                  No leads found
+                  {t('dashboard.common.no_data')}
                 </TableCell>
               </TableRow>
             ) : (
@@ -225,12 +227,12 @@ export default function Leads() {
                   <TableCell>{lead.industry}</TableCell>
                   <TableCell>
                     <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${STATUS_COLORS[lead.status]}`}>
-                      {lead.status.replace('_', ' ')}
+                      {t(`dashboard.status.${lead.status}`)}
                     </span>
                   </TableCell>
                   <TableCell>
                     <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${PRIORITY_COLORS[lead.priority]}`}>
-                      {lead.priority}
+                      {t(`dashboard.priority.${lead.priority}`)}
                     </span>
                   </TableCell>
                   <TableCell className="text-right">
@@ -249,7 +251,7 @@ export default function Leads() {
                         variant="ghost"
                         size="sm"
                         onClick={() => {
-                          if (confirm('Are you sure you want to delete this lead?')) {
+                          if (confirm(t('dashboard.common.confirm_delete'))) {
                             deleteMutation.mutate(lead.id);
                           }
                         }}

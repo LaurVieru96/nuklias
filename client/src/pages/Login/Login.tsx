@@ -6,11 +6,13 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
 import { useToast } from '@/hooks/use-toast';
+import { useTranslation } from 'react-i18next';
 
 export default function Login() {
   const [, setLocation] = useLocation();
   const { login } = useAuth();
   const { toast } = useToast();
+  const { t } = useTranslation();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -27,8 +29,8 @@ export default function Login() {
       console.log('Login successful, redirecting to dashboard...');
       
       toast({
-        title: 'Login successful',
-        description: 'Welcome back!',
+        title: t('auth.login_success'),
+        description: t('auth.welcome_back'),
       });
       
       // Force redirect to dashboard using window.location
@@ -36,7 +38,7 @@ export default function Login() {
     } catch (error: any) {
       console.error('Login error:', error);
       toast({
-        title: 'Login failed',
+        title: t('auth.login_failed'),
         description: error.message || 'Invalid email or password',
         variant: 'destructive',
       });
@@ -50,8 +52,8 @@ export default function Login() {
       <div className="w-full max-w-md space-y-8">
         {/* Logo/Header */}
         <div className="text-center">
-          <h1 className="text-3xl font-bold">Nuklias Dashboard</h1>
-          <p className="text-muted-foreground mt-2">Sign in to your account</p>
+          <h1 className="text-3xl font-bold">{t('auth.login_title')}</h1>
+          <p className="text-muted-foreground mt-2">{t('auth.login_subtitle')}</p>
         </div>
 
         {/* Login Form */}
@@ -59,7 +61,7 @@ export default function Login() {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Email */}
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email">{t('auth.email')}</Label>
               <Input
                 id="email"
                 type="email"
@@ -74,7 +76,7 @@ export default function Login() {
 
             {/* Password */}
             <div className="space-y-2">
-              <Label htmlFor="password">Password</Label>
+              <Label htmlFor="password">{t('auth.password')}</Label>
               <Input
                 id="password"
                 type="password"
@@ -99,7 +101,7 @@ export default function Login() {
                 htmlFor="remember"
                 className="text-sm font-normal cursor-pointer"
               >
-                Remember me for 30 days
+                {t('auth.remember_me')}
               </Label>
             </div>
 
@@ -109,13 +111,13 @@ export default function Login() {
               className="w-full"
               disabled={isLoading}
             >
-              {isLoading ? 'Signing in...' : 'Sign in'}
+              {isLoading ? t('auth.signing_in') : t('auth.sign_in')}
             </Button>
           </form>
 
           {/* Test Credentials */}
           <div className="mt-6 p-4 bg-muted rounded-md text-sm">
-            <p className="font-semibold mb-2">Test Credentials:</p>
+            <p className="font-semibold mb-2">{t('auth.test_credentials')}:</p>
             <p className="text-muted-foreground">
               <strong>Admin:</strong> admin@nuklias.com / Admin123!
             </p>
@@ -131,7 +133,7 @@ export default function Login() {
             onClick={() => setLocation('/')}
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
-            ← Back to home
+            ← {t('auth.back_home')}
           </button>
         </div>
       </div>

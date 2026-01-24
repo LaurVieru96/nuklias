@@ -32,6 +32,7 @@ import {
 } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
+import { useTranslation } from 'react-i18next';
 
 const STATUS_COLORS: Record<TaskStatus, string> = {
   todo: 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200',
@@ -48,6 +49,7 @@ const PRIORITY_COLORS: Record<TaskPriority, string> = {
 export default function Tasks() {
   const { toast } = useToast();
   const { user } = useAuth();
+  const { t } = useTranslation();
   const queryClient = useQueryClient();
   const [search, setSearch] = useState('');
   const [statusFilter, setStatusFilter] = useState<TaskStatus | 'all'>('all');
@@ -79,13 +81,13 @@ export default function Tasks() {
       queryClient.invalidateQueries({ queryKey: ['tasks'] });
       setIsCreateModalOpen(false);
       toast({
-        title: 'Success',
+        title: t('dashboard.common.success'),
         description: 'Task created successfully',
       });
     },
     onError: (error: any) => {
       toast({
-        title: 'Error',
+        title: t('dashboard.common.error'),
         description: error.message || 'Failed to create task',
         variant: 'destructive',
       });
@@ -102,13 +104,13 @@ export default function Tasks() {
       setIsEditModalOpen(false);
       setSelectedTask(null);
       toast({
-        title: 'Success',
+        title: t('dashboard.common.success'),
         description: 'Task updated successfully',
       });
     },
     onError: (error: any) => {
       toast({
-        title: 'Error',
+        title: t('dashboard.common.error'),
         description: error.message || 'Failed to update task',
         variant: 'destructive',
       });
@@ -123,13 +125,13 @@ export default function Tasks() {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['tasks'] });
       toast({
-        title: 'Success',
+        title: t('dashboard.common.success'),
         description: 'Task deleted successfully',
       });
     },
     onError: (error: any) => {
       toast({
-        title: 'Error',
+        title: t('dashboard.common.error'),
         description: error.message || 'Failed to delete task',
         variant: 'destructive',
       });
@@ -141,14 +143,14 @@ export default function Tasks() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-2xl font-bold">Tasks</h2>
+          <h2 className="text-2xl font-bold">{t('dashboard.tasks.title')}</h2>
           <p className="text-muted-foreground mt-1">
-            Manage your team's tasks and track progress
+            {t('dashboard.tasks.subtitle')}
           </p>
         </div>
         <Button onClick={() => setIsCreateModalOpen(true)}>
           <Plus className="w-4 h-4 mr-2" />
-          Add Task
+          {t('dashboard.tasks.add_task')}
         </Button>
       </div>
 
@@ -157,7 +159,7 @@ export default function Tasks() {
         <div className="relative flex-1">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
           <Input
-            placeholder="Search tasks..."
+            placeholder={t('dashboard.common.search') + "..."}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="pl-10"
@@ -165,24 +167,24 @@ export default function Tasks() {
         </div>
         <Select value={statusFilter} onValueChange={(v) => setStatusFilter(v as any)}>
           <SelectTrigger className="w-full sm:w-[180px]">
-            <SelectValue placeholder="Status" />
+            <SelectValue placeholder={t('dashboard.tasks.columns.status')} />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">All Status</SelectItem>
-            <SelectItem value="todo">To Do</SelectItem>
-            <SelectItem value="in_progress">In Progress</SelectItem>
-            <SelectItem value="done">Done</SelectItem>
+            <SelectItem value="all">{t('dashboard.status.all')}</SelectItem>
+            <SelectItem value="todo">{t('dashboard.status.todo')}</SelectItem>
+            <SelectItem value="in_progress">{t('dashboard.status.in_progress')}</SelectItem>
+            <SelectItem value="done">{t('dashboard.status.done')}</SelectItem>
           </SelectContent>
         </Select>
         <Select value={priorityFilter} onValueChange={(v) => setPriorityFilter(v as any)}>
           <SelectTrigger className="w-full sm:w-[180px]">
-            <SelectValue placeholder="Priority" />
+            <SelectValue placeholder={t('dashboard.tasks.columns.priority')} />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">All Priority</SelectItem>
-            <SelectItem value="high">High</SelectItem>
-            <SelectItem value="medium">Medium</SelectItem>
-            <SelectItem value="low">Low</SelectItem>
+            <SelectItem value="all">{t('dashboard.priority.all')}</SelectItem>
+            <SelectItem value="high">{t('dashboard.priority.high')}</SelectItem>
+            <SelectItem value="medium">{t('dashboard.priority.medium')}</SelectItem>
+            <SelectItem value="low">{t('dashboard.priority.low')}</SelectItem>
           </SelectContent>
         </Select>
       </div>
@@ -192,24 +194,24 @@ export default function Tasks() {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead>Title</TableHead>
-              <TableHead>Description</TableHead>
-              <TableHead>Status</TableHead>
-              <TableHead>Priority</TableHead>
-              <TableHead className="text-right">Actions</TableHead>
+              <TableHead>{t('dashboard.tasks.columns.title')}</TableHead>
+              <TableHead>{t('dashboard.tasks.columns.description')}</TableHead>
+              <TableHead>{t('dashboard.tasks.columns.status')}</TableHead>
+              <TableHead>{t('dashboard.tasks.columns.priority')}</TableHead>
+              <TableHead className="text-right">{t('dashboard.common.actions')}</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {isLoading ? (
               <TableRow>
                 <TableCell colSpan={5} className="text-center py-8">
-                  Loading...
+                  {t('dashboard.common.loading')}
                 </TableCell>
               </TableRow>
             ) : !data || data.length === 0 ? (
               <TableRow>
                 <TableCell colSpan={5} className="text-center py-8 text-muted-foreground">
-                  No tasks found
+                  {t('dashboard.common.no_data')}
                 </TableCell>
               </TableRow>
             ) : (
@@ -219,12 +221,12 @@ export default function Tasks() {
                   <TableCell className="max-w-xs truncate">{task.description || '-'}</TableCell>
                   <TableCell>
                     <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${STATUS_COLORS[task.status]}`}>
-                      {task.status.replace('_', ' ')}
+                      {t(`dashboard.status.${task.status}`)}
                     </span>
                   </TableCell>
                   <TableCell>
                     <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${PRIORITY_COLORS[task.priority]}`}>
-                      {task.priority}
+                      {t(`dashboard.priority.${task.priority}`)}
                     </span>
                   </TableCell>
                   <TableCell className="text-right">
@@ -243,7 +245,7 @@ export default function Tasks() {
                         variant="ghost"
                         size="sm"
                         onClick={() => {
-                          if (confirm('Are you sure you want to delete this task?')) {
+                          if (confirm(t('dashboard.common.confirm_delete'))) {
                             deleteMutation.mutate(task.id);
                           }
                         }}

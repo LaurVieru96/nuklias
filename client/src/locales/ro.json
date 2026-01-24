@@ -504,5 +504,142 @@
         "content": "Ne rezervăm dreptul, la discreția noastră, de a modifica sau înlocui acești Termeni în orice moment. Continuând să accesați sau să utilizați Serviciul nostru după ce acele revizuiri devin efective, sunteți de acord să respectați termenii revizuiți"
       }
     }
+  },
+  "dashboard": {
+    "nav": {
+      "dashboard": "Panou de Control",
+      "leads": "Lead-uri",
+      "tasks": "Sarcini",
+      "users": "Utilizatori",
+      "profile": "Profil",
+      "logout": "Deconectare"
+    },
+    "common": {
+      "add": "Adaugă",
+      "edit": "Editează",
+      "delete": "Șterge",
+      "search": "Caută",
+      "actions": "Acțiuni",
+      "cancel": "Anulează",
+      "save": "Salvează",
+      "update": "Actualizează",
+      "create": "Creează",
+      "back": "Înapoi",
+      "loading": "Se încarcă...",
+      "success": "Succes",
+      "error": "Eroare",
+      "confirm_delete": "Ești sigur că vrei să ștergi acest element?",
+      "no_data": "Nu s-au găsit date"
+    },
+    "home": {
+      "welcome": "Bine ai revenit, {{name}}!",
+      "subtitle": "Iată ce se întâmplă cu afacerea ta astăzi.",
+      "quick_actions": "Acțiuni Rapide",
+      "new_lead": "Lead Nou",
+      "new_task": "Sarcină Nouă",
+      "view_leads": "Vezi Toate Lead-urile",
+      "view_tasks": "Vezi Toate Sarcinile",
+      "coming_soon": "Mai Multe Funcționalități în Curând",
+      "coming_soon_desc": "Lead-uri recente, sarcinile tale și analize detaliate vor fi adăugate în curând.",
+      "stats": {
+        "new_leads": "Lead-uri Noi",
+        "active_tasks": "Sarcini Active",
+        "conversion_rate": "Rată de Conversie",
+        "team_activity": "Activitate Echipă"
+      }
+    },
+    "leads": {
+      "title": "Lead-uri",
+      "subtitle": "Gestionează pipeline-ul de vânzări și relațiile cu clienții",
+      "add_lead": "Adaugă Lead",
+      "edit_lead": "Editează Lead",
+      "create_lead": "Creează Lead Nou",
+      "create_desc": "Adaugă un nou lead în pipeline",
+      "edit_desc": "Actualizează informațiile lead-ului",
+      "columns": {
+        "name": "Nume",
+        "email": "Email",
+        "phone": "Telefon",
+        "location": "Locație",
+        "industry": "Industrie",
+        "status": "Stare",
+        "priority": "Prioritate",
+        "business_type": "Tip Afacere",
+        "challenge": "Provocare",
+        "message": "Mesaj"
+      }
+    },
+    "tasks": {
+      "title": "Sarcini",
+      "subtitle": "Gestionează sarcinile echipei și urmărește progresul",
+      "add_task": "Adaugă Sarcină",
+      "edit_task": "Editează Sarcină",
+      "create_task": "Creează Sarcină Nouă",
+      "create_desc": "Adaugă o nouă sarcină în listă",
+      "edit_desc": "Actualizează informațiile sarcinii",
+      "columns": {
+        "title": "Titlu",
+        "description": "Descriere",
+        "status": "Stare",
+        "priority": "Prioritate",
+        "assigned_to": "Atribuit Lui"
+      }
+    },
+    "users": {
+      "title": "Utilizatori",
+      "subtitle": "Gestionează membrii echipei și accesul lor",
+      "add_user": "Adaugă Utilizator",
+      "edit_user": "Editează Utilizator",
+      "create_user": "Creează Utilizator Nou",
+      "create_desc": "Adaugă un nou membru în echipă",
+      "edit_desc": "Actualizează informațiile și permisiunile utilizatorului",
+      "email_immutable": "Email-ul nu poate fi schimbat",
+      "columns": {
+        "name": "Nume",
+        "email": "Email",
+        "role": "Rol",
+        "status": "Stare",
+        "first_name": "Prenume",
+        "last_name": "Nume"
+      }
+    },
+    "status": {
+      "all": "Toate",
+      "new": "Nou",
+      "contacted": "Contactat",
+      "qualified": "Calificat",
+      "proposal_sent": "Ofertă Trimisă",
+      "won": "Câștigat",
+      "lost": "Pierdut",
+      "todo": "De Făcut",
+      "in_progress": "În Lucru",
+      "done": "Finalizat",
+      "active": "Activ",
+      "inactive": "Inactiv"
+    },
+    "priority": {
+      "all": "Toate",
+      "high": "Ridicată",
+      "medium": "Medie",
+      "low": "Scăzută"
+    },
+    "roles": {
+      "admin": "Admin",
+      "member": "Membru"
+    }
+  },
+  "auth": {
+    "login_title": "Nuklias Dashboard",
+    "login_subtitle": "Autentifică-te în contul tău",
+    "email": "Email",
+    "password": "Parolă",
+    "remember_me": "Ține-mă minte 30 de zile",
+    "sign_in": "Autentificare",
+    "signing_in": "Se autentifică...",
+    "back_home": "Înapoi la site",
+    "login_success": "Autentificare reușită",
+    "welcome_back": "Bine ai revenit!",
+    "login_failed": "Autentificare eșuată",
+    "test_credentials": "Date de Test"
   }
 }

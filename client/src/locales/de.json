@@ -504,5 +504,142 @@
         "content": "Wir behalten uns das Recht vor, diese Bedingungen nach eigenem Ermessen jederzeit zu ändern oder zu ersetzen. Durch die fortgesetzte Nutzung unseres Dienstes nach Inkrafttreten dieser Änderungen stimmen Sie zu, an die überarbeiteten Bedingungen gebunden zu sein"
       }
     }
+  },
+  "dashboard": {
+    "nav": {
+      "dashboard": "Dashboard",
+      "leads": "Leads",
+      "tasks": "Aufgaben",
+      "users": "Benutzer",
+      "profile": "Profil",
+      "logout": "Abmelden"
+    },
+    "common": {
+      "add": "Hinzufügen",
+      "edit": "Bearbeiten",
+      "delete": "Löschen",
+      "search": "Suchen",
+      "actions": "Aktionen",
+      "cancel": "Abbrechen",
+      "save": "Speichern",
+      "update": "Aktualisieren",
+      "create": "Erstellen",
+      "back": "Zurück",
+      "loading": "Laden...",
+      "success": "Erfolg",
+      "error": "Fehler",
+      "confirm_delete": "Möchten Sie dieses Element wirklich löschen?",
+      "no_data": "Keine Daten gefunden"
+    },
+    "home": {
+      "welcome": "Willkommen zurück, {{name}}!",
+      "subtitle": "Hier ist, was heute in Ihrem Unternehmen passiert.",
+      "quick_actions": "Schnellaktionen",
+      "new_lead": "Neuer Lead",
+      "new_task": "Neue Aufgabe",
+      "view_leads": "Alle Leads anzeigen",
+      "view_tasks": "Alle Aufgaben anzeigen",
+      "coming_soon": "Weitere Funktionen kommen bald",
+      "coming_soon_desc": "Aktuelle Leads, Ihre Aufgaben und detaillierte Analysen werden als nächstes hinzugefügt.",
+      "stats": {
+        "new_leads": "Neue Leads",
+        "active_tasks": "Aktive Aufgaben",
+        "conversion_rate": "Konversionsrate",
+        "team_activity": "Teamaktivität"
+      }
+    },
+    "leads": {
+      "title": "Leads",
+      "subtitle": "Verwalten Sie Ihre Vertriebspipeline und Kundenbeziehungen",
+      "add_lead": "Lead hinzufügen",
+      "edit_lead": "Lead bearbeiten",
+      "create_lead": "Neuen Lead erstellen",
+      "create_desc": "Einen neuen Lead zur Pipeline hinzufügen",
+      "edit_desc": "Lead-Informationen aktualisieren",
+      "columns": {
+        "name": "Name",
+        "email": "E-Mail",
+        "phone": "Telefon",
+        "location": "Standort",
+        "industry": "Branche",
+        "status": "Status",
+        "priority": "Priorität",
+        "business_type": "Geschäftstyp",
+        "challenge": "Herausforderung",
+        "message": "Nachricht"
+      }
+    },
+    "tasks": {
+      "title": "Aufgaben",
+      "subtitle": "Verwalten Sie Teamaufgaben und verfolgen Sie den Fortschritt",
+      "add_task": "Aufgabe hinzufügen",
+      "edit_task": "Aufgabe bearbeiten",
+      "create_task": "Neue Aufgabe erstellen",
+      "create_desc": "Eine neue Aufgabe zur Liste hinzufügen",
+      "edit_desc": "Aufgabeninformationen aktualisieren",
+      "columns": {
+        "title": "Titel",
+        "description": "Beschreibung",
+        "status": "Status",
+        "priority": "Priorität",
+        "assigned_to": "Zugewiesen an"
+      }
+    },
+    "users": {
+      "title": "Benutzer",
+      "subtitle": "Teammitglieder und deren Zugriff verwalten",
+      "add_user": "Benutzer hinzufügen",
+      "edit_user": "Benutzer bearbeiten",
+      "create_user": "Neuen Benutzer erstellen",
+      "create_desc": "Ein neues Teammitglied zum Dashboard hinzufügen",
+      "edit_desc": "Benutzerinformationen und Berechtigungen aktualisieren",
+      "email_immutable": "E-Mail kann nicht geändert werden",
+      "columns": {
+        "name": "Name",
+        "email": "E-Mail",
+        "role": "Rolle",
+        "status": "Status",
+        "first_name": "Vorname",
+        "last_name": "Nachname"
+      }
+    },
+    "status": {
+      "all": "Alle",
+      "new": "Neu",
+      "contacted": "Kontaktiert",
+      "qualified": "Qualifiziert",
+      "proposal_sent": "Angebot gesendet",
+      "won": "Gewonnen",
+      "lost": "Verloren",
+      "todo": "Zu erledigen",
+      "in_progress": "In Bearbeitung",
+      "done": "Erledigt",
+      "active": "Aktiv",
+      "inactive": "Inaktiv"
+    },
+    "priority": {
+      "all": "Alle",
+      "high": "Hoch",
+      "medium": "Mittel",
+      "low": "Niedrig"
+    },
+    "roles": {
+      "admin": "Admin",
+      "member": "Mitglied"
+    }
+  },
+  "auth": {
+    "login_title": "Nuklias Dashboard",
+    "login_subtitle": "Melden Sie sich bei Ihrem Konto an",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "remember_me": "30 Tage lang angemeldet bleiben",
+    "sign_in": "Anmelden",
+    "signing_in": "Anmelden...",
+    "back_home": "Zurück zur Startseite",
+    "login_success": "Anmeldung erfolgreich",
+    "welcome_back": "Willkommen zurück!",
+    "login_failed": "Anmeldung fehlgeschlagen",
+    "test_credentials": "Testanmeldedaten"
   }
 }

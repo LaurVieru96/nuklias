@@ -30,9 +30,11 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
+import { useTranslation } from 'react-i18next';
 
 export default function Users() {
   const { toast } = useToast();
+  const { t } = useTranslation();
   const queryClient = useQueryClient();
   const [search, setSearch] = useState('');
   const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
@@ -57,13 +59,13 @@ export default function Users() {
       queryClient.invalidateQueries({ queryKey: ['users'] });
       setIsCreateModalOpen(false);
       toast({
-        title: 'Success',
+        title: t('dashboard.common.success'),
         description: 'User created successfully',
       });
     },
     onError: (error: any) => {
       toast({
-        title: 'Error',
+        title: t('dashboard.common.error'),
         description: error.message || 'Failed to create user',
         variant: 'destructive',
       });
@@ -80,13 +82,13 @@ export default function Users() {
       setIsEditModalOpen(false);
       setSelectedUser(null);
       toast({
-        title: 'Success',
+        title: t('dashboard.common.success'),
         description: 'User updated successfully',
       });
     },
     onError: (error: any) => {
       toast({
-        title: 'Error',
+        title: t('dashboard.common.error'),
         description: error.message || 'Failed to update user',
         variant: 'destructive',
       });
@@ -101,13 +103,13 @@ export default function Users() {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['users'] });
       toast({
-        title: 'Success',
+        title: t('dashboard.common.success'),
         description: 'User deleted successfully',
       });
     },
     onError: (error: any) => {
       toast({
-        title: 'Error',
+        title: t('dashboard.common.error'),
         description: error.message || 'Failed to delete user',
         variant: 'destructive',
       });
@@ -125,14 +127,14 @@ export default function Users() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-2xl font-bold">Users</h2>
+          <h2 className="text-2xl font-bold">{t('dashboard.users.title')}</h2>
           <p className="text-muted-foreground mt-1">
-            Manage team members and their access
+            {t('dashboard.users.subtitle')}
           </p>
         </div>
         <Button onClick={() => setIsCreateModalOpen(true)}>
           <Plus className="w-4 h-4 mr-2" />
-          Add User
+          {t('dashboard.users.add_user')}
         </Button>
       </div>
 
@@ -141,7 +143,7 @@ export default function Users() {
         <div className="relative flex-1 max-w-sm">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
           <Input
-            placeholder="Search users..."
+            placeholder={t('dashboard.common.search') + "..."}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="pl-10"
@@ -154,24 +156,24 @@ export default function Users() {
         <Table>
           <TableHeader>
             <TableRow>
-              <TableHead>Name</TableHead>
-              <TableHead>Email</TableHead>
-              <TableHead>Role</TableHead>
-              <TableHead>Status</TableHead>
-              <TableHead className="text-right">Actions</TableHead>
+              <TableHead>{t('dashboard.users.columns.name')}</TableHead>
+              <TableHead>{t('dashboard.users.columns.email')}</TableHead>
+              <TableHead>{t('dashboard.users.columns.role')}</TableHead>
+              <TableHead>{t('dashboard.users.columns.status')}</TableHead>
+              <TableHead className="text-right">{t('dashboard.common.actions')}</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {isLoading ? (
               <TableRow>
                 <TableCell colSpan={5} className="text-center py-8">
-                  Loading...
+                  {t('dashboard.common.loading')}
                 </TableCell>
               </TableRow>
             ) : filteredUsers.length === 0 ? (
               <TableRow>
                 <TableCell colSpan={5} className="text-center py-8 text-muted-foreground">
-                  No users found
+                  {t('dashboard.common.no_data')}
                 </TableCell>
               </TableRow>
             ) : (
@@ -187,7 +189,7 @@ export default function Users() {
                         ? 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200'
                         : 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200'
                     }`}>
-                      {user.role}
+                      {t(`dashboard.roles.${user.role}`)}
                     </span>
                   </TableCell>
                   <TableCell>
@@ -196,7 +198,7 @@ export default function Users() {
                         ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
                         : 'bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200'
                     }`}>
-                      {user.isActive ? 'Active' : 'Inactive'}
+                      {user.isActive ? t('dashboard.status.active') : t('dashboard.status.inactive')}
                     </span>
                   </TableCell>
                   <TableCell className="text-right">
@@ -215,7 +217,7 @@ export default function Users() {
                         variant="ghost"
                         size="sm"
                         onClick={() => {
-                          if (confirm('Are you sure you want to delete this user?')) {
+                          if (confirm(t('dashboard.common.confirm_delete'))) {
                             deleteMutation.mutate(user.id);
                           }
                         }}

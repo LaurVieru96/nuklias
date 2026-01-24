@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import { Link, useLocation } from 'wouter';
 import { useAuth } from '@/contexts/AuthContext';
+import { useTranslation } from 'react-i18next';
 import { 
   LayoutDashboard, 
   Users, 
@@ -29,13 +30,14 @@ interface DashboardLayoutProps {
 export function DashboardLayout({ children }: DashboardLayoutProps) {
   const [location] = useLocation();
   const { user, logout } = useAuth();
+  const { t } = useTranslation();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const navigation = [
-    { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard, roles: ['admin', 'member'] },
-    { name: 'Leads', href: '/dashboard/leads', icon: Briefcase, roles: ['admin', 'member'] },
-    { name: 'Tasks', href: '/dashboard/tasks', icon: CheckSquare, roles: ['admin', 'member'] },
-    { name: 'Users', href: '/dashboard/users', icon: Users, roles: ['admin'] },
+    { name: t('dashboard.nav.dashboard'), href: '/dashboard', icon: LayoutDashboard, roles: ['admin', 'member'] },
+    { name: t('dashboard.nav.leads'), href: '/dashboard/leads', icon: Briefcase, roles: ['admin', 'member'] },
+    { name: t('dashboard.nav.tasks'), href: '/dashboard/tasks', icon: CheckSquare, roles: ['admin', 'member'] },
+    { name: t('dashboard.nav.users'), href: '/dashboard/users', icon: Users, roles: ['admin'] },
   ];
 
   const filteredNavigation = navigation.filter(item => 
@@ -70,7 +72,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
               
               return (
                 <Link
-                  key={item.name}
+                  key={item.href}
                   href={item.href}
                   className={`flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
                     isActive
@@ -139,7 +141,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
                 
                 return (
                   <Link
-                    key={item.name}
+                    key={item.href}
                     href={item.href}
                     onClick={() => setIsSidebarOpen(false)}
                     className={`flex items-center gap-3 px-4 py-3 text-sm font-medium rounded-lg transition-colors ${
@@ -194,7 +196,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
           {/* Breadcrumb / Title */}
           <div className="flex-1">
             <h1 className="text-lg font-semibold">
-              {filteredNavigation.find(item => item.href === location)?.name || 'Dashboard'}
+              {filteredNavigation.find(item => item.href === location)?.name || t('dashboard.nav.dashboard')}
             </h1>
           </div>
 
@@ -217,14 +219,14 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
                     {user?.email}
                   </p>
                   <p className="text-xs text-muted-foreground capitalize">
-                    Role: {user?.role}
+                    {t(`dashboard.roles.${user?.role || 'member'}`)}
                   </p>
                 </div>
               </DropdownMenuLabel>
               <DropdownMenuSeparator />
               <DropdownMenuItem onClick={handleLogout} className="cursor-pointer">
                 <LogOut className="mr-2 h-4 w-4" />
-                <span>Log out</span>
+                <span>{t('dashboard.nav.logout')}</span>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
