@@ -1,11 +1,13 @@
 import { Link, useLocation } from "wouter";
-import { Menu, X } from "lucide-react";
+import { Menu, X, DoorOpen } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
+import { useAuth } from "@/contexts/AuthContext";
 
 export function Navbar() {
   const { t } = useTranslation();
+  const { isAuthenticated } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
   const [location] = useLocation();
 
@@ -46,6 +48,17 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
+            
+            {/* Dashboard Icon - Always visible, redirects to login if not authenticated */}
+            <Link
+              href={isAuthenticated ? "/dashboard" : "/login"}
+              className="ml-2 p-2.5 rounded-lg hover:bg-accent/10 transition-all duration-300 relative group"
+              title={isAuthenticated ? "Dashboard" : "Login"}
+            >
+              <DoorOpen 
+                className="w-5 h-5 text-foreground/70 group-hover:text-primary transition-colors" 
+              />
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -85,6 +98,23 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
+              
+              {/* Dashboard Link - Always visible in mobile */}
+              <Link
+                href={isAuthenticated ? "/dashboard" : "/login"}
+                onClick={() => handleNav(isAuthenticated ? "/dashboard" : "/login")}
+                className={`block w-full text-left py-3 px-4 rounded-lg font-medium transition-colors text-lg ${
+                  location === "/dashboard" || location === "/login"
+                    ? "bg-accent/10 text-primary font-bold border-l-4 border-accent"
+                    : "text-foreground/80 hover:text-primary hover:bg-black/5 dark:hover:bg-white/5 active:bg-black/10"
+                }`}
+              >
+                <div className="flex items-center gap-2">
+                  <DoorOpen className="w-5 h-5" />
+                  {isAuthenticated ? "Dashboard" : "Login"}
+                </div>
+              </Link>
+              
               <div className="pt-4 mt-4 border-t border-border/50">
                 <Link 
                   href="/contact"
