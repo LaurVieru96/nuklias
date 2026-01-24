@@ -546,6 +546,21 @@
         "active_tasks": "Sarcini Active",
         "conversion_rate": "Rată de Conversie",
         "team_activity": "Activitate Echipă"
+      },
+      "recent_leads": "Lead-uri Recente",
+      "your_tasks": "Sarcinile Tale",
+      "view_all": "Vezi Tot",
+      "no_recent_leads": "Nu s-au găsit lead-uri recente.",
+      "no_active_tasks": "Nu ai sarcini active atribuite.",
+      "updated_just_now": "Actualizat acum",
+      "date": "Data",
+      "due": "Termen",
+      "glossary": {
+        "title": "Ghid Metrici Dashboard",
+        "new_leads": "Clienți potențiali care au intrat recent în pipeline-ul tău.",
+        "active_tasks": "Sarcini aflate în lucru sau care așteaptă să fie rezolvate.",
+        "conversion_rate": "Procentul de lead-uri transformate în clienți plătitori.",
+        "team_activity": "Numărul membrilor din echipă activi în această lună."
       }
     },
     "leads": {

@@ -92,7 +92,7 @@ export const authApi = {
 };
 
 // ============================================
-// USERS API (to be implemented)
+// USERS API
 // ============================================
 
 export const usersApi = {
@@ -100,25 +100,41 @@ export const usersApi = {
 };
 
 // ============================================
-// LEADS API (to be implemented)
+// LEADS API
 // ============================================
 
 export const leadsApi = {
-  // TODO: Implement lead CRUD operations
+  list: (params?: any) => api.get<any>('/leads' + (params ? '?' + new URLSearchParams(params) : '')),
+  create: (data: any) => api.post<any>('/leads', data),
+  get: (id: string) => api.get<any>(`/leads/${id}`),
+  update: (id: string, data: any) => api.put<any>(`/leads/${id}`, data),
+  delete: (id: string) => api.delete<any>(`/leads/${id}`),
 };
 
 // ============================================
-// TASKS API (to be implemented)
+// TASKS API
 // ============================================
 
 export const tasksApi = {
-  // TODO: Implement task CRUD operations
+  list: (params?: any) => api.get<any>('/tasks' + (params ? '?' + new URLSearchParams(params) : '')),
+  create: (data: any) => api.post<any>('/tasks', data),
+  get: (id: string) => api.get<any>(`/tasks/${id}`),
+  update: (id: string, data: any) => api.put<any>(`/tasks/${id}`, data),
+  delete: (id: string) => api.delete<any>(`/tasks/${id}`),
 };
 
 // ============================================
-// STATS API (to be implemented)
+// STATS API
 // ============================================
 
 export const statsApi = {
-  // TODO: Implement stats operations
+  getDashboard: () => api.get<{
+    success: boolean;
+    data: {
+      totalLeads: number;
+      activeTasks: number;
+      teamSize: number;
+      conversionRate: number;
+    }
+  }>('/stats/dashboard'),
 };

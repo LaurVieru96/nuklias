@@ -546,6 +546,21 @@
         "active_tasks": "Aktive Aufgaben",
         "conversion_rate": "Konversionsrate",
         "team_activity": "Teamaktivität"
+      },
+      "recent_leads": "Aktuelle Leads",
+      "your_tasks": "Ihre Aufgaben",
+      "view_all": "Alle ansehen",
+      "no_recent_leads": "Keine aktuellen Leads gefunden.",
+      "no_active_tasks": "Keine aktiven Aufgaben zugewiesen.",
+      "updated_just_now": "Gerade aktualisiert",
+      "date": "Datum",
+      "due": "Fällig",
+      "glossary": {
+        "title": "Dashboard-Metriken Leitfaden",
+        "new_leads": "Potenzielle Kunden, die kürzlich in Ihre Pipeline eingetreten sind.",
+        "active_tasks": "Aufgaben, die derzeit in Bearbeitung sind oder erledigt werden müssen.",
+        "conversion_rate": "Prozentsatz der Leads, die zu zahlenden Kunden wurden.",
+        "team_activity": "Anzahl der aktiven Teammitglieder in diesem Monat."
       }
     },
     "leads": {

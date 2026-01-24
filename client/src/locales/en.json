@@ -577,6 +577,21 @@
         "active_tasks": "Active Tasks",
         "conversion_rate": "Conversion Rate",
         "team_activity": "Team Activity"
+      },
+      "recent_leads": "Recent Leads",
+      "your_tasks": "Your Tasks",
+      "view_all": "View All",
+      "no_recent_leads": "No recent leads found.",
+      "no_active_tasks": "No active tasks assigned to you.",
+      "updated_just_now": "Updated just now",
+      "date": "Date",
+      "due": "Due",
+      "glossary": {
+        "title": "Dashboard Metrics Guide",
+        "new_leads": "Potential clients who have entered your pipeline recently.",
+        "active_tasks": "Tasks currently in progress or waiting to be done.",
+        "conversion_rate": "Percentage of leads that turned into paying customers.",
+        "team_activity": "Number of active team members working this month."
       }
     },
     "leads": {
