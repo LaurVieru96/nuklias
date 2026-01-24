@@ -38,6 +38,17 @@ export function ProductsSection() {
         t('products_section.tiers.gold.features.4'),
         t('products_section.tiers.gold.features.5')
       ]
+    },
+    {
+      tier: "talent" as const,
+      delay: 0.3,
+      features: [
+        t('products_section.tiers.talent.features.1'),
+        t('products_section.tiers.talent.features.2'),
+        t('products_section.tiers.talent.features.3'),
+        t('products_section.tiers.talent.features.4'),
+        t('products_section.tiers.talent.features.5')
+      ]
     }
   ]), [t]);
 
@@ -53,7 +64,7 @@ export function ProductsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 items-stretch">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {tiers.map((item) => (
             <ServiceCard
               key={item.tier}

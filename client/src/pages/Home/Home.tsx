@@ -2,6 +2,7 @@ import { Navbar } from "@/components/Navbar/Navbar";
 import { ClientJourney } from "@/components/ClientJourney/ClientJourney";
 import { ComparisonSection } from "@/components/ComparisonSection/ComparisonSection";
 import { Hero } from "@/components/Hero/Hero";
+import { TalentInfrastructureSection } from "@/components/TalentInfrastructureSection/TalentInfrastructureSection";
 import { ProductsSection } from "@/components/ProductsSection/ProductsSection";
 import { WhyUs } from "@/components/WhyUs/WhyUs";
 import { Footer } from "@/components/Footer/Footer";
@@ -23,6 +24,9 @@ export default function Home() {
 
       {/* Comparison Section */}
       <ComparisonSection />
+
+      {/* Talent Infrastructure Section */}
+      <TalentInfrastructureSection />
 
       {/* Products Section */}
       <ProductsSection />

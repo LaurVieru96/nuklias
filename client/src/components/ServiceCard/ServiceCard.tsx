@@ -5,7 +5,7 @@ interface ServiceCardProps {
   title: string;
   subtitle: string;
   features: string[];
-  tier: "bronze" | "silver" | "gold";
+  tier: "bronze" | "silver" | "gold" | "talent";
   delay?: number;
 }
 
@@ -15,20 +15,24 @@ import { Link } from "wouter";
 export function ServiceCard({ title, subtitle, features, tier, delay = 0 }: ServiceCardProps) {
   const { t } = useTranslation();
   const isGold = tier === "gold";
+  const isTalent = tier === "talent";
   
   const accentColor = 
     tier === "bronze" ? "border-sky-200 dark:border-sky-800/50 bg-sky-50/50 dark:bg-sky-900/20" : 
     tier === "silver" ? "border-emerald-200 dark:border-emerald-800/50 bg-emerald-50/50 dark:bg-emerald-900/20" : 
-    "border-purple-200 dark:border-purple-900/50 bg-purple-50/50 dark:bg-purple-950/30";
+    tier === "gold" ? "border-purple-200 dark:border-purple-900/50 bg-purple-50/50 dark:bg-purple-950/30" :
+    "border-accent dark:border-accent/50 bg-accent/5 dark:bg-accent/10 shadow-[0_0_15px_rgba(var(--accent),0.15)]";
 
   const checkStyles = 
     tier === "bronze" ? "bg-sky-100 text-sky-600 dark:bg-sky-900/50 dark:text-sky-400" :
     tier === "silver" ? "bg-emerald-100 text-emerald-600 dark:bg-emerald-900/50 dark:text-emerald-400" :
+    tier === "talent" ? "bg-accent/10 text-accent dark:bg-accent/20 dark:text-accent" :
     "bg-accent text-accent-foreground";
 
   const buttonStyles = 
     tier === "bronze" ? "bg-card border-2 border-sky-100 text-sky-600 hover:border-sky-300 hover:bg-sky-50 dark:bg-sky-600 dark:text-white dark:border-transparent dark:hover:bg-sky-500" :
     tier === "silver" ? "bg-card border-2 border-emerald-100 text-emerald-600 hover:border-emerald-300 hover:bg-emerald-50 dark:bg-emerald-600 dark:text-white dark:border-transparent dark:hover:bg-emerald-500" :
+    tier === "talent" ? "bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg shadow-accent/20" :
     "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20";
 
 
@@ -49,6 +53,11 @@ export function ServiceCard({ title, subtitle, features, tier, delay = 0 }: Serv
       {isGold && (
         <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-xs font-bold tracking-wider uppercase shadow-md">
           {t('products_section.most_popular')}
+        </div>
+      )}
+      {isTalent && (
+        <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground px-4 py-1 rounded-full text-xs font-bold tracking-wider uppercase shadow-md shadow-accent/20">
+          New
         </div>
       )}
 
@@ -72,7 +81,7 @@ export function ServiceCard({ title, subtitle, features, tier, delay = 0 }: Serv
           w-full py-3 rounded-xl font-bold text-sm transition-all duration-300 shadow-sm flex items-center justify-center
           ${buttonStyles}
         `}>
-          {t('products_section.request_quote')}
+          {isTalent ? t('products_section.deploy_hiring') : t('products_section.request_quote')}
         </Link>
     </motion.div>
   );

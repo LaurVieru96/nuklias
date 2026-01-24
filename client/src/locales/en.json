@@ -340,11 +340,30 @@
     "title": "404 Page Not Found",
     "desc": "Page not found"
   },
+  "talent_section": {
+    "title": "Talent Infrastructure & HR Tech",
+    "subtitle": "Deploy entire teams with the same speed and logic you deploy code",
+    "cards": {
+      "1": {
+        "title": "Visual Pipeline Architecture",
+        "desc": "Full visibility over your talent flow. Drag-and-drop Kanban boards to manage thousands of applicants without operational chaos"
+      },
+      "2": {
+        "title": "Algorithmic Automation",
+        "desc": "AI-driven logic layers to auto-reject unqualified leads, schedule interviews, and score candidates based on data points"
+      },
+      "3": {
+        "title": "Uncapped Scalability",
+        "desc": "Zero limits architecture. Unlimited recruiter seats, unlimited job openings, and infinite candidate data pools"
+      }
+    }
+  },
   "products_section": {
     "title": "Create Your Custom Website",
     "subtitle": "Pick the structure that matches where your business is today. Every option is built to be fast, clear, and conversion-focused",
     "most_popular": "Most Popular",
     "request_quote": "Request a Quote",
+    "deploy_hiring": "Deploy Hiring System",
     "tiers": {
       "bronze": {
         "title": "Website Basic",
@@ -377,6 +396,17 @@
           "3": "New page development as your offers evolve",
           "4": "Ongoing UX and conversion optimization",
           "5": "Priority support for experiments and iterations"
+        }
+      },
+      "talent": {
+        "title": "Nuklias Talent OS",
+        "subtitle": "The Hiring Engine for Growth-Focused Companies",
+        "features": {
+          "1": "Visual Applicant Tracking System (ATS)",
+          "2": "One-Click Multi-Board Broadcasting",
+          "3": "White-Label Career Portal Builder",
+          "4": "Automated Interview Scheduling",
+          "5": "Built-in Compliance & Data Logic"
         }
       }
     }
