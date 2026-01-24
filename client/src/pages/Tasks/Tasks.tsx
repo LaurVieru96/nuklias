@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { api } from '@/lib/api';
 import { useAuth } from '@/contexts/AuthContext';
-import type { Task, CreateTaskInput, UpdateTaskInput, TaskStatus, TaskPriority } from '@shared/types';
+import type { Task, CreateTaskInput, UpdateTaskInput, TaskStatus, TaskPriority } from '@/types';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Plus, Search, Edit, Trash2, CheckCircle2 } from 'lucide-react';
