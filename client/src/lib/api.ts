@@ -1,11 +1,5 @@
 import type { ApiError, ApiSuccess, User, LoginInput } from '@/types';
-
-// API base URL configuration
-// Production: Uses Render backend
-// Development: Uses local proxy (configured in vite.config.ts)
-const API_URL = import.meta.env.PROD 
-  ? 'https://nuklias-app.onrender.com' 
-  : '';
+import { API_BASE_URL } from '@/config/env';
 
 /**
  * Generic API client wrapper
@@ -13,7 +7,7 @@ const API_URL = import.meta.env.PROD
 class ApiClient {
   private baseUrl: string;
 
-  constructor(baseUrl: string = API_URL) {
+  constructor(baseUrl: string = API_BASE_URL) {
     // Remove trailing slash to avoid double slashes
     this.baseUrl = baseUrl.replace(/\/$/, '');
   }
