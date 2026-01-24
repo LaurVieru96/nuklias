@@ -58,7 +58,7 @@ export interface Lead {
   // Contact Info
   name: string;
   email: string;
-  phone?: string;
+  phone?: string | null;
   location: string;
   // Business Info
   industry: string;
@@ -68,19 +68,19 @@ export interface Lead {
   // CRM Fields
   status: LeadStatus;
   priority: LeadPriority;
-  assignedTo?: string; // User ID
-  estimatedValue?: number;
+  assignedTo?: string | null; // User ID
+  estimatedValue?: number | null;
   source: LeadSource;
   // Metadata
   createdAt: Date;
   updatedAt: Date;
-  deletedAt?: Date;
+  deletedAt?: Date | null;
 }
 
 export interface CreateLeadInput {
   name: string;
   email: string;
-  phone?: string;
+  phone?: string | null;
   location: string;
   industry: string;
   businessType: string;
@@ -88,15 +88,15 @@ export interface CreateLeadInput {
   message: string;
   status?: LeadStatus;
   priority?: LeadPriority;
-  assignedTo?: string;
-  estimatedValue?: number;
+  assignedTo?: string | null;
+  estimatedValue?: number | null;
   source?: LeadSource;
 }
 
 export interface UpdateLeadInput {
   name?: string;
   email?: string;
-  phone?: string;
+  phone?: string | null;
   location?: string;
   industry?: string;
   businessType?: string;
@@ -104,8 +104,8 @@ export interface UpdateLeadInput {
   message?: string;
   status?: LeadStatus;
   priority?: LeadPriority;
-  assignedTo?: string;
-  estimatedValue?: number;
+  assignedTo?: string | null;
+  estimatedValue?: number | null;
 }
 
 export interface LeadFilters {
@@ -113,6 +113,8 @@ export interface LeadFilters {
   priority?: LeadPriority[];
   assignedTo?: string;
   timeRange?: 'today' | 'week' | 'month' | 'last30';
+  startDate?: string;
+  endDate?: string;
   search?: string;
   sortBy?: 'createdAt' | 'updatedAt' | 'priority' | 'name';
   sortOrder?: 'asc' | 'desc';
