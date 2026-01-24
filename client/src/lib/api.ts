@@ -1,26 +1,35 @@
-import type { ApiError, ApiSuccess } from '@shared/types';
+import type { ApiError, ApiSuccess, User, LoginInput } from '@shared/types';
 
-const API_BASE_URL = '/api';
+// API base URL - uses environment variable in production
+const API_URL = import.meta.env.VITE_API_URL || '';
 
 /**
- * API client wrapper with error handling
+ * Generic API client wrapper
  */
 class ApiClient {
+  private baseUrl: string;
+
+  constructor(baseUrl: string = API_URL) {
+    this.baseUrl = baseUrl;
+  }
+
   private async request<T>(
     endpoint: string,
-    options?: RequestInit
+    options: RequestInit = {}
   ): Promise<T> {
-    const url = `${API_BASE_URL}${endpoint}`;
+    const url = `${this.baseUrl}/api${endpoint}`;
+    
+    const config: RequestInit = {
+      ...options,
+      headers: {
+        'Content-Type': 'application/json',
+        ...options.headers,
+      },
+      credentials: 'include', // Important for cookies
+    };
 
     try {
-      const response = await fetch(url, {
-        ...options,
-        headers: {
-          'Content-Type': 'application/json',
-          ...options?.headers,
-        },
-        credentials: 'include', // Important for session cookies
-      });
+      const response = await fetch(url, config);
 
       const data = await response.json();
 
