@@ -1,7 +1,11 @@
 import type { ApiError, ApiSuccess, User, LoginInput } from '@/types';
 
-// API base URL - uses environment variable in production
-const API_URL = import.meta.env.VITE_API_URL || '';
+// API base URL configuration
+// Production: Uses Render backend
+// Development: Uses local proxy (configured in vite.config.ts)
+const API_URL = import.meta.env.PROD 
+  ? 'https://nuklias-app.onrender.com' 
+  : '';
 
 /**
  * Generic API client wrapper
