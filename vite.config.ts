@@ -36,6 +36,12 @@ export default defineConfig({
       strict: true,
       deny: ["**/.*"],
     },
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+      },
+    },
     allowedHosts: ["e2a7485a-39a3-4e4a-a22a-8f3a759e2061-00-1rbm73pq3t7em.spock.replit.dev"],
   },
 });
