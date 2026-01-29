@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useLocation } from 'wouter';
 import { useAuth } from '@/contexts/AuthContext';
 import { Button } from '@/components/ui/button';
@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function Login() {
   const [, setLocation] = useLocation();
-  const { login } = useAuth();
+  const { login, isAuthenticated, isLoading: authLoading } = useAuth();
   const { toast } = useToast();
   const { t } = useTranslation();
 
@@ -18,6 +18,13 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+
+  // Redirect if already authenticated
+  useEffect(() => {
+    if (!authLoading && isAuthenticated) {
+      setLocation('/dashboard');
+    }
+  }, [isAuthenticated, authLoading, setLocation]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -116,15 +123,15 @@ export default function Login() {
           </form>
 
           {/* Test Credentials */}
-          <div className="mt-6 p-4 bg-muted rounded-md text-sm">
+          {/* <div className="mt-6 p-4 bg-muted rounded-md text-sm">
             <p className="font-semibold mb-2">{t('auth.test_credentials')}:</p>
             <p className="text-muted-foreground">
-              {/* <strong>Admin:</strong> admin@nuklias.com / Admin123! */}
+              <strong>Admin:</strong> admin@nuklias.com / Admin123!
             </p>
             <p className="text-muted-foreground">
-              {/* <strong>Member:</strong> member@nuklias.com / Member123! */}
+              <strong>Member:</strong> member@nuklias.com / Member123!
             </p>
-          </div>
+          </div> */}
         </div>
 
         {/* Back to Home */}

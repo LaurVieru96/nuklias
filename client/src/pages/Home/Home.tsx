@@ -16,7 +16,7 @@ export default function Home() {
       <Hero />
 
       {/* Client Journey Section */}
-      <section className="py-24 bg-background overflow-hidden border-t border-border/10">
+      <section className="py-18 bg-background overflow-hidden border-t border-border/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
            <ClientJourney />
         </div>

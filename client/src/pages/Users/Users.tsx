@@ -57,16 +57,17 @@ export default function Users() {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['users'] });
+      queryClient.invalidateQueries({ queryKey: ['dashboard'] });
       setIsCreateModalOpen(false);
       toast({
         title: t('dashboard.common.success'),
-        description: 'User created successfully',
+        description: t('dashboard.users.messages.create_success'),
       });
     },
     onError: (error: any) => {
       toast({
         title: t('dashboard.common.error'),
-        description: error.message || 'Failed to create user',
+        description: error.message || t('dashboard.users.messages.create_error'),
         variant: 'destructive',
       });
     },
@@ -79,17 +80,18 @@ export default function Users() {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['users'] });
+      queryClient.invalidateQueries({ queryKey: ['dashboard'] });
       setIsEditModalOpen(false);
       setSelectedUser(null);
       toast({
         title: t('dashboard.common.success'),
-        description: 'User updated successfully',
+        description: t('dashboard.users.messages.update_success'),
       });
     },
     onError: (error: any) => {
       toast({
         title: t('dashboard.common.error'),
-        description: error.message || 'Failed to update user',
+        description: error.message || t('dashboard.users.messages.update_error'),
         variant: 'destructive',
       });
     },
@@ -102,15 +104,16 @@ export default function Users() {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['users'] });
+      queryClient.invalidateQueries({ queryKey: ['dashboard'] });
       toast({
         title: t('dashboard.common.success'),
-        description: 'User deleted successfully',
+        description: t('dashboard.users.messages.delete_success'),
       });
     },
     onError: (error: any) => {
       toast({
         title: t('dashboard.common.error'),
-        description: error.message || 'Failed to delete user',
+        description: error.message || t('dashboard.users.messages.delete_error'),
         variant: 'destructive',
       });
     },
@@ -270,6 +273,7 @@ function CreateUserModal({
   onSubmit: (data: CreateUserInput) => void;
   isLoading: boolean;
 }) {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState<CreateUserInput>({
     email: '',
     password: '',
@@ -287,15 +291,15 @@ function CreateUserModal({
     <Dialog open={open} onOpenChange={onClose}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Create New User</DialogTitle>
+          <DialogTitle>{t('dashboard.users.create_user')}</DialogTitle>
           <DialogDescription>
-            Add a new team member to the dashboard
+            {t('dashboard.users.create_desc')}
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="firstName">First Name</Label>
+              <Label htmlFor="firstName">{t('dashboard.users.columns.first_name')}</Label>
               <Input
                 id="firstName"
                 value={formData.firstName}
@@ -304,7 +308,7 @@ function CreateUserModal({
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="lastName">Last Name</Label>
+              <Label htmlFor="lastName">{t('dashboard.users.columns.last_name')}</Label>
               <Input
                 id="lastName"
                 value={formData.lastName}
@@ -314,7 +318,7 @@ function CreateUserModal({
             </div>
           </div>
           <div className="space-y-2">
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="email">{t('dashboard.users.columns.email')}</Label>
             <Input
               id="email"
               type="email"
@@ -324,7 +328,7 @@ function CreateUserModal({
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="password">Password</Label>
+            <Label htmlFor="password">{t('auth.password')}</Label>
             <Input
               id="password"
               type="password"
@@ -335,7 +339,7 @@ function CreateUserModal({
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="role">Role</Label>
+            <Label htmlFor="role">{t('dashboard.users.columns.role')}</Label>
             <Select
               value={formData.role}
               onValueChange={(value: 'admin' | 'member') => setFormData({ ...formData, role: value })}
@@ -344,17 +348,17 @@ function CreateUserModal({
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="member">Member</SelectItem>
-                <SelectItem value="admin">Admin</SelectItem>
+                <SelectItem value="member">{t('dashboard.roles.member')}</SelectItem>
+                <SelectItem value="admin">{t('dashboard.roles.admin')}</SelectItem>
               </SelectContent>
             </Select>
           </div>
           <DialogFooter>
             <Button type="button" variant="outline" onClick={onClose}>
-              Cancel
+              {t('dashboard.common.cancel')}
             </Button>
             <Button type="submit" disabled={isLoading}>
-              {isLoading ? 'Creating...' : 'Create User'}
+              {isLoading ? t('dashboard.common.creating') : t('dashboard.common.create')}
             </Button>
           </DialogFooter>
         </form>
@@ -377,6 +381,7 @@ function EditUserModal({
   onSubmit: (data: UpdateUserInput) => void;
   isLoading: boolean;
 }) {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState<UpdateUserInput>({
     firstName: user.firstName,
     lastName: user.lastName,
@@ -393,15 +398,15 @@ function EditUserModal({
     <Dialog open={open} onOpenChange={onClose}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Edit User</DialogTitle>
+          <DialogTitle>{t('dashboard.users.edit_user')}</DialogTitle>
           <DialogDescription>
-            Update user information and permissions
+            {t('dashboard.users.edit_desc')}
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="edit-firstName">First Name</Label>
+              <Label htmlFor="edit-firstName">{t('dashboard.users.columns.first_name')}</Label>
               <Input
                 id="edit-firstName"
                 value={formData.firstName}
@@ -410,7 +415,7 @@ function EditUserModal({
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="edit-lastName">Last Name</Label>
+              <Label htmlFor="edit-lastName">{t('dashboard.users.columns.last_name')}</Label>
               <Input
                 id="edit-lastName"
                 value={formData.lastName}
@@ -420,12 +425,12 @@ function EditUserModal({
             </div>
           </div>
           <div className="space-y-2">
-            <Label>Email</Label>
+            <Label>{t('dashboard.users.columns.email')}</Label>
             <Input value={user.email} disabled className="bg-muted" />
-            <p className="text-xs text-muted-foreground">Email cannot be changed</p>
+            <p className="text-xs text-muted-foreground">{t('dashboard.users.email_immutable')}</p>
           </div>
           <div className="space-y-2">
-            <Label htmlFor="edit-role">Role</Label>
+            <Label htmlFor="edit-role">{t('dashboard.users.columns.role')}</Label>
             <Select
               value={formData.role}
               onValueChange={(value: 'admin' | 'member') => setFormData({ ...formData, role: value })}
@@ -434,13 +439,13 @@ function EditUserModal({
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="member">Member</SelectItem>
-                <SelectItem value="admin">Admin</SelectItem>
+                <SelectItem value="member">{t('dashboard.roles.member')}</SelectItem>
+                <SelectItem value="admin">{t('dashboard.roles.admin')}</SelectItem>
               </SelectContent>
             </Select>
           </div>
           <div className="space-y-2">
-            <Label htmlFor="edit-status">Status</Label>
+            <Label htmlFor="edit-status">{t('dashboard.users.columns.status')}</Label>
             <Select
               value={formData.isActive ? 'active' : 'inactive'}
               onValueChange={(value) => setFormData({ ...formData, isActive: value === 'active' })}
@@ -449,17 +454,17 @@ function EditUserModal({
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="active">Active</SelectItem>
-                <SelectItem value="inactive">Inactive</SelectItem>
+                <SelectItem value="active">{t('dashboard.status.active')}</SelectItem>
+                <SelectItem value="inactive">{t('dashboard.status.inactive')}</SelectItem>
               </SelectContent>
             </Select>
           </div>
           <DialogFooter>
             <Button type="button" variant="outline" onClick={onClose}>
-              Cancel
+              {t('dashboard.common.cancel')}
             </Button>
             <Button type="submit" disabled={isLoading}>
-              {isLoading ? 'Updating...' : 'Update User'}
+              {isLoading ? t('dashboard.common.updating') : t('dashboard.common.update')}
             </Button>
           </DialogFooter>
         </form>

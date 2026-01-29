@@ -62,27 +62,6 @@ export function ClientJourney() {
 
   return (
     <div className="relative w-full max-w-7xl mx-auto">
-      {/* Title Section with Enhanced Styling */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.6 }}
-        className="text-center mb-16"
-      >
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent border border-accent/20 text-xs font-bold uppercase tracking-wider mb-4">
-          <Sparkles className="w-4 h-4" />
-          <span className="">
-            {t("client_journey.title")}
-          </span>
-        </div>
-        <h2 className="text-3xl md:text-5xl font-bold font-display bg-gradient-to-r from-primary via-purple-600 to-primary bg-clip-text text-transparent mb-4 leading-tight">
-          {t("client_journey.title")}
-        </h2>
-        <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          {t("client_journey.subtitle")}
-        </p>
-      </motion.div>
 
       {/* Journey Container with Enhanced Background */}
       <div className="relative bg-gradient-to-br from-primary/5 via-purple-500/5 to-pink-500/5 dark:from-primary/10 dark:via-purple-900/10 dark:to-pink-900/10 rounded-3xl p-8 md:p-16 overflow-hidden border border-primary/10 dark:border-primary/20 shadow-2xl">
@@ -161,6 +140,24 @@ export function ClientJourney() {
           ))}
         </div>
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.6 }}
+        className="text-center mt-16"
+      >
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent border border-accent/20 text-xs font-bold uppercase tracking-wider mb-4">
+          <Sparkles className="w-4 h-4" />
+          <span className="">
+            {t("client_journey.title")}
+          </span>
+        </div>
+        <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          {t("client_journey.subtitle")}
+        </p>
+      </motion.div>
     </div>
   );
 }

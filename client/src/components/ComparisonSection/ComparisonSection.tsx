@@ -57,7 +57,7 @@ export function ComparisonSection() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div className="rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.05)] md:shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-border/50">
+        <div className="md:rounded-[2.5rem] md:overflow-hidden md:shadow-[0_20px_50px_rgba(0,0,0,0.1)] md:border border-border/50">
           {/* Header Row - Hidden on mobile to save space, shown on md+ */}
           <div className="hidden md:grid md:grid-cols-2">
             <div className="bg-red-600/10 dark:bg-red-900/20 p-8 md:p-12 text-center border-b border-border/50">
@@ -80,10 +80,10 @@ export function ComparisonSection() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.5 }}
-              className="grid grid-cols-1 md:grid-cols-2 group border-b border-white/5 last:border-0"
+              className="grid grid-cols-1 md:grid-cols-2 group md:border-b md:border-white/5 md:last:border-0 mb-6 md:mb-0 rounded-3xl md:rounded-none overflow-hidden shadow-lg md:shadow-none"
             >
               {/* Traditional Side */}
-              <div className={`${row.bgTraditional} p-6 md:p-12 border-b md:border-b-0 md:border-r border-white/10 flex flex-col items-center justify-center text-center transition-colors duration-500 group-hover:bg-red-600/100 dark:group-hover:bg-red-900/50 relative overflow-hidden`}>
+              <div className={`${row.bgTraditional} p-8 md:p-12 border-b-2 border-dashed border-white/10 md:border-b-0 md:border-r md:border-solid flex flex-col items-center justify-center text-center transition-colors duration-500 group-hover:bg-red-600/100 dark:group-hover:bg-red-900/50 relative overflow-hidden`}>
                 {/* Mobile Label */}
                 <span className="md:hidden text-xs font-bold uppercase tracking-widest text-white/50 mb-4 bg-black/20 px-3 py-1 rounded-full">
                   {t('comparison.traditional_title')}
@@ -102,7 +102,7 @@ export function ComparisonSection() {
               </div>
 
               {/* Nuklias Side */}
-              <div className={`${row.bgNuklias} p-6 md:p-12 flex flex-col items-center justify-center text-center transition-colors duration-500 group-hover:bg-primary/100 dark:group-hover:bg-primary/90 relative overflow-hidden`}>
+              <div className={`${row.bgNuklias} p-8 md:p-12 flex flex-col items-center justify-center text-center transition-colors duration-500 group-hover:bg-primary/100 dark:group-hover:bg-primary/90 relative overflow-hidden`}>
                 {/* Mobile Label */}
                 <span className="md:hidden text-xs font-bold uppercase tracking-widest text-white/50 mb-4 bg-black/20 px-3 py-1 rounded-full">
                    {t('comparison.nuklias_title')}

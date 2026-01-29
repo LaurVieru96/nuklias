@@ -14,10 +14,10 @@
   },
   "hero": {
     "badge": "IHRE REISE",
-    "title_start": "Vom Chaos zur Klarheit:",
-    "title_end": "Ihr Motor für Digitales Wachstum",
-    "description": "Wir entwickeln automatisierte Ökosysteme, die passive Follower in treue Kunden verwandeln",
-    "cta_audit": "Strategisches Audit Buchen",
+    "title_start": "",
+    "title_end": "Einfach Effizient Transparent",
+    "description": "Generisches Marketing bringt generische Ergebnisse. Wir tauchen tief in Ihre spezifische Realität ein, um einen maßgeschneiderten Motor zu bauen, der tatsächlich Umsatz generiert",
+    "cta_audit": "Besprechen Sie Ihre Ziele",
     "cta_plans": "Unsere Pläne Erkunden"
   },
   "client_journey": {
@@ -75,28 +75,28 @@
     "subtitle": "Warum Nuklias als Ihr Partner für digitales Wachstum?",
     "cards": {
       "1": {
-        "title": "Kundenorientierte Denkweise",
-        "desc": "Wir denken wie Unternehmer. Jeder investierte Euro muss eine Rendite bringen"
+        "title": "Strategische Präzision",
+        "desc": "Wir behandeln Wachstum als technisches Problem, nicht als Glücksspiel. Jede Kampagne ist präzise auf Ihre spezifischen Umsatzziele abgestimmt, um Verschwendung zu vermeiden"
       },
       "2": {
-        "title": "Full-Service-Architektur",
-        "desc": "Von Code bis Content steuern wir jede Ebene Ihres digitalen Ökosystems intern"
+        "title": "Nahtlose Integration",
+        "desc": "Wir lösen die Barrieren zwischen Kanälen auf. Ihre Plattformen und Systeme arbeiten als ein synchronisierter Motor, der sich gegenseitig verstärkt, anstatt um Aufmerksamkeit zu konkurrieren"
       },
       "3": {
-        "title": "Proaktive Evolution",
-        "desc": "Wir reagieren nicht nur auf Trends, wir antizipieren sie. Ihr System ist bereit für morgen"
+        "title": "Zukunftssichere Skalierung",
+        "desc": "Wir bauen Infrastruktur, die Erfolg überlebt. Wenn Ihr Traffic steigt und das Geschäft expandiert, wird Ihr digitales Fundament stärker, nicht schwächer"
       },
       "4": {
-        "title": "Radikale Transparenz",
-        "desc": "Keine versteckte Magie. Sie haben volle Einsicht in unsere Strategien und Metriken"
+        "title": "Umsatz-Logik",
+        "desc": "Wir entfernen Vanity-Metriken. Wir intensivieren den Fokus auf die Punkte, die Gewinn treiben, und stellen eine klare Logik hinter jeder Strategie und Entscheidung sicher"
       },
       "5": {
-        "title": "Nachgewiesene Wirkung",
-        "desc": "Wir messen Erfolg in Umsatz, nicht in Vanity-Metrics. Unsere Systeme skalieren Unternehmen effektiv"
+        "title": "Premium-Partnerschaft",
+        "desc": "Konsistenz ist unser Standard. Sie profitieren von einer erstklassigen Partnerschaft, die auf stabiler Ausführung und klarer Kommunikation aufbaut und die professionelle Unterstützung bietet, die Sie benötigen, um Ihr Geschäft mit Zuversicht zu skalieren"
       },
       "6": {
-        "title": "Unermüdliche Leidenschaft",
-        "desc": "Wir sind digitale Architekten, die ihr Handwerk lieben. Wir bauen mit Präzision und Qualität"
+        "title": "Unermüdlicher Erfolg",
+        "desc": "Wir werden vom tatsächlichen Wachstum Ihrer Marke angetrieben. Unser Ansatz ist definiert durch einen anhaltenden Hunger, Ziele zu übertreffen, und wir weigern uns, uns mit durchschnittlicher Leistung zufrieden zu geben, wenn die Möglichkeit besteht, größere Ergebnisse zu erzielen"
       }
     }
   },
@@ -340,11 +340,30 @@
     "title": "404 Seite Nicht Gefunden",
     "desc": "Die gesuchte Seite existiert nicht"
   },
+  "talent_section": {
+    "title": "Talent-Infrastruktur & HR Tech",
+    "subtitle": "Stellen Sie ganze Teams mit der gleichen Geschwindigkeit und Logik bereit wie Code",
+    "cards": {
+      "1": {
+        "title": "Visuelle Pipeline-Architektur",
+        "desc": "Volle Sichtbarkeit über Ihren Talentfluss. Drag-and-Drop Kanban-Boards zur Verwaltung von Tausenden von Bewerbern ohne operatives Chaos"
+      },
+      "2": {
+        "title": "Algorithmische Automatisierung",
+        "desc": "KI-gesteuerte Logikschichten zum automatischen Ablehnen unqualifizierter Leads, Planen von Interviews und Bewerten von Kandidaten basierend auf Datenpunkten"
+      },
+      "3": {
+        "title": "Unbegrenzte Skalierbarkeit",
+        "desc": "Architektur ohne Grenzen. Unbegrenzte Recruiter-Plätze, unbegrenzte Stellenangebote und unendliche Kandidaten-Datenpools"
+      }
+    }
+  },
   "products_section": {
     "title": "Erstellen Sie Ihre Website",
     "subtitle": "Wählen Sie die Struktur aus, die heute zu Ihrem Unternehmen passt. Jede Option ist auf Geschwindigkeit, Klarheit und Konversion ausgelegt",
     "most_popular": "Beliebteste",
     "request_quote": "Angebot Anfordern",
+    "deploy_hiring": "Einstellungssystem Bereitstellen",
     "tiers": {
       "bronze": {
         "title": "Website Basic",
@@ -377,6 +396,17 @@
           "3": "Entwicklung neuer Seiten bei Bedarf",
           "4": "Laufende UX- und Conversion-Optimierung",
           "5": "Priorisierter Support für Experimente"
+        }
+      },
+      "talent": {
+        "title": "Nuklias Talent OS",
+        "subtitle": "Der Einstellungsmotor für wachstumsorientierte Unternehmen",
+        "features": {
+          "1": " Visuelles Bewerber-Tracking-System (ATS)",
+          "2": "Ein-Klick-Multi-Board-Broadcasting",
+          "3": "White-Label Karriereportal-Builder",
+          "4": "Automatisierte Interviewplanung",
+          "5": "Integrierte Compliance & Datenlogik"
         }
       }
     }
@@ -529,7 +559,9 @@
       "success": "Erfolg",
       "error": "Fehler",
       "confirm_delete": "Möchten Sie dieses Element wirklich löschen?",
-      "no_data": "Keine Daten gefunden"
+      "no_data": "Keine Daten gefunden",
+      "creating": "Erstellen...",
+      "updating": "Aktualisieren..."
     },
     "home": {
       "welcome": "Willkommen zurück, {{name}}!",
@@ -582,6 +614,14 @@
         "business_type": "Geschäftstyp",
         "challenge": "Herausforderung",
         "message": "Nachricht"
+      },
+      "messages": {
+        "create_success": "Lead erfolgreich erstellt",
+        "create_error": "Lead konnte nicht erstellt werden",
+        "update_success": "Lead erfolgreich aktualisiert",
+        "update_error": "Lead konnte nicht aktualisiert werden",
+        "delete_success": "Lead erfolgreich gelöscht",
+        "delete_error": "Lead konnte nicht gelöscht werden"
       }
     },
     "tasks": {
@@ -598,6 +638,14 @@
         "status": "Status",
         "priority": "Priorität",
         "assigned_to": "Zugewiesen an"
+      },
+      "messages": {
+        "create_success": "Aufgabe erfolgreich erstellt",
+        "create_error": "Aufgabe konnte nicht erstellt werden",
+        "update_success": "Aufgabe erfolgreich aktualisiert",
+        "update_error": "Aufgabe konnte nicht aktualisiert werden",
+        "delete_success": "Aufgabe erfolgreich gelöscht",
+        "delete_error": "Aufgabe konnte nicht gelöscht werden"
       }
     },
     "users": {
@@ -616,6 +664,14 @@
         "status": "Status",
         "first_name": "Vorname",
         "last_name": "Nachname"
+      },
+      "messages": {
+        "create_success": "Benutzer erfolgreich erstellt",
+        "create_error": "Benutzer konnte nicht erstellt werden",
+        "update_success": "Benutzer erfolgreich aktualisiert",
+        "update_error": "Benutzer konnte nicht aktualisiert werden",
+        "delete_success": "Benutzer erfolgreich gelöscht",
+        "delete_error": "Benutzer konnte nicht gelöscht werden"
       }
     },
     "status": {

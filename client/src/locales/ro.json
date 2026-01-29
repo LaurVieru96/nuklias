@@ -14,10 +14,10 @@
   },
   "hero": {
     "badge": "CĂLĂTORIA TA",
-    "title_start": "De la Haos la Claritate:",
-    "title_end": "Motorul Tău de Creștere Digitală",
-    "description": "Construim ecosisteme automate care transformă urmăritorii pasivi în clienți loiali",
-    "cta_audit": "Rezervă un Audit Strategic",
+    "title_start": "",
+    "title_end": "Simplu Eficient Transparent",
+    "description": "Marketingul generic aduce rezultate generice. Analizăm în profunzime realitatea ta specifică pentru a construi un motor personalizat care chiar generează venituri",
+    "cta_audit": "Discută Obiectivele Tale",
     "cta_plans": "Vezi Planurile Noastre"
   },
   "client_journey": {
@@ -75,28 +75,28 @@
     "subtitle": "De ce să alegi Nuklias ca partenerul tău de creștere digitală?",
     "cards": {
       "1": {
-        "title": "Mentalitate de Client",
-        "desc": "Gândim ca antreprenori, nu doar prestatori. Fiecare leu investit trebuie să aducă profit"
+        "title": "Precizie Strategică",
+        "desc": "Tratăm creșterea ca pe o problemă de inginerie, nu un joc de noroc. Fiecare campanie este aliniată precis cu obiectivele tale specifice de venit, eliminând risipa"
       },
       "2": {
-        "title": "Arhitectură Full-Service",
-        "desc": "De la cod la conținut, gestionăm in-house fiecare strat al ecosistemului tău digital"
+        "title": "Integrare Perfectă",
+        "desc": "Dizolvăm barierele dintre canale. Platformele și Sistemele tale operează ca un singur motor sincronizat, întărindu-se reciproc în loc să concureze pentru atenție"
       },
       "3": {
-        "title": "Evoluție Proactivă",
-        "desc": "Nu doar reacționăm la trenduri, le anticipăm. Sistemul tău este mereu pregătit pentru viitor"
+        "title": "Scalare Pregătită pentru Viitor",
+        "desc": "Construim infrastructură proiectată să supraviețuiască succesului. Când traficul crește și afacerea se extinde, fundația ta digitală devine mai puternică, nu mai slabă"
       },
       "4": {
-        "title": "Transparență Radicală",
-        "desc": "Fără 'magie' ascunsă. Ai vizibilitate totală asupra strategiilor și metricilor noastre"
+        "title": "Logică de Venit",
+        "desc": "Eliminăm metricile de vanitate. Intensificăm focusul pe punctele care aduc profit, asigurând o logică clară în spatele fiecărei strategii și decizii"
       },
       "5": {
-        "title": "Impact Dovedit",
-        "desc": "Măsurăm succesul în venituri, nu în like-uri. Sistemele noastre scalează afaceri reale"
+        "title": "Parteneriat Premium",
+        "desc": "Consistența este standardul nostru. Beneficiezi de un parteneriat de nivel înalt construit pe execuție stabilă și comunicare clară, oferind suportul profesional necesar pentru a scala afacerea cu încredere"
       },
       "6": {
-        "title": "Pasiune Neobosită",
-        "desc": "Suntem arhitecți digitali care iubesc ceea ce fac. Construim cu precizie, viteză și obsesie pentru calitate"
+        "title": "Succes Neobosit",
+        "desc": "Suntem alimentați de creșterea reală a brandului tău. Abordarea noastră este definită de o foame persistentă de a depăși obiectivele, refuzând să ne mulțumim cu performanța medie când există oportunitatea de a obține rezultate mai mari"
       }
     }
   },
@@ -340,11 +340,30 @@
     "title": "404 Pagina Nu a Fost Găsită",
     "desc": "Pagina căutată nu există"
   },
+  "talent_section": {
+    "title": "Infrastructură de Talent & HR Tech",
+    "subtitle": "Desfășoară echipe întregi cu aceeași viteză și logică cu care desfășori cod",
+    "cards": {
+      "1": {
+        "title": "Arhitectură Vizuală de Pipeline",
+        "desc": "Vizibilitate totală asupra fluxului de talente. Panouri Kanban drag-and-drop pentru a gestiona mii de aplicanți fără haos operațional"
+      },
+      "2": {
+        "title": "Automatizare Algoritmică",
+        "desc": "Straturi logice bazate pe AI pentru a respinge automat lead-urile necalificate, a programa interviuri și a nota candidații pe baza punctelor de date"
+      },
+      "3": {
+        "title": "Scalabilitate Nelimitată",
+        "desc": "Arhitectură fără limite. Locuri nelimitate pentru recrutori, joburi nelimitate și bazine infinite de date despre candidați"
+      }
+    }
+  },
   "products_section": {
     "title": "Creează-ți Website-ul Personalizat",
     "subtitle": "Alege structura care se potrivește afacerii tale azi. Fiecare opțiune este construită pentru viteză, claritate și conversie",
     "most_popular": "Cel Mai Popular",
     "request_quote": "Cere o Ofertă",
+    "deploy_hiring": "Implementează Sistem de Angajare",
     "tiers": {
       "bronze": {
         "title": "Website Basic",
@@ -377,6 +396,17 @@
           "3": "Dezvoltare pagini noi pe măsură ce ofertele evoluează",
           "4": "Optimizare continuă UX și conversie",
           "5": "Suport prioritar pentru experimente și iterații"
+        }
+      },
+      "talent": {
+        "title": "Nuklias Talent OS",
+        "subtitle": "Motorul de Angajare pentru Companii Axate pe Creștere",
+        "features": {
+          "1": "Sistem Vizual de Urmărire a Aplicanților (ATS)",
+          "2": "Broadcasting Multi-Board cu un Click",
+          "3": "Builder Portal de Carieră White-Label",
+          "4": "Programare Automată a Interviurilor",
+          "5": "Conformitate și Logică de Date Integrate"
         }
       }
     }
@@ -529,7 +559,9 @@
       "success": "Succes",
       "error": "Eroare",
       "confirm_delete": "Ești sigur că vrei să ștergi acest element?",
-      "no_data": "Nu s-au găsit date"
+      "no_data": "Nu s-au găsit date",
+      "creating": "Se creează...",
+      "updating": "Se actualizează..."
     },
     "home": {
       "welcome": "Bine ai revenit, {{name}}!",
@@ -582,6 +614,14 @@
         "business_type": "Tip Afacere",
         "challenge": "Provocare",
         "message": "Mesaj"
+      },
+      "messages": {
+        "create_success": "Lead creat cu succes",
+        "create_error": "Nu s-a putut crea lead-ul",
+        "update_success": "Lead actualizat cu succes",
+        "update_error": "Nu s-a putut actualiza lead-ul",
+        "delete_success": "Lead șters cu succes",
+        "delete_error": "Nu s-a putut șterge lead-ul"
       }
     },
     "tasks": {
@@ -598,6 +638,14 @@
         "status": "Stare",
         "priority": "Prioritate",
         "assigned_to": "Atribuit Lui"
+      },
+      "messages": {
+        "create_success": "Sarcină creată cu succes",
+        "create_error": "Nu s-a putut crea sarcina",
+        "update_success": "Sarcină actualizată cu succes",
+        "update_error": "Nu s-a putut actualiza sarcina",
+        "delete_success": "Sarcină ștearsă cu succes",
+        "delete_error": "Nu s-a putut șterge sarcina"
       }
     },
     "users": {
@@ -616,6 +664,14 @@
         "status": "Stare",
         "first_name": "Prenume",
         "last_name": "Nume"
+      },
+      "messages": {
+        "create_success": "Utilizator creat cu succes",
+        "create_error": "Nu s-a putut crea utilizatorul",
+        "update_success": "Utilizator actualizat cu succes",
+        "update_error": "Nu s-a putut actualiza utilizatorul",
+        "delete_success": "Utilizator șters cu succes",
+        "delete_error": "Nu s-a putut șterge utilizatorul"
       }
     },
     "status": {

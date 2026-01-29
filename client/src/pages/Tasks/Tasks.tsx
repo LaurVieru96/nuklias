@@ -82,13 +82,13 @@ export default function Tasks() {
       setIsCreateModalOpen(false);
       toast({
         title: t('dashboard.common.success'),
-        description: 'Task created successfully',
+        description: t('dashboard.tasks.messages.create_success'),
       });
     },
     onError: (error: any) => {
       toast({
         title: t('dashboard.common.error'),
-        description: error.message || 'Failed to create task',
+        description: error.message || t('dashboard.tasks.messages.create_error'),
         variant: 'destructive',
       });
     },
@@ -105,13 +105,13 @@ export default function Tasks() {
       setSelectedTask(null);
       toast({
         title: t('dashboard.common.success'),
-        description: 'Task updated successfully',
+        description: t('dashboard.tasks.messages.update_success'),
       });
     },
     onError: (error: any) => {
       toast({
         title: t('dashboard.common.error'),
-        description: error.message || 'Failed to update task',
+        description: error.message || t('dashboard.tasks.messages.update_error'),
         variant: 'destructive',
       });
     },
@@ -126,13 +126,13 @@ export default function Tasks() {
       queryClient.invalidateQueries({ queryKey: ['tasks'] });
       toast({
         title: t('dashboard.common.success'),
-        description: 'Task deleted successfully',
+        description: t('dashboard.tasks.messages.delete_success'),
       });
     },
     onError: (error: any) => {
       toast({
         title: t('dashboard.common.error'),
-        description: error.message || 'Failed to delete task',
+        description: error.message || t('dashboard.tasks.messages.delete_error'),
         variant: 'destructive',
       });
     },
@@ -301,6 +301,7 @@ function CreateTaskModal({
   isLoading: boolean;
   currentUserId: string;
 }) {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState<CreateTaskInput>({
     title: '',
     description: '',
@@ -318,12 +319,12 @@ function CreateTaskModal({
     <Dialog open={open} onOpenChange={onClose}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Create New Task</DialogTitle>
-          <DialogDescription>Add a new task to your list</DialogDescription>
+          <DialogTitle>{t('dashboard.tasks.create_task')}</DialogTitle>
+          <DialogDescription>{t('dashboard.tasks.create_desc')}</DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="title">Title *</Label>
+            <Label htmlFor="title">{t('dashboard.tasks.columns.title')} *</Label>
             <Input
               id="title"
               value={formData.title}
@@ -332,7 +333,7 @@ function CreateTaskModal({
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="description">Description</Label>
+            <Label htmlFor="description">{t('dashboard.tasks.columns.description')}</Label>
             <Textarea
               id="description"
               value={formData.description}
@@ -342,7 +343,7 @@ function CreateTaskModal({
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="status">Status</Label>
+              <Label htmlFor="status">{t('dashboard.tasks.columns.status')}</Label>
               <Select
                 value={formData.status}
                 onValueChange={(value: TaskStatus) => setFormData({ ...formData, status: value })}
@@ -351,14 +352,14 @@ function CreateTaskModal({
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="todo">To Do</SelectItem>
-                  <SelectItem value="in_progress">In Progress</SelectItem>
-                  <SelectItem value="done">Done</SelectItem>
+                  <SelectItem value="todo">{t('dashboard.status.todo')}</SelectItem>
+                  <SelectItem value="in_progress">{t('dashboard.status.in_progress')}</SelectItem>
+                  <SelectItem value="done">{t('dashboard.status.done')}</SelectItem>
                 </SelectContent>
               </Select>
             </div>
             <div className="space-y-2">
-              <Label htmlFor="priority">Priority</Label>
+              <Label htmlFor="priority">{t('dashboard.tasks.columns.priority')}</Label>
               <Select
                 value={formData.priority}
                 onValueChange={(value: TaskPriority) => setFormData({ ...formData, priority: value })}
@@ -367,19 +368,19 @@ function CreateTaskModal({
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="high">High</SelectItem>
-                  <SelectItem value="medium">Medium</SelectItem>
-                  <SelectItem value="low">Low</SelectItem>
+                  <SelectItem value="high">{t('dashboard.priority.high')}</SelectItem>
+                  <SelectItem value="medium">{t('dashboard.priority.medium')}</SelectItem>
+                  <SelectItem value="low">{t('dashboard.priority.low')}</SelectItem>
                 </SelectContent>
               </Select>
             </div>
           </div>
           <DialogFooter>
             <Button type="button" variant="outline" onClick={onClose}>
-              Cancel
+              {t('dashboard.common.cancel')}
             </Button>
             <Button type="submit" disabled={isLoading}>
-              {isLoading ? 'Creating...' : 'Create Task'}
+              {isLoading ? t('dashboard.common.creating') : t('dashboard.common.create')}
             </Button>
           </DialogFooter>
         </form>
@@ -402,6 +403,7 @@ function EditTaskModal({
   onSubmit: (data: UpdateTaskInput) => void;
   isLoading: boolean;
 }) {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState<UpdateTaskInput>({
     title: task.title,
     description: task.description,
@@ -418,12 +420,12 @@ function EditTaskModal({
     <Dialog open={open} onOpenChange={onClose}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Edit Task</DialogTitle>
-          <DialogDescription>Update task information</DialogDescription>
+          <DialogTitle>{t('dashboard.tasks.edit_task')}</DialogTitle>
+          <DialogDescription>{t('dashboard.tasks.edit_desc')}</DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="edit-title">Title</Label>
+            <Label htmlFor="edit-title">{t('dashboard.tasks.columns.title')}</Label>
             <Input
               id="edit-title"
               value={formData.title}
@@ -432,7 +434,7 @@ function EditTaskModal({
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="edit-description">Description</Label>
+            <Label htmlFor="edit-description">{t('dashboard.tasks.columns.description')}</Label>
             <Textarea
               id="edit-description"
               value={formData.description || ''}
@@ -442,7 +444,7 @@ function EditTaskModal({
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="edit-status">Status</Label>
+              <Label htmlFor="edit-status">{t('dashboard.tasks.columns.status')}</Label>
               <Select
                 value={formData.status}
                 onValueChange={(value: TaskStatus) => setFormData({ ...formData, status: value })}
@@ -451,14 +453,14 @@ function EditTaskModal({
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="todo">To Do</SelectItem>
-                  <SelectItem value="in_progress">In Progress</SelectItem>
-                  <SelectItem value="done">Done</SelectItem>
+                  <SelectItem value="todo">{t('dashboard.status.todo')}</SelectItem>
+                  <SelectItem value="in_progress">{t('dashboard.status.in_progress')}</SelectItem>
+                  <SelectItem value="done">{t('dashboard.status.done')}</SelectItem>
                 </SelectContent>
               </Select>
             </div>
             <div className="space-y-2">
-              <Label htmlFor="edit-priority">Priority</Label>
+              <Label htmlFor="edit-priority">{t('dashboard.tasks.columns.priority')}</Label>
               <Select
                 value={formData.priority}
                 onValueChange={(value: TaskPriority) => setFormData({ ...formData, priority: value })}
@@ -467,19 +469,19 @@ function EditTaskModal({
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="high">High</SelectItem>
-                  <SelectItem value="medium">Medium</SelectItem>
-                  <SelectItem value="low">Low</SelectItem>
+                  <SelectItem value="high">{t('dashboard.priority.high')}</SelectItem>
+                  <SelectItem value="medium">{t('dashboard.priority.medium')}</SelectItem>
+                  <SelectItem value="low">{t('dashboard.priority.low')}</SelectItem>
                 </SelectContent>
               </Select>
             </div>
           </div>
           <DialogFooter>
             <Button type="button" variant="outline" onClick={onClose}>
-              Cancel
+              {t('dashboard.common.cancel')}
             </Button>
             <Button type="submit" disabled={isLoading}>
-              {isLoading ? 'Updating...' : 'Update Task'}
+              {isLoading ? t('dashboard.common.updating') : t('dashboard.common.update')}
             </Button>
           </DialogFooter>
         </form>

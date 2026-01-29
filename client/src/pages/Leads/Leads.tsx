@@ -80,16 +80,17 @@ export default function Leads() {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['leads'] });
+      queryClient.invalidateQueries({ queryKey: ['dashboard'] });
       setIsCreateModalOpen(false);
       toast({
         title: t('dashboard.common.success'),
-        description: 'Lead created successfully',
+        description: t('dashboard.leads.messages.create_success'),
       });
     },
     onError: (error: any) => {
       toast({
         title: t('dashboard.common.error'),
-        description: error.message || 'Failed to create lead',
+        description: error.message || t('dashboard.leads.messages.create_error'),
         variant: 'destructive',
       });
     },
@@ -102,17 +103,18 @@ export default function Leads() {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['leads'] });
+      queryClient.invalidateQueries({ queryKey: ['dashboard'] });
       setIsEditModalOpen(false);
       setSelectedLead(null);
       toast({
         title: t('dashboard.common.success'),
-        description: 'Lead updated successfully',
+        description: t('dashboard.leads.messages.update_success'),
       });
     },
     onError: (error: any) => {
       toast({
         title: t('dashboard.common.error'),
-        description: error.message || 'Failed to update lead',
+        description: error.message || t('dashboard.leads.messages.update_error'),
         variant: 'destructive',
       });
     },
@@ -125,15 +127,16 @@ export default function Leads() {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['leads'] });
+      queryClient.invalidateQueries({ queryKey: ['dashboard'] });
       toast({
         title: t('dashboard.common.success'),
-        description: 'Lead deleted successfully',
+        description: t('dashboard.leads.messages.delete_success'),
       });
     },
     onError: (error: any) => {
       toast({
         title: t('dashboard.common.error'),
-        description: error.message || 'Failed to delete lead',
+        description: error.message || t('dashboard.leads.messages.delete_error'),
         variant: 'destructive',
       });
     },
@@ -304,6 +307,7 @@ function CreateLeadModal({
   onSubmit: (data: CreateLeadInput) => void;
   isLoading: boolean;
 }) {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState<CreateLeadInput>({
     name: '',
     email: '',
@@ -327,13 +331,13 @@ function CreateLeadModal({
     <Dialog open={open} onOpenChange={onClose}>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle>Create New Lead</DialogTitle>
-          <DialogDescription>Add a new lead to your pipeline</DialogDescription>
+          <DialogTitle>{t('dashboard.leads.create_lead')}</DialogTitle>
+          <DialogDescription>{t('dashboard.leads.create_desc')}</DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="name">Name *</Label>
+              <Label htmlFor="name">{t('dashboard.leads.columns.name')} *</Label>
               <Input
                 id="name"
                 value={formData.name}
@@ -342,7 +346,7 @@ function CreateLeadModal({
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email">Email *</Label>
+              <Label htmlFor="email">{t('dashboard.leads.columns.email')} *</Label>
               <Input
                 id="email"
                 type="email"
@@ -354,7 +358,7 @@ function CreateLeadModal({
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="phone">Phone</Label>
+              <Label htmlFor="phone">{t('dashboard.leads.columns.phone')}</Label>
               <Input
                 id="phone"
                 value={formData.phone || ''}
@@ -362,7 +366,7 @@ function CreateLeadModal({
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="location">Location *</Label>
+              <Label htmlFor="location">{t('dashboard.leads.columns.location')} *</Label>
               <Input
                 id="location"
                 value={formData.location}
@@ -373,7 +377,7 @@ function CreateLeadModal({
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="industry">Industry *</Label>
+              <Label htmlFor="industry">{t('dashboard.leads.columns.industry')} *</Label>
               <Input
                 id="industry"
                 value={formData.industry}
@@ -382,7 +386,7 @@ function CreateLeadModal({
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="businessType">Business Type *</Label>
+              <Label htmlFor="businessType">{t('dashboard.leads.columns.business_type')} *</Label>
               <Input
                 id="businessType"
                 value={formData.businessType}
@@ -392,7 +396,7 @@ function CreateLeadModal({
             </div>
           </div>
           <div className="space-y-2">
-            <Label htmlFor="challenge">Challenge *</Label>
+            <Label htmlFor="challenge">{t('dashboard.leads.columns.challenge')} *</Label>
             <Input
               id="challenge"
               value={formData.challenge}
@@ -401,7 +405,7 @@ function CreateLeadModal({
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="message">Message *</Label>
+            <Label htmlFor="message">{t('dashboard.leads.columns.message')} *</Label>
             <Textarea
               id="message"
               value={formData.message}
@@ -412,7 +416,7 @@ function CreateLeadModal({
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="status">Status</Label>
+              <Label htmlFor="status">{t('dashboard.leads.columns.status')}</Label>
               <Select
                 value={formData.status}
                 onValueChange={(value: LeadStatus) => setFormData({ ...formData, status: value })}
@@ -421,17 +425,17 @@ function CreateLeadModal({
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="new">New</SelectItem>
-                  <SelectItem value="contacted">Contacted</SelectItem>
-                  <SelectItem value="qualified">Qualified</SelectItem>
-                  <SelectItem value="proposal_sent">Proposal Sent</SelectItem>
-                  <SelectItem value="won">Won</SelectItem>
-                  <SelectItem value="lost">Lost</SelectItem>
+                  <SelectItem value="new">{t('dashboard.status.new')}</SelectItem>
+                  <SelectItem value="contacted">{t('dashboard.status.contacted')}</SelectItem>
+                  <SelectItem value="qualified">{t('dashboard.status.qualified')}</SelectItem>
+                  <SelectItem value="proposal_sent">{t('dashboard.status.proposal_sent')}</SelectItem>
+                  <SelectItem value="won">{t('dashboard.status.won')}</SelectItem>
+                  <SelectItem value="lost">{t('dashboard.status.lost')}</SelectItem>
                 </SelectContent>
               </Select>
             </div>
             <div className="space-y-2">
-              <Label htmlFor="priority">Priority</Label>
+              <Label htmlFor="priority">{t('dashboard.leads.columns.priority')}</Label>
               <Select
                 value={formData.priority}
                 onValueChange={(value: LeadPriority) => setFormData({ ...formData, priority: value })}
@@ -440,19 +444,19 @@ function CreateLeadModal({
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="high">High</SelectItem>
-                  <SelectItem value="medium">Medium</SelectItem>
-                  <SelectItem value="low">Low</SelectItem>
+                  <SelectItem value="high">{t('dashboard.priority.high')}</SelectItem>
+                  <SelectItem value="medium">{t('dashboard.priority.medium')}</SelectItem>
+                  <SelectItem value="low">{t('dashboard.priority.low')}</SelectItem>
                 </SelectContent>
               </Select>
             </div>
           </div>
           <DialogFooter>
             <Button type="button" variant="outline" onClick={onClose}>
-              Cancel
+              {t('dashboard.common.cancel')}
             </Button>
             <Button type="submit" disabled={isLoading}>
-              {isLoading ? 'Creating...' : 'Create Lead'}
+              {isLoading ? t('dashboard.common.creating') : t('dashboard.common.create')}
             </Button>
           </DialogFooter>
         </form>
@@ -475,6 +479,7 @@ function EditLeadModal({
   onSubmit: (data: UpdateLeadInput) => void;
   isLoading: boolean;
 }) {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState<UpdateLeadInput>({
     name: lead.name,
     email: lead.email,
@@ -497,13 +502,13 @@ function EditLeadModal({
     <Dialog open={open} onOpenChange={onClose}>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle>Edit Lead</DialogTitle>
-          <DialogDescription>Update lead information</DialogDescription>
+          <DialogTitle>{t('dashboard.leads.edit_lead')}</DialogTitle>
+          <DialogDescription>{t('dashboard.leads.edit_desc')}</DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="edit-name">Name</Label>
+              <Label htmlFor="edit-name">{t('dashboard.leads.columns.name')}</Label>
               <Input
                 id="edit-name"
                 value={formData.name}
@@ -512,7 +517,7 @@ function EditLeadModal({
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="edit-email">Email</Label>
+              <Label htmlFor="edit-email">{t('dashboard.leads.columns.email')}</Label>
               <Input
                 id="edit-email"
                 type="email"
@@ -524,7 +529,7 @@ function EditLeadModal({
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
-              <Label htmlFor="edit-status">Status</Label>
+              <Label htmlFor="edit-status">{t('dashboard.leads.columns.status')}</Label>
               <Select
                 value={formData.status}
                 onValueChange={(value: LeadStatus) => setFormData({ ...formData, status: value })}
@@ -533,17 +538,17 @@ function EditLeadModal({
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="new">New</SelectItem>
-                  <SelectItem value="contacted">Contacted</SelectItem>
-                  <SelectItem value="qualified">Qualified</SelectItem>
-                  <SelectItem value="proposal_sent">Proposal Sent</SelectItem>
-                  <SelectItem value="won">Won</SelectItem>
-                  <SelectItem value="lost">Lost</SelectItem>
+                  <SelectItem value="new">{t('dashboard.status.new')}</SelectItem>
+                  <SelectItem value="contacted">{t('dashboard.status.contacted')}</SelectItem>
+                  <SelectItem value="qualified">{t('dashboard.status.qualified')}</SelectItem>
+                  <SelectItem value="proposal_sent">{t('dashboard.status.proposal_sent')}</SelectItem>
+                  <SelectItem value="won">{t('dashboard.status.won')}</SelectItem>
+                  <SelectItem value="lost">{t('dashboard.status.lost')}</SelectItem>
                 </SelectContent>
               </Select>
             </div>
             <div className="space-y-2">
-              <Label htmlFor="edit-priority">Priority</Label>
+              <Label htmlFor="edit-priority">{t('dashboard.leads.columns.priority')}</Label>
               <Select
                 value={formData.priority}
                 onValueChange={(value: LeadPriority) => setFormData({ ...formData, priority: value })}
@@ -552,19 +557,19 @@ function EditLeadModal({
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="high">High</SelectItem>
-                  <SelectItem value="medium">Medium</SelectItem>
-                  <SelectItem value="low">Low</SelectItem>
+                  <SelectItem value="high">{t('dashboard.priority.high')}</SelectItem>
+                  <SelectItem value="medium">{t('dashboard.priority.medium')}</SelectItem>
+                  <SelectItem value="low">{t('dashboard.priority.low')}</SelectItem>
                 </SelectContent>
               </Select>
             </div>
           </div>
           <DialogFooter>
             <Button type="button" variant="outline" onClick={onClose}>
-              Cancel
+              {t('dashboard.common.cancel')}
             </Button>
             <Button type="submit" disabled={isLoading}>
-              {isLoading ? 'Updating...' : 'Update Lead'}
+              {isLoading ? t('dashboard.common.updating') : t('dashboard.common.update')}
             </Button>
           </DialogFooter>
         </form>

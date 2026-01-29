@@ -91,7 +91,7 @@ export function Navbar() {
                   onClick={() => handleNav(link.href)}
                   className={`block w-full text-left py-3 px-4 rounded-lg font-medium transition-colors text-lg ${
                     location === link.href 
-                      ? "bg-accent/10 text-primary font-bold border-l-4 border-accent" 
+                      ? "bg-accent text-accent-foreground font-bold shadow-md" 
                       : "text-foreground/80 hover:text-primary hover:bg-black/5 dark:hover:bg-white/5 active:bg-black/10"
                   }`}
                 >
@@ -105,7 +105,7 @@ export function Navbar() {
                 onClick={() => handleNav(isAuthenticated ? "/dashboard" : "/login")}
                 className={`block w-full text-left py-3 px-4 rounded-lg font-medium transition-colors text-lg ${
                   location === "/dashboard" || location === "/login"
-                    ? "bg-accent/10 text-primary font-bold border-l-4 border-accent"
+                    ? "bg-accent text-accent-foreground font-bold shadow-md"
                     : "text-foreground/80 hover:text-primary hover:bg-black/5 dark:hover:bg-white/5 active:bg-black/10"
                 }`}
               >

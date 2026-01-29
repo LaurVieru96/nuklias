@@ -9,15 +9,15 @@
   "footer": {
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
-    "copyright": "© 2026 Nuklias Digital Architects. All rights reserved",
+    "copyright": "© 2026 Nuklias Digital Success. All rights reserved",
     "marketing": "NUKLIAS MARKETING"
   },
   "hero": {
     "badge": "YOUR JOURNEY",
-    "title_start": "From Chaos to Clarity:",
-    "title_end": "Your Digital Growth Engine",
-    "description": "We engineer automated ecosystems that convert passive followers into loyal customers",
-    "cta_audit": "Book a Strategic Audit",
+    "title_start": "Growth Built Around You:",
+    "title_end": "Simple Efficient Transparent",
+    "description": "Generic marketing gets generic results. We dive deep into your specific reality to build a custom engine that actually drives revenue",
+    "cta_audit": "Discuss Your Goals",
     "cta_plans": "Explore Our Plans"
   },
   "client_journey": {
@@ -75,28 +75,28 @@
     "subtitle": "Why choose Nuklias as your digital growth partner?",
     "cards": {
       "1": {
-        "title": "Client-First Mentality",
-        "desc": "We think like business owners, not just service providers. Every dollar invested must yield a return"
+        "title": "Strategic Precision",
+        "desc": "We treat growth as an engineering problem, not a guessing game. Every campaign is precisely aligned with your specific revenue targets, eliminating waste"
       },
       "2": {
-        "title": "Full-Service Architecture",
-        "desc": "From code to content, we handle every layer of your digital ecosystem in-house, ensuring total cohesion"
+        "title": "Seamless Integration",
+        "desc": "We dissolve the barriers between channels. Your Platforms and Systems operate as one synchronized engine, reinforcing each other rather than competing for attention"
       },
       "3": {
-        "title": "Proactive Evolution",
-        "desc": "We don't just react to trends; we anticipate them. Your system is always ready for tomorrow's market"
+        "title": "Future-Proof Scale",
+        "desc": "We build infrastructure designed to survive success. When your traffic spikes and business expands, your digital foundation gets stronger, not weaker"
       },
       "4": {
-        "title": "Radical Transparency",
-        "desc": "No black-box magic. You have full visibility into our strategies, metrics, and the logic behind every move"
+        "title": "Revenue Logic",
+        "desc": "We strip away vanity metrics. We intensify focus on the points that drive profit, ensuring clear logic behind every strategy and decision"
       },
       "5": {
-        "title": "Proven Impact",
-        "desc": "We measure success in revenue, not vanity metrics. Our systems effectively scale businesses and saturate capacities"
+        "title": "Premium Partnership",
+        "desc": "Consistency is our standard. You benefit from a high-tier partnership built on stable execution and clear communication, providing the professional support necessary to scale your business with confidence"
       },
       "6": {
-        "title": "Relentless Passion",
-        "desc": "We are digital architects who love the craft. We build with precision, speed, and an obsession for quality"
+        "title": "Relentless Success",
+        "desc": "We are fueled by the actual growth of your brand. Our approach is defined by a persistent hunger to exceed goals, refusing to settle for average performance when there is an opportunity to achieve greater results"
       }
     }
   },
@@ -560,7 +560,9 @@
       "success": "Success",
       "error": "Error",
       "confirm_delete": "Are you sure you want to delete this item?",
-      "no_data": "No data found"
+      "no_data": "No data found",
+      "creating": "Creating...",
+      "updating": "Updating..."
     },
     "home": {
       "welcome": "Welcome back, {{name}}!",
@@ -613,6 +615,14 @@
         "business_type": "Business Type",
         "challenge": "Challenge",
         "message": "Message"
+      },
+      "messages": {
+        "create_success": "Lead created successfully",
+        "create_error": "Failed to create lead",
+        "update_success": "Lead updated successfully",
+        "update_error": "Failed to update lead",
+        "delete_success": "Lead deleted successfully",
+        "delete_error": "Failed to delete lead"
       }
     },
     "tasks": {
@@ -629,6 +639,14 @@
         "status": "Status",
         "priority": "Priority",
         "assigned_to": "Assigned To"
+      },
+      "messages": {
+        "create_success": "Task created successfully",
+        "create_error": "Failed to create task",
+        "update_success": "Task updated successfully",
+        "update_error": "Failed to update task",
+        "delete_success": "Task deleted successfully",
+        "delete_error": "Failed to delete task"
       }
     },
     "users": {
@@ -647,6 +665,14 @@
         "status": "Status",
         "first_name": "First Name",
         "last_name": "Last Name"
+      },
+      "messages": {
+        "create_success": "User created successfully",
+        "create_error": "Failed to create user",
+        "update_success": "User updated successfully",
+        "update_error": "Failed to update user",
+        "delete_success": "User deleted successfully",
+        "delete_error": "Failed to delete user"
       }
     },
     "status": {

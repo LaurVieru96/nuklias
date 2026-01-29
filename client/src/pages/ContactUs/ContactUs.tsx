@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar/Navbar";
 import { useMessages } from "@/hooks/use-messages";
+import { leadsApi } from "@/lib/api";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -13,7 +14,7 @@ const contactFormSchema = z.object({
   email: z.string().email("Invalid email address"),
   phone: z.string().optional(),
   location: z.string().min(1, "Location is required"),
-  businessDomain: z.enum([
+  industry: z.enum([
     "ecommerce",
     "services",
     "technology",
@@ -26,7 +27,7 @@ const contactFormSchema = z.object({
     required_error: "Please select your business domain"
   }),
   businessType: z.string().min(1, "Please describe your business type"),
-  mainChallenge: z.string().min(1, "Please tell us about your main challenge"),
+  challenge: z.string().min(1, "Please tell us about your main challenge"),
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
 
@@ -44,9 +45,9 @@ export default function ContactUs() {
       email: "",
       phone: "",
       location: "",
-      businessDomain: undefined,
+      industry: undefined,
       businessType: "",
-      mainChallenge: "",
+      challenge: "",
       message: "",
     },
   });
@@ -58,15 +59,36 @@ Hello,
 
 I'm reaching out from ${data.location}.
 
-Business Domain: ${data.businessDomain}
+Business Domain: ${data.industry}
 Business Type: ${data.businessType}
-Main Challenge: ${data.mainChallenge}
+Main Challenge: ${data.challenge}
 
+Email: ${data.email}
 ${data.phone ? `Phone: ${data.phone}\n` : ''}
 
 Message:
 ${data.message}
     `.trim();
+
+    try {
+      // Create Lead in Dashboard
+      await leadsApi.create({
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        location: data.location,
+        industry: data.industry,
+        businessType: data.businessType,
+        challenge: data.challenge,
+        message: data.message,
+        status: 'new',
+        priority: 'low',
+        source: 'website_form'
+      });
+    } catch (error) {
+      console.error("Failed to create lead:", error);
+      // We continue to send the message even if lead creation fails
+    }
 
     createMessage({
       name: data.name,
@@ -258,7 +280,7 @@ ${data.message}
                   <div className="space-y-2">
                     <label className="text-sm font-bold text-foreground">{t('contact_us.form.industry_label')}</label>
                     <select
-                      {...form.register("businessDomain")}
+                      {...form.register("industry")}
                       className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-muted border border-gray-200 dark:border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
                       defaultValue=""
                     >
@@ -269,8 +291,8 @@ ${data.message}
                         </option>
                       ))}
                     </select>
-                    {form.formState.errors.businessDomain && (
-                      <p className="text-red-500 text-xs">{form.formState.errors.businessDomain.message}</p>
+                    {form.formState.errors.industry && (
+                      <p className="text-red-500 text-xs">{form.formState.errors.industry.message}</p>
                     )}
                   </div>
 
@@ -291,13 +313,13 @@ ${data.message}
                   <div className="space-y-2">
                     <label className="text-sm font-bold text-foreground">{t('contact_us.form.challenge_label')}</label>
                     <textarea
-                      {...form.register("mainChallenge")}
+                      {...form.register("challenge")}
                       rows={3}
                       className="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-muted border border-gray-200 dark:border-border focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all resize-none"
                       placeholder={t('contact_us.form.challenge_placeholder')}
                     />
-                    {form.formState.errors.mainChallenge && (
-                      <p className="text-red-500 text-xs">{form.formState.errors.mainChallenge.message}</p>
+                    {form.formState.errors.challenge && (
+                      <p className="text-red-500 text-xs">{form.formState.errors.challenge.message}</p>
                     )}
                   </div>
 
