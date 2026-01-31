@@ -7,7 +7,11 @@ import {
   Globe,
   Sparkles,
   ArrowRight,
-  CheckCircle2
+  CheckCircle2,
+  Users,
+  Brain,
+  Clock,
+  BarChart3
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
@@ -150,6 +154,234 @@ export default function Products() {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Talent Infrastructure & HR Tech Section */}
+      <section id="talent-infrastructure" className="py-24 bg-background relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent text-accent-foreground border border-accent/30 text-xs font-bold uppercase tracking-wider mb-6">
+              <span className="w-2 h-2 rounded-full bg-accent-foreground animate-pulse" />
+              {t('products_page.talent_infrastructure.badge')}
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold font-display text-primary mb-6">
+              {t('products_page.talent_infrastructure.title')}
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              {t('products_page.talent_infrastructure.desc')}
+            </p>
+          </div>
+
+          {/* Talent Products Grid */}
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* Card 1: Intelligent Recruitment */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0 }}
+              viewport={{ once: true }}
+              className="bg-white dark:bg-card rounded-2xl shadow-lg border border-border overflow-hidden hover:shadow-2xl transition-all duration-300"
+            >
+              <div className="bg-gradient-to-r from-blue-500 to-cyan-500 p-8 text-white">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="bg-white/20 backdrop-blur-sm p-3 rounded-xl">
+                    <Users className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl font-bold font-display">
+                    {t('products_page.talent_infrastructure.products.recruitment.title')}
+                  </h3>
+                </div>
+                <p className="text-white/90 leading-relaxed">
+                  {t('products_page.talent_infrastructure.products.recruitment.desc')}
+                </p>
+              </div>
+              <div className="p-8">
+                <div className="mb-6">
+                  <h4 className="text-lg font-bold text-foreground mb-4">
+                    {t('products_page.talent_infrastructure.labels.capabilities')}
+                  </h4>
+                  <ul className="space-y-3">
+                    {(t('products_page.talent_infrastructure.products.recruitment.capabilities', { returnObjects: true }) as string[]).map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-3">
+                        <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-foreground mb-4">
+                    {t('products_page.talent_infrastructure.labels.impact')}
+                  </h4>
+                  <ul className="space-y-2">
+                    {(t('products_page.talent_infrastructure.products.recruitment.impact', { returnObjects: true }) as string[]).map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-accent shrink-0 mt-2" />
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Card 2: Core HR & Operations */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+              viewport={{ once: true }}
+              className="bg-white dark:bg-card rounded-2xl shadow-lg border border-border overflow-hidden hover:shadow-2xl transition-all duration-300"
+            >
+              <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-8 text-white">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="bg-white/20 backdrop-blur-sm p-3 rounded-xl">
+                    <Brain className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl font-bold font-display">
+                    {t('products_page.talent_infrastructure.products.core_hr.title')}
+                  </h3>
+                </div>
+                <p className="text-white/90 leading-relaxed">
+                  {t('products_page.talent_infrastructure.products.core_hr.desc')}
+                </p>
+              </div>
+              <div className="p-8">
+                <div className="mb-6">
+                  <h4 className="text-lg font-bold text-foreground mb-4">
+                    {t('products_page.talent_infrastructure.labels.capabilities')}
+                  </h4>
+                  <ul className="space-y-3">
+                    {(t('products_page.talent_infrastructure.products.core_hr.capabilities', { returnObjects: true }) as string[]).map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-3">
+                        <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-foreground mb-4">
+                    {t('products_page.talent_infrastructure.labels.impact')}
+                  </h4>
+                  <ul className="space-y-2">
+                    {(t('products_page.talent_infrastructure.products.core_hr.impact', { returnObjects: true }) as string[]).map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-accent shrink-0 mt-2" />
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Card 3: Time, Absence & Patterns */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white dark:bg-card rounded-2xl shadow-lg border border-border overflow-hidden hover:shadow-2xl transition-all duration-300"
+            >
+              <div className="bg-gradient-to-r from-orange-500 to-red-500 p-8 text-white">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="bg-white/20 backdrop-blur-sm p-3 rounded-xl">
+                    <Clock className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl font-bold font-display">
+                    {t('products_page.talent_infrastructure.products.time_absence.title')}
+                  </h3>
+                </div>
+                <p className="text-white/90 leading-relaxed">
+                  {t('products_page.talent_infrastructure.products.time_absence.desc')}
+                </p>
+              </div>
+              <div className="p-8">
+                <div className="mb-6">
+                  <h4 className="text-lg font-bold text-foreground mb-4">
+                    {t('products_page.talent_infrastructure.labels.capabilities')}
+                  </h4>
+                  <ul className="space-y-3">
+                    {(t('products_page.talent_infrastructure.products.time_absence.capabilities', { returnObjects: true }) as string[]).map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-3">
+                        <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-foreground mb-4">
+                    {t('products_page.talent_infrastructure.labels.impact')}
+                  </h4>
+                  <ul className="space-y-2">
+                    {(t('products_page.talent_infrastructure.products.time_absence.impact', { returnObjects: true }) as string[]).map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-accent shrink-0 mt-2" />
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Card 4: Performance & Compensation Analytics */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              viewport={{ once: true }}
+              className="bg-white dark:bg-card rounded-2xl shadow-lg border border-border overflow-hidden hover:shadow-2xl transition-all duration-300"
+            >
+              <div className="bg-gradient-to-r from-green-500 to-emerald-500 p-8 text-white">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="bg-white/20 backdrop-blur-sm p-3 rounded-xl">
+                    <BarChart3 className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl font-bold font-display">
+                    {t('products_page.talent_infrastructure.products.performance.title')}
+                  </h3>
+                </div>
+                <p className="text-white/90 leading-relaxed">
+                  {t('products_page.talent_infrastructure.products.performance.desc')}
+                </p>
+              </div>
+              <div className="p-8">
+                <div className="mb-6">
+                  <h4 className="text-lg font-bold text-foreground mb-4">
+                    {t('products_page.talent_infrastructure.labels.capabilities')}
+                  </h4>
+                  <ul className="space-y-3">
+                    {(t('products_page.talent_infrastructure.products.performance.capabilities', { returnObjects: true }) as string[]).map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-3">
+                        <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-foreground mb-4">
+                    {t('products_page.talent_infrastructure.labels.impact')}
+                  </h4>
+                  <ul className="space-y-2">
+                    {(t('products_page.talent_infrastructure.products.performance.impact', { returnObjects: true }) as string[]).map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-accent shrink-0 mt-2" />
+                        <span className="text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>

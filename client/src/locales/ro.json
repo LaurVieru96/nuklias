@@ -14,7 +14,7 @@
   },
   "hero": {
     "badge": "CĂLĂTORIA TA",
-    "title_start": "",
+    "title_start": "Creștere Construită în Jurul Tău:",
     "title_end": "Simplu Eficient Transparent",
     "description": "Marketingul generic aduce rezultate generice. Analizăm în profunzime realitatea ta specifică pentru a construi un motor personalizat care chiar generează venituri",
     "cta_audit": "Discută Obiectivele Tale",
@@ -142,7 +142,17 @@
       "industry_label": "În ce industrie activează afacerea ta? *",
       "industry_default": "Selectează industria.",
       "business_type_label": "Ce tip de afacere ai? *",
-      "business_type_placeholder": "ex: Magazin online, Servicii locale, Platformă SaaS.",
+      "business_type_placeholder": "ex. B2B SaaS, Agenție, etc.",
+      "domains": {
+        "ecommerce": "E-commerce & Retail",
+        "services": "Servicii Profesionale",
+        "technology": "Tehnologie & SaaS",
+        "healthcare": "Sănătate & Medical",
+        "finance": "Finanțe & Bănci",
+        "real_estate": "Imobiliare",
+        "education": "Educație & Training",
+        "other": "Altele"
+      },
       "challenge_label": "Care este principala ta provocare în marketing? *",
       "challenge_placeholder": "ex: Nu am destule lead-uri, Rată de conversie mică, Lipsă de vizibilitate.",
       "message_label": "Spune-ne mai multe despre proiect *",
@@ -300,6 +310,85 @@
         ]
       }
     },
+    "talent_infrastructure": {
+      "badge": "INFRASTRUCTURĂ DE TALENT",
+      "title": "Infrastructură de Talent & HR Tech",
+      "desc": "Desfășoară echipe întregi cu aceeași viteză și logică cu care desfășori cod. Sisteme HR de nivel enterprise construite pentru companii axate pe creștere",
+      "labels": {
+        "capabilities": "Capabilități Cheie",
+        "impact": "Impact de Business"
+      },
+      "products": {
+        "recruitment": {
+          "title": "Recrutare Inteligentă (ATS)",
+          "desc": "Sistem de urmărire a aplicanților bazat pe AI care transformă angajarea din haos într-un proces raționalizat, bazat pe date",
+          "capabilities": [
+            "Arhitectură Vizuală de Pipeline & Panouri Kanban",
+            "Descrieri de Job Generate de AI & Detectare Bias",
+            "Postare Job cu un Click pe Multiple Platforme (Indeed, LinkedIn, etc.)",
+            "Programare Automată a Interviurilor & Sincronizare Calendar (Outlook/Google)",
+            "Scoring AI pentru Potrivire Candidați & Analiză Profundă CV"
+          ],
+          "impact": [
+            "Reduce timpul de angajare prin automatizarea sarcinilor administrative",
+            "Elimină bias-ul inconștient din descrierile de job",
+            "Vizibilitate completă asupra miilor de aplicanți fără haos",
+            "Colaborare perfectă între recrutori și manageri de angajare"
+          ]
+        },
+        "core_hr": {
+          "title": "HR Central & Operațiuni",
+          "desc": "Sistem centralizat de management al angajaților care elimină hârtiile și raționalizează operațiunile HR",
+          "capabilities": [
+            "Dosare Digitale ale Angajaților & Organigramă",
+            "Planuri de Onboarding Generate de AI & Checklist-uri",
+            "Portal Self-Service pentru Angajați (Concedii, Documente, Profil)",
+            "Management Securizat al Documentelor & Semnături Digitale",
+            "Workflow-uri Automate de Offboarding"
+          ],
+          "impact": [
+            "Management al datelor angajaților fără hârtie, conform și securizat",
+            "Experiențe structurate de onboarding care cresc retenția",
+            "Reducerea volumului de muncă administrativ HR prin opțiuni self-service",
+            "Director centralizat accesibil întregii echipe"
+          ]
+        },
+        "time_absence": {
+          "title": "Timp, Absențe & Pattern-uri",
+          "desc": "Management inteligent al absențelor cu analiză predictivă pentru prevenirea deficitului de personal și identificarea burnout-ului",
+          "capabilities": [
+            "Management Global al Sărbătorilor & Politici Personalizate de Concediu",
+            "Workflow-uri Automate de Aprobare & Detectare Pattern-uri",
+            "Dashboard Absențe cu Analiză Departamentală",
+            "Urmărire Certificate Medicale & Alerte",
+            "Bradford Factor & Analiză Pattern pentru Absenteism"
+          ],
+          "impact": [
+            "Previne deficitul de personal cu vizibilitate clară a calendarului",
+            "Identifică și abordează burnout-ul sau absenteismul devreme",
+            "Proces raționalizat de la cerere la aprobare",
+            "Conformitate cu reglementările locale privind concediile"
+          ]
+        },
+        "performance": {
+          "title": "Performanță & Analiză Compensații",
+          "desc": "Management al performanței și planificare a compensațiilor bazate pe date care asigură echitate și motivează talentele",
+          "capabilities": [
+            "Evaluări de Performanță 360° & Auto-evaluări",
+            "Benchmarking Salarial & Analiză Compresie",
+            "Administrare Beneficii & Urmărire Înscrieri",
+            "Planuri de Îmbunătățire a Performanței (PIP) & Urmărire Obiective",
+            "Analiză Buget în Timp Real & Rapoarte Echitate Salarială"
+          ],
+          "impact": [
+            "Decizii de compensare bazate pe date care asigură echitatea",
+            "Căi clare de creștere care motivează talentele de top",
+            "ROI măsurabil pe investițiile în capital uman",
+            "Management transparent al beneficiilor pentru toți angajații"
+          ]
+        }
+      }
+    },
     "cta": {
       "title": "Soluții Personalizate pentru Afacerea Ta",
       "desc": "Înțelegem că fiecare afacere este unică. De aceea creăm pachete personalizate adaptate nevoilor, obiectivelor și bugetului tău. Fără soluții generice—doar servicii strategice create să livreze rezultatele de care ai nevoie",
@@ -343,6 +432,7 @@
   "talent_section": {
     "title": "Infrastructură de Talent & HR Tech",
     "subtitle": "Desfășoară echipe întregi cu aceeași viteză și logică cu care desfășori cod",
+    "cta_button": "Explorează Suita Completă HR Tech",
     "cards": {
       "1": {
         "title": "Arhitectură Vizuală de Pipeline",
@@ -362,8 +452,9 @@
     "title": "Creează-ți Website-ul Personalizat",
     "subtitle": "Alege structura care se potrivește afacerii tale azi. Fiecare opțiune este construită pentru viteză, claritate și conversie",
     "most_popular": "Cel Mai Popular",
+    "new_badge": "Nou",
     "request_quote": "Cere o Ofertă",
-    "deploy_hiring": "Implementează Sistem de Angajare",
+    "deploy_hiring": "Implementează Infrastructura de Recrutare",
     "tiers": {
       "bronze": {
         "title": "Website Basic",
@@ -431,6 +522,7 @@
   },
   "legal": {
     "privacy": {
+      "last_updated": "Ultima actualizare:",
       "title": "Politica de Confidențialitate",
       "intro": {
         "title": "1. Introducere",
@@ -561,7 +653,17 @@
       "confirm_delete": "Ești sigur că vrei să ștergi acest element?",
       "no_data": "Nu s-au găsit date",
       "creating": "Se creează...",
-      "updating": "Se actualizează..."
+      "updating": "Se actualizează...",
+      "close": "Închide",
+      "pagination": {
+        "previous": "Anterior",
+        "next": "Următorul",
+        "more_pages": "Mai multe pagini"
+      },
+      "errors": {
+        "request_failed": "Solicitarea a eșuat",
+        "network_error": "Eroare de rețea"
+      }
     },
     "home": {
       "welcome": "Bine ai revenit, {{name}}!",

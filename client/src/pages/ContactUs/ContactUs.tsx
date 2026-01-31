@@ -101,14 +101,14 @@ ${data.message}
   };
 
   const businessDomains = [
-    { value: "ecommerce", label: "E-commerce & Retail" },
-    { value: "services", label: "Professional Services" },
-    { value: "technology", label: "Technology & SaaS" },
-    { value: "healthcare", label: "Healthcare & Medical" },
-    { value: "finance", label: "Finance & Banking" },
-    { value: "real-estate", label: "Real Estate" },
-    { value: "education", label: "Education & Training" },
-    { value: "other", label: "Other" },
+    { value: "ecommerce", label: t('contact_us.domains.ecommerce') },
+    { value: "services", label: t('contact_us.domains.services') },
+    { value: "technology", label: t('contact_us.domains.technology') },
+    { value: "healthcare", label: t('contact_us.domains.healthcare') },
+    { value: "finance", label: t('contact_us.domains.finance') },
+    { value: "real-estate", label: t('contact_us.domains.real_estate') },
+    { value: "education", label: t('contact_us.domains.education') },
+    { value: "other", label: t('contact_us.domains.other') },
   ];
 
   return (

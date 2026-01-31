@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { Workflow, Cpu, Server } from "lucide-react";
+import { Workflow, Cpu, Server, ArrowRight } from "lucide-react";
 import { useMemo } from "react";
+import { Link } from "wouter";
 
 export function TalentInfrastructureSection() {
   const { t } = useTranslation();
@@ -39,7 +40,7 @@ export function TalentInfrastructureSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 items-stretch">
+        <div className="grid md:grid-cols-3 gap-8 items-stretch mb-12">
           {features.map((item, i) => (
             <motion.div
               key={i}
@@ -62,6 +63,21 @@ export function TalentInfrastructureSection() {
               </p>
             </motion.div>
           ))}
+        </div>
+
+        {/* CTA to Products Page */}
+        <div className="text-center">
+          <Link href="/products#talent-infrastructure">
+            <motion.button
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="px-8 py-4 bg-accent text-accent-foreground font-bold rounded-xl shadow-xl shadow-accent/20 hover:scale-105 transition-transform inline-flex items-center gap-2"
+            >
+              {t('talent_section.cta_button')}
+              <ArrowRight size={18} />
+            </motion.button>
+          </Link>
         </div>
       </div>
     </section>

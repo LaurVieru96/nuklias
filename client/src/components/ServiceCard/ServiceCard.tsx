@@ -57,7 +57,7 @@ export function ServiceCard({ title, subtitle, features, tier, delay = 0 }: Serv
       )}
       {isTalent && (
         <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-foreground px-4 py-1 rounded-full text-xs font-bold tracking-wider uppercase shadow-md shadow-accent/20">
-          New
+          {t('products_section.new_badge')}
         </div>
       )}
 

@@ -142,7 +142,17 @@
       "industry_label": "What industry is your business in? *",
       "industry_default": "Select your industry.",
       "business_type_label": "What type of business do you have? *",
-      "business_type_placeholder": "e.g., Online retail store, Local service business, SaaS platform.",
+      "business_type_placeholder": "e.g. B2B SaaS, Agency, etc.",
+      "domains": {
+        "ecommerce": "E-commerce & Retail",
+        "services": "Professional Services",
+        "technology": "Technology & SaaS",
+        "healthcare": "Healthcare & Medical",
+        "finance": "Finance & Banking",
+        "real_estate": "Real Estate",
+        "education": "Education & Training",
+        "other": "Other"
+      },
       "challenge_label": "What's your main digital marketing challenge? *",
       "challenge_placeholder": "e.g., Not getting enough qualified leads, Low conversion rates, Lack of brand visibility.",
       "message_label": "Tell us more about your project *",
@@ -300,6 +310,85 @@
         ]
       }
     },
+    "talent_infrastructure": {
+      "badge": "TALENT INFRASTRUCTURE",
+      "title": "Talent Infrastructure & HR Tech",
+      "desc": "Deploy entire teams with the same speed and logic you deploy code. Enterprise-grade HR systems built for growth-focused companies",
+      "labels": {
+        "capabilities": "Key Capabilities",
+        "impact": "Business Impact"
+      },
+      "products": {
+        "recruitment": {
+          "title": "Intelligent Recruitment (ATS)",
+          "desc": "AI-powered applicant tracking system that transforms hiring from chaos into a streamlined, data-driven process",
+          "capabilities": [
+            "Visual Pipeline Architecture & Kanban Boards",
+            "AI-Driven Job Descriptions & Bias Detection",
+            "One-click Job Posting to Multiple Boards (Indeed, LinkedIn, etc.)",
+            "Automated Interview Scheduling & Calendar Sync (Outlook/Google)",
+            "AI Candidate Match Scoring & Deep CV Analysis"
+          ],
+          "impact": [
+            "Reduce time-to-hire by automating administrative tasks",
+            "Eliminate unconscious bias in job descriptions",
+            "Full visibility over thousands of applicants without chaos",
+            "Seamless collaboration between recruiters and hiring managers"
+          ]
+        },
+        "core_hr": {
+          "title": "Core HR & Operations",
+          "desc": "Centralized employee management system that eliminates paperwork and streamlines HR operations",
+          "capabilities": [
+            "Digital Employee Files & Organizational Chart",
+            "AI-Generated Onboarding Plans & Checklists",
+            "Employee Self-Service Portal (Leave, Docs, Profile)",
+            "Secure Document Management & Digital Signatures",
+            "Automated Offboarding Workflows"
+          ],
+          "impact": [
+            "Paperless, compliant, and secure employee data management",
+            "Structured onboarding experiences that boost retention",
+            "Reduced HR admin workload via self-service options",
+            "Centralized directory accessible to the whole team"
+          ]
+        },
+        "time_absence": {
+          "title": "Time, Absence & Patterns",
+          "desc": "Smart absence management with predictive analytics to prevent staffing shortages and identify burnout",
+          "capabilities": [
+            "Global Holiday Management & Custom Leave Policies",
+            "Automated Approval Workflows & Pattern Detection",
+            "Absence Dashboard with Departmental Analytics",
+            "Medical Certificate Tracking & Alerts",
+            "Bradford Factor & Pattern Analysis for Absenteeism"
+          ],
+          "impact": [
+            "Prevent staffing shortages with clear calendar visibility",
+            "Identify and address burnout or absenteeism early",
+            "Streamlined request-to-approval process",
+            "Compliance with local leave regulations"
+          ]
+        },
+        "performance": {
+          "title": "Performance & Compensation Analytics",
+          "desc": "Data-driven performance management and compensation planning that ensures equity and motivates talent",
+          "capabilities": [
+            "360° Performance Reviews & Self-Evaluations",
+            "Salary Benchmarking & Compression Analysis",
+            "Benefits Administration & Enrollment Tracking",
+            "Performance Improvement Plans (PIPs) & Goal Tracking",
+            "Real-time Budget Analysis & Pay Equity Reports"
+          ],
+          "impact": [
+            "Data-driven compensation decisions that ensure equity",
+            "Clear growth paths that motivate top talent",
+            "Measurable ROI on human capital investments",
+            "Transparent benefits management for all employees"
+          ]
+        }
+      }
+    },
     "cta": {
       "title": "Custom Solutions for Your Business",
       "desc": "We understand that every business is unique. That's why we create custom packages tailored to your specific needs, goals, and budget. No cookie-cutter solutions—just strategic services designed to deliver the results you need",
@@ -343,6 +432,7 @@
   "talent_section": {
     "title": "Talent Infrastructure & HR Tech",
     "subtitle": "Deploy entire teams with the same speed and logic you deploy code",
+    "cta_button": "Explore Full HR Tech Suite",
     "cards": {
       "1": {
         "title": "Visual Pipeline Architecture",
@@ -363,7 +453,8 @@
     "subtitle": "Pick the structure that matches where your business is today. Every option is built to be fast, clear, and conversion-focused",
     "most_popular": "Most Popular",
     "request_quote": "Request a Quote",
-    "deploy_hiring": "Deploy Hiring System",
+    "new_badge": "New",
+    "deploy_hiring": "Deploy Hiring Infrastructure",
     "tiers": {
       "bronze": {
         "title": "Website Basic",
@@ -431,6 +522,7 @@
   },
   "legal": {
     "privacy": {
+      "last_updated": "Last updated:",
       "title": "Privacy Policy",
       "intro": {
         "title": "1. Introduction",
@@ -534,8 +626,7 @@
         "content": "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms"
       }
     }
-  }
-  ,
+  },
   "dashboard": {
     "nav": {
       "dashboard": "Dashboard",
@@ -562,7 +653,17 @@
       "confirm_delete": "Are you sure you want to delete this item?",
       "no_data": "No data found",
       "creating": "Creating...",
-      "updating": "Updating..."
+      "updating": "Updating...",
+      "close": "Close",
+      "pagination": {
+        "previous": "Previous",
+        "next": "Next",
+        "more_pages": "More pages"
+      },
+      "errors": {
+        "request_failed": "Request failed",
+        "network_error": "Network error"
+      }
     },
     "home": {
       "welcome": "Welcome back, {{name}}!",

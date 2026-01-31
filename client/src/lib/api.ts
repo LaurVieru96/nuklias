@@ -1,5 +1,6 @@
 import type { ApiError, ApiSuccess, User, LoginInput } from '@/types';
 import { API_BASE_URL } from '@/config/env';
+import i18n from '@/lib/i18n';
 
 /**
  * Generic API client wrapper
@@ -35,7 +36,7 @@ class ApiClient {
       if (!response.ok) {
         throw {
           status: response.status,
-          message: data.error || data.message || 'Request failed',
+          message: data.error || data.message || i18n.t('dashboard.errors.request_failed'),
           details: data.details,
         };
       }
@@ -47,7 +48,7 @@ class ApiClient {
       }
       throw {
         status: 0,
-        message: 'Network error',
+        message: i18n.t('dashboard.errors.network_error'),
         details: error.message,
       };
     }

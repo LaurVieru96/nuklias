@@ -14,7 +14,7 @@
   },
   "hero": {
     "badge": "IHRE REISE",
-    "title_start": "",
+    "title_start": "Wachstum, das sich nach Ihnen richtet:",
     "title_end": "Einfach Effizient Transparent",
     "description": "Generisches Marketing bringt generische Ergebnisse. Wir tauchen tief in Ihre spezifische Realität ein, um einen maßgeschneiderten Motor zu bauen, der tatsächlich Umsatz generiert",
     "cta_audit": "Besprechen Sie Ihre Ziele",
@@ -142,7 +142,17 @@
       "industry_label": "In welcher Branche sind Sie tätig? *",
       "industry_default": "Branche auswählen.",
       "business_type_label": "Welche Art von Geschäft haben Sie? *",
-      "business_type_placeholder": "z.B. Online-Shop, Lokales Dienstleistungsunternehmen, SaaS-Plattform.",
+      "business_type_placeholder": "z.B. B2B SaaS, Agentur, etc.",
+      "domains": {
+        "ecommerce": "E-Commerce & Einzelhandel",
+        "services": "Professionelle Dienstleistungen",
+        "technology": "Technologie & SaaS",
+        "healthcare": "Gesundheitswesen & Medizin",
+        "finance": "Finanzen & Bankwesen",
+        "real_estate": "Immobilien",
+        "education": "Bildung & Ausbildung",
+        "other": "Andere"
+      },
       "challenge_label": "Was ist Ihre größte Herausforderung im digitalen Marketing? *",
       "challenge_placeholder": "z.B. Nicht genügend qualifizierte Leads, niedrige Konversionsraten, mangelnde Sichtbarkeit.",
       "message_label": "Erzählen Sie uns mehr über Ihr Projekt *",
@@ -300,6 +310,85 @@
         ]
       }
     },
+    "talent_infrastructure": {
+      "badge": "TALENT-INFRASTRUKTUR",
+      "title": "Talent-Infrastruktur & HR Tech",
+      "desc": "Stellen Sie ganze Teams mit der gleichen Geschwindigkeit und Logik bereit wie Code. Enterprise-grade HR-Systeme für wachstumsorientierte Unternehmen",
+      "labels": {
+        "capabilities": "Hauptfunktionen",
+        "impact": "Geschäftlicher Nutzen"
+      },
+      "products": {
+        "recruitment": {
+          "title": "Intelligente Rekrutierung (ATS)",
+          "desc": "KI-gestütztes Bewerberverfolgungssystem, das die Einstellung von Chaos in einen optimierten, datengesteuerten Prozess verwandelt",
+          "capabilities": [
+            "Visuelle Pipeline-Architektur & Kanban-Boards",
+            "KI-gesteuerte Stellenbeschreibungen & Bias-Erkennung",
+            "Ein-Klick-Stellenausschreibung auf mehreren Plattformen (Indeed, LinkedIn, etc.)",
+            "Automatisierte Interviewplanung & Kalender-Synchronisation (Outlook/Google)",
+            "KI-Kandidaten-Matching-Score & Tiefgehende Lebenslauf-Analyse"
+          ],
+          "impact": [
+            "Reduzierung der Zeit bis zur Einstellung durch Automatisierung administrativer Aufgaben",
+            "Beseitigung unbewusster Voreingenommenheit in Stellenbeschreibungen",
+            "Volle Transparenz über Tausende von Bewerbern ohne Chaos",
+            "Nahtlose Zusammenarbeit zwischen Recruitern und Hiring Managern"
+          ]
+        },
+        "core_hr": {
+          "title": "Kern-HR & Betrieb",
+          "desc": "Zentralisiertes Mitarbeiterverwaltungssystem, das Papierkram eliminiert und HR-Abläufe optimiert",
+          "capabilities": [
+            "Digitale Mitarbeiterakten & Organigramm",
+            "KI-generierte Onboarding-Pläne & Checklisten",
+            "Mitarbeiter-Self-Service-Portal (Urlaub, Dokumente, Profil)",
+            "Sichere Dokumentenverwaltung & Digitale Signaturen",
+            "Automatisierte Offboarding-Workflows"
+          ],
+          "impact": [
+            "Papierloses, konformes und sicheres Mitarbeiterdatenmanagement",
+            "Strukturierte Onboarding-Erlebnisse, die die Bindung erhöhen",
+            "Reduzierter HR-Verwaltungsaufwand durch Self-Service-Optionen",
+            "Zentrales Verzeichnis, zugänglich für das gesamte Team"
+          ]
+        },
+        "time_absence": {
+          "title": "Zeit, Abwesenheit & Muster",
+          "desc": "Intelligentes Abwesenheitsmanagement mit prädiktiver Analyse zur Vermeidung von Personalengpässen und Identifizierung von Burnout",
+          "capabilities": [
+            "Globales Feiertagsmanagement & Individuelle Urlaubsrichtlinien",
+            "Automatisierte Genehmigungs-Workflows & Mustererkennung",
+            "Abwesenheits-Dashboard mit Abteilungsanalyse",
+            "Verfolgung von Krankmeldungen & Benachrichtigungen",
+            "Bradford-Faktor & Musteranalyse für Fehlzeiten"
+          ],
+          "impact": [
+            "Vermeidung von Personalengpässen durch klare Kalenderübersicht",
+            "Frühzeitige Identifizierung und Behandlung von Burnout oder Fehlzeiten",
+            "Optimierter Prozess von Antrag bis Genehmigung",
+            "Einhaltung lokaler Urlaubsvorschriften"
+          ]
+        },
+        "performance": {
+          "title": "Leistung & Vergütungsanalyse",
+          "desc": "Datengesteuertes Leistungsmanagement und Vergütungsplanung, die Gerechtigkeit gewährleistet und Talente motiviert",
+          "capabilities": [
+            "360°-Leistungsbeurteilungen & Selbstbewertungen",
+            "Gehaltsbenchmarking & Kompressionsanalyse",
+            "Leistungsverwaltung & Anmeldungsverfolgung",
+            "Leistungsverbesserungspläne (PIPs) & Zielverfolgung",
+            "Echtzeit-Budgetanalyse & Berichte zur Lohngerechtigkeit"
+          ],
+          "impact": [
+            "Datengesteuerte Vergütungsentscheidungen, die Gerechtigkeit gewährleisten",
+            "Klare Wachstumspfade, die Top-Talente motivieren",
+            "Messbarer ROI auf Investitionen in Humankapital",
+            "Transparente Leistungsverwaltung für alle Mitarbeiter"
+          ]
+        }
+      }
+    },
     "cta": {
       "title": "Maßgeschneiderte Lösungen für Ihr Unternehmen",
       "desc": "Wir verstehen, dass jedes Unternehmen einzigartig ist. Deshalb erstellen wir maßgeschneiderte Pakete, die auf Ihre spezifischen Bedürfnisse, Ziele und Ihr Budget zugeschnitten sind. Keine Standardlösungen — nur strategische Dienstleistungen für die Ergebnisse, die Sie benötigen",
@@ -343,6 +432,7 @@
   "talent_section": {
     "title": "Talent-Infrastruktur & HR Tech",
     "subtitle": "Stellen Sie ganze Teams mit der gleichen Geschwindigkeit und Logik bereit wie Code",
+    "cta_button": "Vollständige HR Tech Suite Erkunden",
     "cards": {
       "1": {
         "title": "Visuelle Pipeline-Architektur",
@@ -361,9 +451,10 @@
   "products_section": {
     "title": "Erstellen Sie Ihre Website",
     "subtitle": "Wählen Sie die Struktur aus, die heute zu Ihrem Unternehmen passt. Jede Option ist auf Geschwindigkeit, Klarheit und Konversion ausgelegt",
-    "most_popular": "Beliebteste",
+    "most_popular": "Am Beliebtesten",
+    "new_badge": "Neu",
     "request_quote": "Angebot Anfordern",
-    "deploy_hiring": "Einstellungssystem Bereitstellen",
+    "deploy_hiring": "Rekrutierungsinfrastruktur Einsetzen",
     "tiers": {
       "bronze": {
         "title": "Website Basic",
@@ -431,7 +522,8 @@
   },
   "legal": {
     "privacy": {
-      "title": "Datenschutzrichtlinie",
+      "last_updated": "Zuletzt aktualisiert:",
+      "title": "Datenschutzerklärung",
       "intro": {
         "title": "1. Einführung",
         "content": "Nuklias Digital Architects ('wir', 'unsere' oder 'uns') verpflichtet sich, Ihre Privatsphäre zu schützen. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Website besuchen oder unsere Dienste nutzen. Durch die Nutzung der Dienste stimmen Sie der Sammlung und Nutzung von Informationen gemäß dieser Richtlinie zu"
@@ -561,7 +653,17 @@
       "confirm_delete": "Möchten Sie dieses Element wirklich löschen?",
       "no_data": "Keine Daten gefunden",
       "creating": "Erstellen...",
-      "updating": "Aktualisieren..."
+      "updating": "Aktualisieren...",
+      "close": "Schließen",
+      "pagination": {
+        "previous": "Vorherige",
+        "next": "Nächste",
+        "more_pages": "Mehr Seiten"
+      },
+      "errors": {
+        "request_failed": "Anfrage fehlgeschlagen",
+        "network_error": "Netzwerkfehler"
+      }
     },
     "home": {
       "welcome": "Willkommen zurück, {{name}}!",
